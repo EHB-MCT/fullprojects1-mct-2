@@ -1,25 +1,34 @@
 /* TYPOGRAPHY */
-
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Hepta+Slab:wght@1..900&display=swap");
 h1 {
+	font-size: 36px;
+	font-family: "Grandstander", cursive;
 }
 
 h2 {
+	font-family: "Grandstander", cursive;
 }
 
 h3 {
+	font-family: "Grandstander", cursive;
 }
 
 h4 {
+	font-family: "Grandstander", cursive;
 }
 
 h5 {
+	font-family: "Grandstander", cursive;
 }
 
 h6 {
+	font-family: "Grandstander", cursive;
 }
 
 p {
+	font-family: "Hepta Slab";
 }
 
 a {
+	font-family: "Hepta Slab";
 }
