@@ -1,25 +1,86 @@
 /* TYPOGRAPHY */
+@import url("https://use.typekit.net/tst2dxh.css");
+body {
+	font-family: "evolver-variable", sans-serif;
+	font-variation-settings: "wght" 400, "slnt" 1;
+	background-image: url(https://grainy-gradients.vercel.app/noise.svg);
+	background-color: #211c57;
 
-h1 {
+	color: #fff;
+
+	img {
+		position: absolute;
+	}
 }
 
-h2 {
+.border_one {
+	img {
+		width: 30%;
+	}
+	h2 {
+		font-size: 36pt;
+	}
+}
+.border_two {
+	img {
+		width: 20%;
+	}
+	h4 {
+		font-size: 24pt;
+	}
+}
+
+h1 {
+	font-size: 44pt;
 }
 
 h3 {
-}
-
-h4 {
+	font-size: 20pt;
+	font-variation-settings: "wght" 300, "slnt" -11;
 }
 
 h5 {
+	font-family: ocr-a-std, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 11pt;
 }
 
 h6 {
+	font-family: ocr-a-std, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12pt;
 }
 
-p {
+.chat {
+	h2 {
+		font-size: 45pt;
+	}
+
+	h3 {
+		font-size: 16pt;
+	}
+
+	h4 {
+		font-family: ocr-a-std, monospace;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 18pt;
+	}
+}
+
+p,
+li {
+	font-family: ocr-a-std, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13pt;
 }
 
 a {
+	size: 16pt;
+	font-family: ocr-a-std, monospace;
+	text-decoration: none;
+	color: #36bdb4;
 }
