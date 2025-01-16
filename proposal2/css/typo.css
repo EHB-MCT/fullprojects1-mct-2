@@ -7,28 +7,14 @@ h1 {
 
 h2 {
 	font-family: "Grandstander", cursive;
+	font-size: 21px;
 }
-
-h3 {
-	font-family: "Grandstander", cursive;
-}
-
-h4 {
-	font-family: "Grandstander", cursive;
-}
-
-h5 {
-	font-family: "Grandstander", cursive;
-}
-
-h6 {
-	font-family: "Grandstander", cursive;
-}
-
 p {
 	font-family: "Hepta Slab";
+	font-size: 12px;
 }
 
 a {
-	font-family: "Hepta Slab";
+	font-family: "Grandstander", cursive;
+	font-size: 18px;
 }
