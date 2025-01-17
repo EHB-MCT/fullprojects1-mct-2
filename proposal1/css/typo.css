@@ -3,32 +3,36 @@
 body {
 	font-family: "evolver-variable", sans-serif;
 	font-variation-settings: "wght" 400, "slnt" 1;
-	background-image: url(https://grainy-gradients.vercel.app/noise.svg);
-	background-color: #211c57;
-
+	background-image: url('../images/background.png');
 	color: #fff;
+	margin-left: 50px;
 
-	img {
-		position: absolute;
-	}
 }
 
 .border_one {
-	img {
-		width: 30%;
-	}
-	h2 {
-		font-size: 36pt;
-	}
+	height:150px;
+	background-image: url('../images/chip.svg');
+	background-repeat: no-repeat;
+	background-size: 28%;
+	padding-top: 1px;
 }
-.border_two {
-	img {
-		width: 20%;
-	}
-	h4 {
-		font-size: 24pt;
-	}
+
+
+h2 {
+	font-size: 36pt;
+	margin-left: 10px;
+	padding-left: 20px;
 }
+
+.border_two img {
+	width: 15%;	
+	
+}
+
+h4 {
+	font-size: 24pt;
+}
+
 
 h1 {
 	font-size: 44pt;
@@ -53,22 +57,21 @@ h6 {
 	font-size: 12pt;
 }
 
-.chat {
-	h2 {
-		font-size: 45pt;
-	}
-
-	h3 {
-		font-size: 16pt;
-	}
-
-	h4 {
-		font-family: ocr-a-std, monospace;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 18pt;
-	}
+.chat h2 {
+	font-size: 45pt;
 }
+
+.chat h3 {
+	font-size: 16pt;
+}
+
+.chat h4 {
+	font-family: ocr-a-std, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18pt;
+}
+
 
 p,
 li {
