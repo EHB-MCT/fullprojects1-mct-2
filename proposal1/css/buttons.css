@@ -7,13 +7,18 @@
 		width: 10%;
 		position: absolute;
 	}
+	span {
+		display: block;
+		margin-top: 25px;
+		margin-left: 40px;
+	}
 }
-.btn-primary:hover {
+/* .btn-primary:hover {
 	color: #ec2b77;
 	img {
 		display: none;
 	}
-}
+} */
 
 .btn-secondary {
 	background-color: #36bdb4;
