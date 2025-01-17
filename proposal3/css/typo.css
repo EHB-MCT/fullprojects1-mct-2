@@ -1,28 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
-@font-face {
-	font-family: Joystix Monospace-Regular;
-	src: url(https://www.1001fonts.com/joystix-font.html);
-}
-
-h {
-	font-family: Joystix Monospace-Regular;
-}
 h1 {
 	font-size: 47pt;
-	font-family: joystix monospace-regular;
+	font-family: "lores-12", sans-serif;
 }
 
 h2 {
 	font-size: 10pt;
+	font-family: "lores-12", sans-serif;
 }
 
 h3 {
 	font-size: 20pt;
+	font-family: "lores-12", sans-serif;
 }
 
 h4 {
 	font-size: 24pt;
+	font-family: "lores-12", sans-serif;
 }
 
 h5 {
@@ -33,12 +26,15 @@ h6 {
 
 p {
 	font-size: 21pt;
+	font-family: "lores-12", sans-serif;
 }
 
 a.nav {
 	font-size: 10pt;
+	font-family: "lores-12", sans-serif;
 }
 
 a.options {
 	font-size: 21pt;
+	font-family: "lores-12", sans-serif;
 }
