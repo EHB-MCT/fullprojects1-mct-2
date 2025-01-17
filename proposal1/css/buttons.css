@@ -8,6 +8,12 @@
 		position: absolute;
 	}
 }
+.btn-primary:hover {
+	color: #ec2b77;
+	img {
+		display: none;
+	}
+}
 
 .btn-secondary {
 	background-color: #36bdb4;
