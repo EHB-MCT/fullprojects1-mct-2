@@ -3,3 +3,42 @@
 body {
 	margin: 0;
 }
+.footer {
+	background-color: #131432;
+	margin: 0;
+	height: 40vh;
+	width: 100%;
+	display: flex;
+}
+
+.link {
+	width: 33%;
+}
+.link a {
+	width: 80%;
+	display: flex block;
+	padding-top: 25px;
+}
+.social {
+	margin-right: 100px;
+	padding-left: 50px;
+	padding-top: 50px;
+	width: 33%;
+}
+.social img {
+	width: 15%;
+	padding-left: 50px;
+	padding-top: 10px;
+}
+.ehb {
+	width: 33%;
+}
+.ehb img {
+	width: 50%;
+	padding-top: 50px;
+	padding-left: 50px;
+}
+.popup {
+	margin: 20px;
+	float: right;
+}
