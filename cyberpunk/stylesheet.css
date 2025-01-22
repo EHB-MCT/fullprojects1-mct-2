@@ -15,32 +15,109 @@ body {
 
 .link {
 	width: 33%;
+	a {
+		width: 80%;
+		display: flex block;
+		padding-top: 25px;
+	}
 }
-.link a {
-	width: 80%;
-	display: flex block;
-	padding-top: 25px;
-}
+
 .social {
 	margin-right: 100px;
 	padding-left: 50px;
 	padding-top: 50px;
 	width: 33%;
-}
-.social img {
-	width: 15%;
-	padding-left: 50px;
-	padding-top: 10px;
+	img {
+		width: 15%;
+		padding-left: 50px;
+		padding-top: 10px;
+	}
 }
 .ehb {
 	width: 33%;
-}
-.ehb img {
-	width: 50%;
-	padding-top: 50px;
-	padding-left: 50px;
+	img {
+		width: 50%;
+		padding-top: 50px;
+		padding-left: 50px;
+	}
 }
 .popup {
 	margin: 20px;
 	float: right;
+}
+
+.border_one {
+	height: 150px;
+	background-image: url("../images/chip.svg");
+	background-repeat: no-repeat;
+	background-size: 28%;
+	padding-top: 1px;
+}
+
+h2 {
+	font-size: 36pt;
+	margin-left: 10px;
+	padding-left: 20px;
+}
+
+.border_h3 img {
+	width: 15%;
+	margin: 0;
+}
+
+h4 {
+	font-size: 18pt;
+}
+
+h1 {
+	font-size: 44pt;
+}
+
+h3 {
+	font-size: 20pt;
+	font-variation-settings: "wght" 300, "slnt" -11;
+}
+
+h5 {
+	font-family: ocr-a-std, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 11pt;
+}
+
+h6 {
+	font-family: ocr-a-std, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12pt;
+}
+
+.chat h2 {
+	font-size: 45pt;
+}
+
+.chat h3 {
+	font-size: 16pt;
+}
+
+.chat h4 {
+	font-family: ocr-a-std, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18pt;
+}
+
+p,
+li {
+	font-family: ocr-a-std, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13pt;
+}
+
+a {
+	size: 16pt;
+	font-family: ocr-a-std, monospace;
+	text-decoration: none;
+	color: #36bdb4;
 }
