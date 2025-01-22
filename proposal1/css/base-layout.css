@@ -42,3 +42,14 @@ body {
 	margin: 20px;
 	float: right;
 }
+.studiekosten {
+	width: 100%;
+	background-image: url("../images/white\ background2.png");
+	background-repeat: repeat;
+
+	height: 200vh;
+	margin: 0;
+}
+.studiekosten h1 {
+	color: blueviolet;
+}
