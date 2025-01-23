@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+	font-family: "evolver-variable", sans-serif;
+	font-variation-settings: "wght" 400, "slnt" 1;
+	background-image: url("../cyberpunk/images/background\ purpel.jpg");
+	background-repeat: repeat;
+	color: #fff;
+}
+.wrapperstudiekosten {
+	width: 80%;
+	margin: 0 auto;
+	grid-template-columns: repeat(7, 1fr);
+	display: grid;
+}
+.tekststudiekosten {
+	grid-column: 1 / 4;
+	padding-bottom: 20%;
+}
+.tabelstudiekosten {
+	grid-column: 5/9;
+	padding-top: 100px;
+}
+.tabelstudiekosten img {
+	width: 100%;
+}
+.studiefinanciering {
+	grid-column: 1 / 4;
+}
+.inschrijven {
+	grid-column: 5 / 8;
+}
