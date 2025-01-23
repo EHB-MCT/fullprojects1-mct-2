@@ -3,10 +3,12 @@ body {
 	margin: 0;
 	font-family: "evolver-variable", sans-serif;
 	font-variation-settings: "wght" 400, "slnt" 1;
-	background-image: url("../images/background.png");
+	background-image: url("../cyberpunk/images/background\ purpel.jpg");
+	background-repeat: repeat;
+
 	color: #fff;
-	background-color: #211c57;
 }
+
 .wrapperLes {
 	width: 80%;
 	margin: 0 auto;
@@ -59,28 +61,11 @@ iframe {
 		padding-left: 50px;
 	}
 }
-.popup {
-	margin: 20px;
-	float: right;
-}
-
-.border_one {
-	height: 150px;
-	background-image: url("../images/chip.svg");
-	background-repeat: no-repeat;
-	background-size: 28%;
-	padding-top: 1px;
-}
 
 h2 {
 	font-size: 18pt;
 	margin-left: 10px;
 	padding-left: 20px;
-}
-
-.border_h3 img {
-	width: 15%;
-	margin: 0;
 }
 
 h4 {
@@ -147,7 +132,7 @@ a {
 	grid-template-columns: repeat(7, 1fr);
 	grid-template-rows: 1fr 4fr;
 	position: relative;
-	background-color: #fafaff;
+	background-image: url("../cyberpunk/images/white\ background.png");
 }
 .NaStudie {
 	grid-row: 2;
