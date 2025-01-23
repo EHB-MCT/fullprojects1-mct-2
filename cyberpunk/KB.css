@@ -1,0 +1,36 @@
+@import url("https://use.typekit.net/tst2dxh.css");
+
+h1 {
+	font-size: 40pt;
+	font-family: "evolver-variable", sans-serif;
+	font-style: italic;
+	color: #fff;
+}
+
+h2 {
+	font-family: "evolver-variable", sans-serif;
+	font-variation-settings: "wght" 400, "slnt" 1;
+	font-size: 28pt;
+	margin-left: 10px;
+	padding-left: 20px;
+	color: #21bbb5;
+	margin-top: 20%;
+}
+h3 {
+	font-family: "ocr-a-std", monospace;
+	font-size: 18pt;
+	color: #ec2b77;
+	padding-left: 5%;
+}
+h4 {
+	font-family: "ocr-a-std", monospace;
+	font-size: 13pt;
+	color: #21bbb5;
+}
+
+p {
+	font-family: "ocr-a-std", monospace;
+	font-style: normal;
+	font-size: 12pt;
+	padding-left: 5%;
+}
