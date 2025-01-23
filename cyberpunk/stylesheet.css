@@ -16,6 +16,7 @@ body {
 	grid-column: 1 / 5;
 	padding-bottom: 20%;
 }
+
 iframe {
 	border: 4px solid #21bbb5;
 	grid-column: 5/8;
@@ -111,7 +112,37 @@ p {
 	margin: 0;
 }
 
-.chat h2 {
+<<<<<<< HEAD ======= h4 {
+	font-size: 18pt;
+}
+
+h1 {
+	font-size: 40pt;
+	font-family: "evolver-variable", sans-serif;
+	color: #36bdb4;
+	font-style: italic;
+}
+
+h3 {
+	font-size: 20pt;
+	font-variation-settings: "wght" 300, "slnt" -11;
+}
+
+h5 {
+	font-family: ocr-a-std, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 11pt;
+}
+
+h6 {
+	font-family: ocr-a-std, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12pt;
+}
+
+>>>>>>>bd9a067fc016180215742634b269ed92ae110a4d .chat h2 {
 	font-size: 45pt;
 }
 
