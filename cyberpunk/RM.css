@@ -1,0 +1,10 @@
+@import url("https://use.typekit.net/tst2dxh.css");
+body {
+	margin: 0;
+	font-family: "evolver-variable", sans-serif;
+	font-variation-settings: "wght" 400, "slnt" 1;
+	background-image: url("../cyberpunk/images/background\ purpel.jpg");
+	background-repeat: repeat;
+
+	color: #fff;
+}
