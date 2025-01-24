@@ -1,20 +1,27 @@
-@import url("https://use.typekit.net/tst2dxh.css");
+/* p fixen */
 
-h1 {
-	font-size: 40pt;
+@import url("https://use.typekit.net/tst2dxh.css");
+body {
+	margin: 0;
 	font-family: "evolver-variable", sans-serif;
-	font-style: italic;
-	color: #fff;
+	font-variation-settings: "wght" 400, "slnt" 1;
+	background-image: url("../cyberpunk/images/white\ background.png");
+	background-repeat: repeat;
+
+	color: black;
+}
+.wrapper {
+	margin: 100px;
 }
 
 h2 {
 	font-family: "evolver-variable", sans-serif;
 	font-variation-settings: "wght" 400, "slnt" 1;
 	font-size: 28pt;
-	margin-left: 10px;
+	font-style: italic;
+	margin-top: 137px;
 	padding-left: 20px;
 	color: #21bbb5;
-	margin-top: 20%;
 }
 h3 {
 	font-family: "ocr-a-std", monospace;
@@ -25,7 +32,8 @@ h3 {
 h4 {
 	font-family: "ocr-a-std", monospace;
 	font-size: 13pt;
-	color: #21bbb5;
+	color: #ec2b77;
+	padding-left: 5%;
 }
 
 p {
@@ -33,4 +41,37 @@ p {
 	font-style: normal;
 	font-size: 12pt;
 	padding-left: 5%;
+	text-align: justify;
+	text-align-last: left;
+}
+
+.vakken {
+	display: flex;
+	gap: 20px;
+	& > * {
+		width: 33.33%;
+	}
+	img {
+		width: 20px;
+	}
+	.pijltjes {
+		display: flex;
+	}
+	.kolommen {
+		display: flex;
+		gap: 27px;
+
+		padding-left: 5%;
+		p {
+			padding-left: 0;
+		}
+		& > * {
+			width: 50%;
+		}
+	}
+	.dropdown {
+		display: none;
+		position: absolute;
+		width: 100%; /* Adjust width as needed */
+	}
 }
