@@ -9,30 +9,27 @@ body {
 	color: black;
 }
 
-/* .bg {
-	margin: 0;
-	padding: 0;
-	display: block;
-	background-image: url("../cyberpunk/images/background\ purpel.svg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 100%;
-	height: 100%;
-} */
 .wrapper {
 	margin: 100px;
 }
 .wrapper2 {
 	background-image: url(../cyberpunk/images/white\ background.png);
 	height: 100vh;
+
+	& > h2 {
+		margin-top: 0;
+	}
+}
+
+img:has(+ .wrapper2) {
+	margin-bottom: -35px;
 }
 
 h1 {
 	font-size: 40pt;
 	font-family: "evolver-variable", sans-serif;
 	font-style: italic;
-	color: black;
+	color: #fff;
 }
 h2 {
 	font-family: "evolver-variable", sans-serif;
@@ -60,6 +57,9 @@ p {
 }
 .opleiding {
 	display: flex;
+	p {
+		color: #fff;
+	}
 	& > * {
 		width: 50%;
 		margin: 0 auto;
@@ -76,6 +76,7 @@ p {
 		}
 		.arrow {
 			display: flex;
+
 			p {
 				max-width: fit-content;
 				padding: 0 150px;
@@ -106,7 +107,7 @@ p {
 	.column_uno {
 		.endpic {
 			img {
-				margin-top: 105px;
+				margin-top: 100px;
 				width: 100%;
 			}
 		}
@@ -115,6 +116,14 @@ p {
 		.endpic {
 			img {
 				margin-top: 30px;
+				width: 100%;
+			}
+		}
+	}
+	.column_tres {
+		.endpic {
+			img {
+				margin-top: 100px;
 				width: 100%;
 			}
 		}
@@ -130,6 +139,9 @@ p {
 
 		& > * {
 			width: 50%;
+			& > * {
+				display: flex;
+			}
 		}
 	}
 }
