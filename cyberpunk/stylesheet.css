@@ -381,3 +381,118 @@ a {
 .zwart {
 	color: black;
 }
+.wrapperOpleiding {
+	margin: 100px;
+}
+.wrapperVakken {
+	background-image: url(../cyberpunk/images/white\ background.png);
+	height: 100vh;
+
+	& > h2 {
+		margin-top: 0;
+	}
+}
+
+img:has(+ .wrapperVakken) {
+	margin-bottom: -35px;
+}
+
+.opleiding {
+	display: flex;
+	p {
+		color: #fff;
+	}
+	& > * {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.text {
+		max-width: 35%;
+	}
+
+	.afb {
+		align-self: center;
+		margin-top: 9%;
+		img {
+			width: 100%;
+		}
+		.arrow {
+			display: flex;
+
+			p {
+				max-width: fit-content;
+				padding: 0 150px;
+			}
+			img {
+				width: 50px;
+			}
+			.arrow1 {
+				transform: rotate(180deg);
+			}
+		}
+	}
+}
+
+.vakken {
+	margin: 100px;
+	display: flex;
+	gap: 50px;
+	& > * {
+		width: 33.33%;
+		& > * {
+			display: flex;
+			img {
+				width: 20px;
+			}
+		}
+	}
+	.column_uno {
+		.endpic {
+			img {
+				margin-top: 100px;
+				width: 100%;
+			}
+		}
+	}
+	.column_uno p {
+		color: black;
+	}
+	.column_dos p {
+		color: black;
+	}
+	.column_tres p {
+		color: black;
+	}
+	.column_dos {
+		.endpic {
+			img {
+				margin-top: 30px;
+				width: 100%;
+			}
+		}
+	}
+	.column_tres {
+		.endpic {
+			img {
+				margin-top: 100px;
+				width: 100%;
+			}
+		}
+	}
+	.endpic {
+		img {
+			width: 100%;
+		}
+	}
+	.kolommen {
+		display: flex;
+		gap: 27px;
+
+		& > * {
+			width: 50%;
+			& > * {
+				display: flex;
+			}
+		}
+	}
+}
