@@ -1,0 +1,104 @@
+@import url("https://use.typekit.net/tst2dxh.css");
+body {
+	margin: 0;
+	font-family: "evolver-variable", sans-serif;
+	font-variation-settings: "wght" 400, "slnt" 1;
+	background-image: url("../cyberpunk/images/background\ purpel.jpg");
+	background-repeat: repeat;
+
+	color: #fff;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.header h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+	color: #ffffff;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.image {
+	flex: 1;
+	max-width: 50%;
+	border-radius: 0px;
+	margin-top: 30px;
+}
+
+.text {
+	flex: 1;
+	max-width: 50%;
+}
+
+.text h2 {
+	font-size: 2rem;
+	color: #5ef7d6;
+}
+
+.text h3 {
+	font-size: 1.5rem;
+	color: #ec2b77;
+}
+
+.text p {
+	line-height: 1.6;
+	margin-bottom: 15px;
+}
+
+.text a {
+	color: #5ef7d6;
+	text-decoration: none;
+}
+
+.text a:hover {
+	text-decoration: underline;
+}
+
+.flexibel-studeren,
+.verkorte-trajecten {
+	padding: 20px;
+	border-bottom: 1px solid #ffffff;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.content img {
+	max-width: 45%;
+	border-radius: 0px;
+}
+
+.content .text {
+	max-width: 50%;
+}
+
+.content .text span {
+	font-size: 1.2em;
+	color: #ec2b77;
+	font-weight: bold;
+}
+
+body p {
+	font-family: "OCR-A-Std", sans-serif;
+	line-height: 1.6;
+	margin-bottom: 15px;
+}
+
+a {
+	color: #50fa7b;
+	text-decoration: none;
+}
