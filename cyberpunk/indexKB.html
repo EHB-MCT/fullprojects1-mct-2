@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<script src="dropdownmenu.js" type="module"></script>
+		<script src="../cyberpunk/dropdown_menu.js" type="module"></script>
 		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="KB.css" />
 	</head>
@@ -16,13 +16,12 @@
 				<div class="column_uno">
 					<h3>1ste jaar</h3>
 					<p>In het eerste jaar beginnen we met de algemene vakken zoals:</p>
-					<div class="pijltjes" onclick="toggleDropdown()">
-						<p>Coding</p>
+
+					<div class="pijltjes1_1" onclick="toggleDropdown()">
+						<p class="title">Coding</p>
 						<img src="images/pijltjes.svg" />
 					</div>
-					<!-- pijltjes -->
-					<!-- als opengevouwd -->
-					<div id="dropdown" class="dropdown">
+					<div id="dropdown1_1" class="dropdown" style="display: none">
 						<p>
 							Duik in de wereld van code en ontwikkel interactieve ervaringen.
 							Je leert programmeren voor web, apps en games, met technologieën
@@ -30,27 +29,32 @@
 							technische skills inzet om creatieve ideeën tot leven te brengen.
 						</p>
 					</div>
+					<div class="pijltjes1_2" onclick="toggleDropdown()">
+						<p class="title">Design</p>
+						<img src="images/pijltjes.svg" />
+					</div>
+					<div id="dropdown1_2" class="dropdown" style="display: none">
+						<p>
+							Van visuele communicatie tot gebruiksvriendelijke interfaces,
+							design is de kern van alles wat je maakt. Leer hoe je krachtige
+							visuals ontwerpt, UX/UI-principes toepast en creativiteit
+							combineert met functionaliteit om ontwerpen te maken die indruk
+							maken.
+						</p>
+					</div>
+					<div class="pijltjes1_3" onclick="toggleDropdown()">
+						<p class="title">Motion</p>
+						<img src="images/pijltjes.svg" />
+					</div>
+					<div id="dropdown1_3" class="dropdown" style="display: none">
+						<p>
+							Breng beelden tot leven met motion graphics, animaties en video.
+							Je ontdekt hoe beweging verhalen versterkt, emoties oproept en
+							impact creëert. Van 2D-animatie tot geavanceerde motion design –
+							dit is waar creativiteit echt gaat stromen.
+						</p>
+					</div>
 
-					<div class="pijltjes">
-						<p>Design</p>
-						<img src="images/pijltjes.svg" />
-					</div>
-					<p>
-						Van visuele communicatie tot gebruiksvriendelijke interfaces, design
-						is de kern van alles wat je maakt. Leer hoe je krachtige visuals
-						ontwerpt, UX/UI-principes toepast en creativiteit combineert met
-						functionaliteit om ontwerpen te maken die indruk maken.
-					</p>
-					<div class="pijltjes">
-						<p>Motion</p>
-						<img src="images/pijltjes.svg" />
-					</div>
-					<p>
-						Breng beelden tot leven met motion graphics, animaties en video. Je
-						ontdekt hoe beweging verhalen versterkt, emoties oproept en impact
-						creëert. Van 2D-animatie tot geavanceerde motion design – dit is
-						waar creativiteit echt gaat stromen.
-					</p>
 					<img src="images/peter.jpg" />
 				</div>
 
@@ -60,116 +64,135 @@
 						In het tweede krijgt je dezelfde vakken met daarbij nog extra keuze
 						vakkken.
 					</p>
-					<div class="pijltjes">
-						<p>XR & 3D</p>
+					<div class="pijltjes2_1" onclick="toggleDropdown()">
+						<p class="title">XR & 3D</p>
 						<img src="images/pijltjes.svg" />
 					</div>
-					<!-- als open gevouwd -->
-					<h4>Ontwerp je eigen wereld</h4>
-					<p>
-						Het keuzetraject XR & 3D biedt studenten een diepgaande opleiding in
-						Virtual Reality (VR), Augmented Reality (AR), Mixed Reality (MR) en
-						3D-contentcreatie. Je ontwikkelt zowel technische als creatieve
-						skills om meeslepende ervaringen te ontwerpen, van interactieve
-						XR-toepassingen en real-time 3D-modellen tot complexe wereldopbouw
-						en gebruikersonderzoeken. Door praktijkgericht te leren werken met
-						toonaangevende software en hardware, ben je klaar voor innovatieve
-						rollen zoals XR-ontwikkelaar, 3D-content creator of immersieve
-						UX-designer.
-					</p>
-					<div class="pijltjes">
-						<p>Experience design</p>
+					<div id="dropdown2_1" class="dropdown" style="display: none">
+						<h4>Ontwerp je eigen wereld</h4>
+						<p>
+							Het keuzetraject XR & 3D biedt studenten een diepgaande opleiding
+							in Virtual Reality (VR), Augmented Reality (AR), Mixed Reality
+							(MR) en 3D-contentcreatie. Je ontwikkelt zowel technische als
+							creatieve skills om meeslepende ervaringen te ontwerpen, van
+							interactieve XR-toepassingen en real-time 3D-modellen tot complexe
+							wereldopbouw en gebruikersonderzoeken. Door praktijkgericht te
+							leren werken met toonaangevende software en hardware, ben je klaar
+							voor innovatieve rollen zoals XR-ontwikkelaar, 3D-content creator
+							of immersieve UX-designer.
+						</p>
+					</div>
+					<div class="pijltjes2_2" onclick="toggleDropdown()">
+						<p class="title">Expierence Design</p>
 						<img src="images/pijltjes.svg" />
 					</div>
+					<div id="dropdown2_2" class="dropdown" style="display: none">
+						<h4>Breng verhalen tot leven</h4>
+						<p>
+							Het keuzetraject Experience Design bereidt je voor om meeslepende
+							en interactieve ervaringen te creëren voor de evenementen-,
+							cultuur- en marketingsector. Je ontwikkelt sterke vaardigheden in
+							conceptontwikkeling, 2D/3D-visualisatie, en prototyping, met
+							expertise in zowel soft-ware als hardware, zoals AV-technologie,
+							sensoren en creative coding. Door te werken met tools als
+							Touch-Designer, Unreal, en Mad-mapper leer je abstracte ideeën om
+							te zetten in immersieve ervaringen die je publiek op een unieke
+							manier betrekken.
+						</p>
+					</div>
 
-					<!-- als open gevouwd -->
-					<h4>Breng verhalen tot leven</h4>
-					<p>
-						Het keuzetraject Experience Design bereidt je voor om meeslepende en
-						interactieve ervaringen te creëren voor de evenementen-, cultuur- en
-						marketingsector. Je ontwikkelt sterke vaardigheden in
-						conceptontwikkeling, 2D/3D-visualisatie, en prototyping, met
-						expertise in zowel soft-ware als hardware, zoals AV-technologie,
-						sensoren en creative coding. Door te werken met tools als
-						Touch-Designer, Unreal, en Mad-mapper leer je abstracte ideeën om te
-						zetten in immersieve ervaringen die je publiek op een unieke manier
-						betrekken.
-					</p>
-
-					<div class="pijltjes">
+					<div class="pijltjes2_3" onclick="toggleDropdown()">
 						<p>Web & Mobile</p>
 						<img src="images/pijltjes.svg" />
 					</div>
-
-					<!-- als open gevouwd -->
-					<h4>Creër de toekomst van digitale ervaringen</h4>
-					<p>
-						Het keuzetraject Web & Mobile bereidt je voor op een carrière als
-						front-end, back-end of mobile developer met uitgebreide vaardigheden
-						in moderne frameworks en tools. Van data-driven web applicaties tot
-						storytelling in een browser of mobiel toestel, je combineert je
-						solide technische en design basis om de volgende generatie van
-						online ervaringen neer te zetten.
-					</p>
-
-					<div class="pijltjes">
+					<div id="dropdown2_3" class="dropdown" style="display: none">
+						<h4>Creër de toekomst van digitale ervaringen</h4>
+						<p>
+							Het keuzetraject Web & Mobile bereidt je voor op een carrière als
+							front-end, back-end of mobile developer met uitgebreide
+							vaardigheden in moderne frameworks en tools. Van data-driven web
+							applicaties tot storytelling in een browser of mobiel toestel, je
+							combineert je solide technische en design basis om de volgende
+							generatie van online ervaringen neer te zetten.
+						</p>
+					</div>
+					<div class="pijltjes2_4" onclick="toggleDropdown()">
 						<p>Digital Design</p>
 						<img src="images/pijltjes.svg" />
 					</div>
+					<div id="dropdown2_4" class="dropdown" style="display: none">
+						<h4>Design met impact</h4>
+						<p>
+							Het keuzetraject Digital Design biedt je de kans om uit te blinken
+							als eigenzinnige ontwerper, van visual- en motion- tot
+							UX-designer. Je leert probleemoplossend en cross-mediaal denken,
+							waarbij zowel het proces als de gebruiker centraal staan. Door
+							visueel onderzoek ontwikkel je een eigen stijl en ontwerpvisie. Of
+							je nu digitale verhalen, social-mediacampagnes of immersieve
+							websites creërt, je verwerft de vaardigheden om grensverleggende
+							oplossingen te realiseren.
+						</p>
+					</div>
 					<!-- als open gevouwd -->
-					<h4>Design met impact</h4>
-					<p>
-						Het keuzetraject Digital Design biedt je de kans om uit te blinken
-						als eigenzinnige ontwerper, van visual- en motion- tot UX-designer.
-						Je leert probleemoplossend en cross-mediaal denken, waarbij zowel
-						het proces als de gebruiker centraal staan. Door visueel onderzoek
-						ontwikkel je een eigen stijl en ontwerpvisie. Of je nu digitale
-						verhalen, social-mediacampagnes of immersieve websites creërt, je
-						verwerft de vaardigheden om grensverleggende oplossingen te
-						realiseren.
-					</p>
+
 					<img src="images/cutten.jpg" />
 				</div>
 				<div class="column_tres">
 					<h3>3de jaar</h3>
 					<div class="kolommen">
 						<div class="part one">
-							<div class="pijltjes">
+							<div class="pijltjes3_1" onclick="toggleDropdown()">
 								<p>Communication III</p>
 								<img src="images/pijltjes.svg" />
 							</div>
+							<div id="dropdown3_1" class="dropdown" style="display: none">
+								<p>Later aan te vullen</p>
+							</div>
 
-							<div class="pijltjes">
+							<div class="pijltjes3_2" onclick="toggleDropdown()">
 								<p>Design V</p>
 								<img src="images/pijltjes.svg" />
 							</div>
-
-							<div class="pijltjes">
+							<div id="dropdown3_2" class="dropdown" style="display: none">
+								<p>Later aan te vullen</p>
+							</div>
+							<div class="pijltjes3_3" onclick="toggleDropdown()">
 								<p>Development V</p>
 								<img src="images/pijltjes.svg" />
 							</div>
-
-							<div class="pijltjes">
+							<div id="dropdown3_3" class="dropdown" style="display: none">
+								<p>Later aan te vullen</p>
+							</div>
+							<div class="pijltjes3_4" onclick="toggleDropdown()">
 								<p>Grow III</p>
 								<img src="images/pijltjes.svg" />
 							</div>
+							<div id="dropdown3_4" class="dropdown" style="display: none">
+								<p>Later aan te vullen</p>
+							</div>
 						</div>
-
 						<!-- tweede kolom -->
 						<div class="part two">
-							<div class="pijltjes">
+							<div class="pijltjes3_5" onclick="toggleDropdown()">
 								<p>Expert Lab</p>
 								<img src="images/pijltjes.svg" />
 							</div>
-
-							<div class="pijltjes">
+							<div id="dropdown3_5" class="dropdown" style="display: none">
+								<p>Later aan te vullen</p>
+							</div>
+							<div class="pijltjes3_6" onclick="toggleDropdown()">
 								<p>Final Work</p>
 								<img src="images/pijltjes.svg" />
 							</div>
-
-							<div class="pijltjes">
+							<div id="dropdown3_6" class="dropdown" style="display: none">
+								<p>Later aan te vullen</p>
+							</div>
+							<div class="pijltjes3_7" onclick="toggleDropdown()">
 								<p>Intership</p>
 								<img src="images/pijltjes.svg" />
+							</div>
+							<div id="dropdown3_7" class="dropdown" style="display: none">
+								<p>Later aan te vullen</p>
 							</div>
 						</div>
 					</div>
