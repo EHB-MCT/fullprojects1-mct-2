@@ -1,53 +1,99 @@
-/* p fixen */
-
 @import url("https://use.typekit.net/tst2dxh.css");
 body {
 	margin: 0;
-	font-family: "evolver-variable", sans-serif;
+	font-family: "ocr-a-std", monospace;
 	font-variation-settings: "wght" 400, "slnt" 1;
-	background-image: url("../cyberpunk/images/white\ background.png");
+	background-image: url("../cyberpunk/images/background\ purpel.jpg");
 	background-repeat: repeat;
 
 	color: black;
 }
+
+/* .bg {
+	margin: 0;
+	padding: 0;
+	display: block;
+	background-image: url("../cyberpunk/images/background\ purpel.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+} */
 .wrapper {
 	margin: 100px;
 }
+.wrapper2 {
+	background-image: url(../cyberpunk/images/white\ background.png);
+	height: 100vh;
+}
 
+h1 {
+	font-size: 40pt;
+	font-family: "evolver-variable", sans-serif;
+	font-style: italic;
+	color: black;
+}
 h2 {
 	font-family: "evolver-variable", sans-serif;
 	font-variation-settings: "wght" 400, "slnt" 1;
 	font-size: 28pt;
 	font-style: italic;
-	margin-top: 137px;
-	padding-left: 20px;
+	margin: 100px;
+	padding-top: 50px;
+
 	color: #21bbb5;
 }
 h3 {
-	font-family: "ocr-a-std", monospace;
 	font-size: 18pt;
 	color: #ec2b77;
-	padding-left: 5%;
 }
 h4 {
-	font-family: "ocr-a-std", monospace;
 	font-size: 13pt;
 	color: #ec2b77;
-	padding-left: 5%;
 }
 
 p {
-	font-family: "ocr-a-std", monospace;
 	font-style: normal;
 	font-size: 12pt;
-	padding-left: 5%;
-	text-align: justify;
-	text-align-last: left;
+	width: 90%;
+}
+.opleiding {
+	display: flex;
+	& > * {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.text {
+		max-width: 35%;
+	}
+
+	.afb {
+		align-self: center;
+		margin-top: 9%;
+		img {
+			width: 100%;
+		}
+		.arrow {
+			display: flex;
+			p {
+				max-width: fit-content;
+				padding: 0 150px;
+			}
+			img {
+				width: 50px;
+			}
+			.arrow1 {
+				transform: rotate(180deg);
+			}
+		}
+	}
 }
 
 .vakken {
+	margin: 100px;
 	display: flex;
-	gap: 20px;
+	gap: 50px;
 	& > * {
 		width: 33.33%;
 		& > * {
@@ -57,15 +103,31 @@ p {
 			}
 		}
 	}
-
+	.column_uno {
+		.endpic {
+			img {
+				margin-top: 105px;
+				width: 100%;
+			}
+		}
+	}
+	.column_dos {
+		.endpic {
+			img {
+				margin-top: 30px;
+				width: 100%;
+			}
+		}
+	}
+	.endpic {
+		img {
+			width: 100%;
+		}
+	}
 	.kolommen {
 		display: flex;
 		gap: 27px;
 
-		padding-left: 5%;
-		p {
-			padding-left: 0;
-		}
 		& > * {
 			width: 50%;
 		}
