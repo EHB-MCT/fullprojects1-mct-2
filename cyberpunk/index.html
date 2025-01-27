@@ -11,30 +11,36 @@
 		<script src="../cyberpunk/dropdown_menu.js" type="module"></script>
 	</head>
 	<body>
-		<header>
-			<div class="logo">
-				<a href="indexJF.html"
-					><img src="images/svg/mct logo.svg" alt="MCT Logo"
-				/></a>
+		<section class="hero">
+			<header class="header">
+				<div class="logo"><img src="images/svg/mct logo.svg" alt="" /></div>
+				<nav class="nav" id="navbar">
+					<ul>
+						<li><a href="#opleiding">Opleiding</a></li>
+						<li><a href="#na-je-studie">Na je studie</a></li>
+						<li><a href="#flexibel">Flexibel studeren</a></li>
+						<li><a href="#infodagen">Infodagen</a></li>
+						<li><a href="#studiekosten">Studiekosten</a></li>
+						<li><a href="#over-ons">Over ons</a></li>
+						<li><a href="#inschrijven" class="inschrijven">Inschrijven</a></li>
+					</ul>
+				</nav>
+				<button class="hamburger" onclick="toggleMenu()">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</button>
+			</header>
+			<div class="hero-content">
+				<h1>
+					multimedia en <br />
+					creatieve technologie
+				</h1>
+				<p>Met design en tech in balans, wordt creativiteit onze kans!</p>
 			</div>
+		</section>
 
-			<input type="checkbox" id="hamburger-toggle" />
-			<label for="hamburger-toggle" class="hamburger-icon">
-				<span></span><span></span><span></span>
-			</label>
-
-			<nav class="navigation">
-				<ul>
-					<li class="nav-item"><a href="#">Opleiding</a></li>
-					<li class="nav-item"><a href="#">Na je studie</a></li>
-					<li class="nav-item"><a href="#">Flexibel studeren</a></li>
-					<li class="nav-item"><a href="#">Infodagen</a></li>
-					<li class="nav-item"><a href="#">Studiekosten</a></li>
-					<li class="nav-item"><a href="#">Over ons</a></li>
-					<li><a href="#" class="inschrijven">Inschrijven</a></li>
-				</ul>
-			</nav>
-		</header>
+		<script src="script.js"></script>
 
 		<div class="wrapperOpleiding">
 			<div class="opleiding">
