@@ -11,7 +11,7 @@
 	<body>
 		<div class="wrapperOpleiding">
 			<div class="opleiding">
-				<div class="text">
+				<!-- <div class="text">
 					<h1>Opleiding</h1>
 					<h2>Wat leer je?</h2>
 
@@ -36,15 +36,149 @@
 						Elk semester werk je in kleine teams aan real-life projecten,
 						begeleid door specialisten uit het bedrijfsleven.
 					</p>
+				</div> -->
+				<!-- <img id="topImage" src="" alt="banner description students/> -->
+
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<img
+							src="images/ou student/bellotbieke.jpg"
+							style="width: 100%"
+							alt="NoirSoir"
+						/>
+					</div>
+
+					<div class="mySlides fade">
+						<video controls autoplay muted>
+							<source
+								src="images/ou student/janssensquinn_28022_2916756_promovideo.mp4"
+							/>
+						</video>
+					</div>
+
+					<div class="mySlides fade">
+						<img
+							src="images/ou student/assakaliilyas.jpg"
+							style="width: 100%"
+							alt="SportSync"
+						/>
+					</div>
+
+					<div class="mySlides fade">
+						<video controls>
+							<source
+								src="images/ou student/shresthaaachal_38611_2919034_SHOWREEL_AACHAL.mp4"
+							/>
+						</video>
+					</div>
+					\
+					<div class="mySlides fade">
+						<img
+							src="images/ou student/lozanogabarronjuanluca.jpg"
+							style="width: 100%"
+							alt="junapix"
+						/>
+						/>
+					</div>
+					<div class="mySlides fade">
+						<video controls autoplay>
+							<source
+								src="images/ou student/vanalphenkylian_28005_2915151_Promovideo.mp4"
+							/>
+						</video>
+					</div>
+
+					<div class="mySlides fade">
+						<img
+							src="images/ou student/ayazbatuhan.jpg"
+							style="width: 100%"
+							alt="Digikids"
+						/>
+					</div>
+
+					<div class="mySlides fade">
+						<img
+							src="images/ou student/mignonquentin.jpg"
+							style="width: 100%"
+							alt="Prototyping"
+						/>
+					</div>
+
+					<div class="arrow">
+						<a class="prev" onclick="plusSlides(-1)"
+							><img src="images/svg/pijltjes.svg"
+						/></a>
+
+						<p>See more creations of students</p>
+
+						<a class="next" onclick="plusSlides(1)"
+							><img src="images/svg/pijltjes.svg"
+						/></a>
+					</div>
+
+					<div style="text-align: center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+						<span class="dot" onclick="currentSlide(5)"></span>
+						<span class="dot" onclick="currentSlide(6)"></span>
+						<span class="dot" onclick="currentSlide(7)"></span>
+					</div>
 				</div>
-				<div class="afb">
+
+				<script>
+					let slideIndex = 1;
+					showSlides(slideIndex);
+
+					function plusSlides(n) {
+						video = document.querySelector(".mySlides video");
+						console.log(video);
+						if (video) {
+							video.pause();
+							console.log("pausing");
+						}
+						showSlides((slideIndex += n));
+					}
+
+					function currentSlide(n) {
+						showSlides((slideIndex = n));
+					}
+
+					function showSlides(n) {
+						let slides = document.getElementsByClassName("mySlides");
+						let dots = document.getElementsByClassName("dot");
+						if (n > slides.length) {
+							slideIndex = 1;
+						}
+						if (n < 1) {
+							slideIndex = slides.length;
+						}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+
+						allVideos = document.querySelectorAll(".mySlides video");
+						allVideos.forEach((video) => video.pause());
+						slides[slideIndex - 1].style.display = "block";
+						let activeVideo = slides[slideIndex - 1].querySelector("video");
+						if (activeVideo) {
+							activeVideo.play();
+						}
+					}
+				</script>
+
+				<!-- <div class="afb">
 					<img src="images/bellotbieke.jpg" />
 					<div class="arrow">
 						<img class="arrow1" src="images/svg/pijltjes.svg" />
 						<p>See more creations of students</p>
 						<img src="images/svg/pijltjes.svg" />
-					</div>
-				</div>
+					</div> -->
+				<!-- </div>
 			</div>
 		</div>
 
@@ -215,7 +349,7 @@
 							</div>
 						</div>
 						<!-- tweede kolom -->
-						<div class="part two">
+				<!-- <div class="part two">
 							<div class="pijltjes3_5" onclick="toggleDropdown()">
 								<p>Expert Lab</p>
 								<img src="images/svg/pijltjes.svg" />
@@ -243,6 +377,8 @@
 						<img src="images/foto.jpg" />
 					</div>
 				</div>
+			</div>
+		</div>  -->
 			</div>
 		</div>
 	</body>

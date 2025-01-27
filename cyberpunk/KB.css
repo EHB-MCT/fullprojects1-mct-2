@@ -21,6 +21,10 @@ body {
 	}
 }
 
+video {
+	width: 100%;
+}
+
 img:has(+ .wrapperVakken) {
 	margin-bottom: -35px;
 }
@@ -58,6 +62,84 @@ img:has(+ .wrapperVakken) {
 				transform: rotate(180deg);
 			}
 		}
+	}
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	margin: 0;
+	box-sizing: border-box;
+}
+.mySlides {
+	display: none;
+}
+img {
+	vertical-align: middle;
+}
+
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+
+	.arrow {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		justify-self: center;
+
+		p {
+			max-width: fit-content;
+		}
+		a img {
+			width: 50px;
+		}
+
+		.prev {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.7;
+	}
+	to {
+		opacity: 1;
 	}
 }
 
