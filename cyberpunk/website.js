@@ -1,3 +1,21 @@
+// studentchat form
+function openForm() {
+	document.getElementById("myForm").style.display = "block";
+	document.querySelector(".open-button").style.display = "none";
+}
+
+function closeForm() {
+	document.getElementById("myForm").style.display = "none";
+	document.querySelector(".open-button").style.display = "block";
+}
+
+// hamburger menu
+function toggleMenu() {
+	const navUl = document.querySelector(".nav ul");
+	navUl.classList.toggle("open");
+}
+
+// dropdown menu vakken
 function toggleDropdown(dropdownId, imageClass) {
 	var dropdown = document.getElementById(dropdownId);
 	var image = document.querySelector("." + imageClass + " img");
@@ -53,9 +71,7 @@ document.querySelector(".pijltjes3_5").addEventListener("click", function () {
 document.querySelector(".pijltjes3_6").addEventListener("click", function () {
 	toggleDropdown("dropdown3_6", "pijltjes3_6");
 });
-document.querySelector(".pijltjes3_6").addEventListener("click", function () {
-	toggleDropdown("dropdown3_6", "pijltjes3_6");
-});
+
 document.querySelector(".pijltjes3_7").addEventListener("click", function () {
 	toggleDropdown("dropdown3_7", "pijltjes3_7");
 });
