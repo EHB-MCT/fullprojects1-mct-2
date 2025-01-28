@@ -23,7 +23,6 @@ body {
 	}
 	h3 {
 		font-size: 18pt;
-		margin-top: -15px;
 		color: #ec2b77;
 	}
 	h4 {
@@ -53,10 +52,6 @@ body {
 		text-decoration: underline;
 		color: #e11f26;
 	}
-
-	img {
-		width: 100%;
-	}
 }
 
 .hero {
@@ -83,6 +78,12 @@ body {
   
   /* Header + navigatie */
   .header {
+img,
+video {
+	width: 100%;
+}
+.header {
+	position: sticky;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -102,13 +103,31 @@ body {
   /* Navigatie */
   .nav ul {
 	list-style: none;
+}
+
+.logo {
+	font-weight: bold;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	width: 150px;
+	margin-top: 15px;
+	margin-left: 25px;
+}
+
+.nav {
+	position: sticky;
 	display: flex;
-	gap: 1rem;
-	margin: 0;
-	padding: 0;
-  }
-  
-  .nav li a {
+	justify-content: space-between;
+	top: 0;
+	ul {
+		list-style: none;
+		display: flex;
+		gap: 1rem;
+		margin: 0;
+		padding: 0;
+	}
+}
+.nav li a {
 	text-decoration: none;
 	color: #fff;
 	font-weight: 300;
@@ -122,6 +141,9 @@ body {
   
   .inschrijven {
 	border: 1px solid #ec2b77;  
+}
+.inschrijven {
+	border: 1px solid #ec2b77;
 	color: #ec2b77;
 	padding: 0.3rem 0.6rem;
 	border-radius: 4px;
@@ -132,14 +154,21 @@ body {
   /* Hamburger-menu (mobiel) */
   .hamburger {
 	display: none; /* Verander naar display: flex als je op mobiel wilt tonen */
+}
+.nav li a:hover {
+	color: #ec2b77;
+}
+
+.hamburger {
+	display: none;
 	flex-direction: column;
 	gap: 4px;
 	background: none;
 	border: none;
 	cursor: pointer;
-  }
-  
-  .hamburger .bar {
+}
+
+.hamburger .bar {
 	width: 25px;
 	height: 3px;
 	background: #fff;
@@ -147,6 +176,19 @@ body {
   
   /* Hero-tekst */
   .hero-content {
+}
+
+.hero {
+	position: relative;
+	width: 100%;
+	min-height: 80vh;
+	background-image: url("images/Screenshot 2025-01-24 112545.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-content {
 	position: absolute;
 	bottom: 5%;
 	left: 5%;
@@ -160,12 +202,24 @@ body {
   }
   
   .hero-content p {
+}
+
+.hero-content h1 {
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+	font-family: "evolver-variable", sans-serif;
+	font-style: italic;
+}
+
+.hero-content p {
 	font-size: 1rem;
 	line-height: 1.4;
 	margin: 0.5rem 0;
   }
   
   
+}
+
 [class*="wrapper"] > * {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -185,6 +239,9 @@ body {
 		}
 		.text {
 			max-width: 35%;
+			h1 {
+				padding-top: 50px;
+			}
 		}
 
 		.afb {
@@ -207,6 +264,71 @@ body {
 				.arrow1 {
 					transform: rotate(180deg);
 				}
+			}
+		}
+
+		.slideshow-container {
+			max-width: 1000px;
+			position: relative;
+			margin: auto;
+			padding-left: 100px;
+			padding-top: 10%;
+
+			.arrow {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				margin-top: 5%;
+				margin-bottom: 5%;
+				justify-self: center;
+
+				p {
+					max-width: fit-content;
+				}
+				a img {
+					width: 50px;
+				}
+
+				.prev {
+					transform: rotate(180deg);
+				}
+			}
+		}
+
+		.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+
+		.active,
+		.dot:hover {
+			background-color: #717171;
+		}
+
+		.fade {
+			animation-name: fade;
+			animation-duration: 1.5s;
+			position: relative;
+
+			.bannerDescription {
+				position: absolute;
+				bottom: 0;
+				width: 50%;
+			}
+		}
+
+		@keyframes fade {
+			from {
+				opacity: 0.7;
+			}
+			to {
+				opacity: 1;
 			}
 		}
 	}
@@ -325,6 +447,9 @@ img:has(+ .wrapperVakken) {
 	.flexibel-studeren,
 	.verkorte-trajecten {
 		padding: 20px;
+		img {
+			width: 100%;
+		}
 	}
 
 	.content {
@@ -332,11 +457,14 @@ img:has(+ .wrapperVakken) {
 		gap: 20px;
 
 		img {
-			max-width: 60%;
+			max-width: 50%;
 			border-radius: 0px;
-			margin-top: 30px;
+			height: 100%;
+			width: 100%;
 		}
-
+		.leerkracht {
+			margin-top: 80px;
+		}
 		.text {
 			flex: 1;
 			max-width: 50%;
@@ -356,6 +484,14 @@ img:has(+ .wrapperVakken) {
 		p {
 			color: black;
 		}
+	}
+	.infoimg {
+		max-width: 70%;
+		border-radius: 0px;
+		padding-left: 10%;
+		padding-top: 20%;
+		height: 100%;
+		width: 100%;
 	}
 }
 

@@ -8,58 +8,19 @@
 		<link rel="stylesheet" href="RV.css" />
 	</head>
 	<body>
-		<div class="wrapperstudiekosten">
-			<div class="tekststudiekosten">
-				<h1>Studiekosten</h1>
-				<p>
-					Hieronder vind je een kort overzicht de kosten. Lees hier een
-					uitgebreid overzicht.
-				</p>
-				<h2>Inschrijvingsgeld</h2>
-				<h3>Hangt onder meer af van:</h3>
-				<li>- het type contract</li>
-				<li>- het aantal studiepunten waarvoor je je inschrijft</li>
-				<li>- je statuut</li>
-				<p>
-					Meer informatie vind je ook terug op de pagina van de Vlaamse
-					overheid.
-				</p>
-				<h2>Opleiding gebonden kosten</h2>
-				<h3>Laptop</h3>
+		<div class="chat-popup" id="myForm">
+			<form action="/action_page.php" class="form-container">
+				<h1>Chat</h1>
 
-				<li>
-					Een laptop:<a href="#"> koop een laptop aan studententarief</a>
-					of check of je eigen laptop voldoet aan de voorwaarden
-				</li>
-				<li>
-					Bekijk <a href="#">het overzicht</a>
-					van kosten voor het regulier traject.
-				</li>
-			</div>
-			<div class="tabelstudiekosten">
-				<img src="images/tabel fp1.png" alt="" />
-			</div>
-			<div class="studiefinanciering">
-				<h2>Studiefinanciering</h2>
-				<h3>hulp nodig</h3>
-				<p>
-					Inschrijvingsgeld, boeken en cursussen, kot, vervoer,... studeren kost
-					wel wat.
-				</p>
-				<p>
-					Maar dit mage geen hindernis vormen om te studeren aan EhB.Check alle
-					mogelijkheden om ondersteuning te krijgen:
-				</p>
-				<li><a href="#">Financiële steun studenten</a></li>
-				<li>
-					<a href="#">Financiële seun voor mensen die aan het werk zijn</a>
-				</li>
-			</div>
-			<div class="inschrijven">
-				<h2>Inschrijven</h2>
-				<p>Klaar om de stap te wagen? Schrijf je in!</p>
-				<a href="#">schrijf je in</a>
-			</div>
+				<label for="msg"><b>Message</b></label>
+				<textarea placeholder="Type message.." name="msg" required></textarea>
+
+				<button type="submit" class="btn">Send</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">
+					Close
+				</button>
+			</form>
 		</div>
+		<script src="RV.js"></script>
 	</body>
 </html>

@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="" type="module"></script>
+		<script src="dropdown_menu.js"></script>
 		<title>Multimedia en Creatieve Technologie</title>
-		<link rel="icon" type="image/icon" href="images/mct logo.svg" />
+		<link rel="icon" type="image/x-icon" href="images/svg/mct logo.svg" />
 		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="stylesheet.css" />
 		<script src="../cyberpunk/dropdown_menu.js" type="module"></script>
@@ -44,8 +44,6 @@
 			</div>
 		  </section>
 
-		<script src="script.js"></script>
-
 		<div class="wrapperOpleiding">
 			<div class="opleiding">
 				<div class="text">
@@ -74,14 +72,157 @@
 						begeleid door specialisten uit het bedrijfsleven.
 					</p>
 				</div>
-				<div class="afb">
-					<img src="images/ou student/bellotbieke.jpg" />
+
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<img
+							src="images/ou student/bellotbieke.jpg"
+							style="width: 100%"
+							alt="NoirSoir"
+						/>
+						<div class="bannerDescription">
+							<img src="images/ou student/noirsoir-banner.png" />
+						</div>
+					</div>
+
+					<div class="mySlides fade">
+						<video controls autoplay muted>
+							<source
+								src="images/ou student/janssensquinn_28022_2916756_promovideo.mp4"
+							/>
+						</video>
+						<div class="bannerDescription">
+							<img src="images/ou student/animation-banner.png" />
+						</div>
+					</div>
+
+					<div class="mySlides fade">
+						<img
+							src="images/ou student/assakaliilyas.jpg"
+							style="width: 100%"
+							alt="SportSync"
+						/>
+						<div class="bannerDescription">
+							<img src="images/ou student/sportsync-banner.png" />
+						</div>
+					</div>
+
+					<div class="mySlides fade">
+						<video controls>
+							<source
+								src="images/ou student/shresthaaachal_38611_2919034_SHOWREEL_AACHAL.mp4"
+							/>
+						</video>
+						<div class="bannerDescription">
+							<img src="images/ou student/chinees.png" />
+						</div>
+					</div>
+
+					<div class="mySlides fade">
+						<img
+							src="images/ou student/lozanogabarronjuanluca.jpg"
+							style="width: 100%"
+							alt="junapix"
+						/>
+						<div class="bannerDescription">
+							<img src="images/ou student/junipix-banner.png" />
+						</div>
+					</div>
+					<div class="mySlides fade">
+						<video controls autoplay>
+							<source
+								src="images/ou student/vanalphenkylian_28005_2915151_Promovideo.mp4"
+							/>
+						</video>
+						<div class="bannerDescription">
+							<img src="images/ou student/film-banner.png" />
+						</div>
+					</div>
+
+					<div class="mySlides fade">
+						<img
+							src="images/ou student/ayazbatuhan.jpg"
+							style="width: 100%"
+							alt="Digikids"
+						/>
+						<div class="bannerDescription">
+							<img src="images/ou student/digikids.png" />
+						</div>
+					</div>
+
+					<div class="mySlides fade">
+						<img
+							src="images/ou student/mignonquentin.jpg"
+							style="width: 100%"
+							alt="Prototyping"
+						/>
+						<div class="bannerDescription">
+							<img src="images/ou student/makers-banner.png" />
+						</div>
+					</div>
+
 					<div class="arrow">
-						<img class="arrow1" src="images/svg/pijltjes.svg" />
+						<a class="prev" onclick="plusSlides(-1)"
+							><img src="images/svg/pijltjes.svg"
+						/></a>
+
 						<p>See more creations of students</p>
-						<img src="images/svg/pijltjes.svg" />
+
+						<a class="next" onclick="plusSlides(1)"
+							><img src="images/svg/pijltjes.svg"
+						/></a>
 					</div>
 				</div>
+
+				<script>
+					let slideIndex = 1;
+					showSlides(slideIndex);
+
+					function plusSlides(n) {
+						video = document.querySelector(".mySlides video");
+						console.log(video);
+						if (video) {
+							video.pause();
+							console.log("pausing");
+						}
+						showSlides((slideIndex += n));
+						if ((n = 2)) {
+							changeBanner();
+						}
+					}
+
+					function currentSlide(n) {
+						showSlides((slideIndex = n));
+					}
+
+					function showSlides(n) {
+						let slides = document.getElementsByClassName("mySlides");
+						let dots = document.getElementsByClassName("dot");
+						if (n > slides.length) {
+							slideIndex = 1;
+						}
+						if (n < 1) {
+							slideIndex = slides.length;
+						}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+
+						allVideos = document.querySelectorAll(".mySlides video");
+						allVideos.forEach((video) => video.pause());
+						slides[slideIndex - 1].style.display = "block";
+						let activeVideo = slides[slideIndex - 1].querySelector("video");
+						if (activeVideo) {
+							activeVideo.play();
+						}
+					}
+					// function changeBanner() {
+					// 	document.getElementById("topImage").src = newSrc;
+					// }
+				</script>
 			</div>
 		</div>
 
@@ -388,9 +529,9 @@
 				<h1>Flexibel studeren</h1>
 				<div class="content">
 					<img
-						src="./images/Leerkracht aan tafel.jpg"
+						class="leerkracht"
+						src="./images/leerkracht.png"
 						alt="Groep die studeert"
-						class="image"
 					/>
 					<div class="text">
 						<h2>Werken en studeren</h2>
@@ -467,7 +608,7 @@
 						<a>hier</a> dan je gegevens achter.
 					</p>
 				</div>
-				<img src="images/" />
+				<img class="infoimg" src="./images/infodagen.png" />
 			</div>
 		</div>
 		<div class="wrapperStudiekosten">
