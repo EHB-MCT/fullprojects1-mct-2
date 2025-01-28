@@ -59,32 +59,47 @@ body {
 	}
 }
 
-.header {
-	position: sticky;
+.hero {
+	position: relative;
+	/* Zorg dat de container het hele scherm vult */
+	width: 100%;
+	min-height: 100vh; 
+	/* of: height: 100vh; */
+	overflow: hidden; /* belangrijk om de video mooi bij te snijden */
+  }
+  
+  
+  /* Volledige achtergrondvideo */
+  .background-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; 
+	z-index: -1; /* video onder de content */
+  }
+  
+  
+  /* Header + navigatie */
+  .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.5rem;
-	padding-bottom: 620px;
+	padding: 1rem;
+	/* padding-bottom: 620px;  <-- weghalen of commenten */
 	position: sticky;
 	top: 0;
 	z-index: 999;
   }
   
-  .logo {
-	font-weight: bold;
-	font-size: 1.5rem;
-	letter-spacing: 2px;
-	width: 150px;
-	margin-top: 15px;
-	margin-left: 25px;
-  }
-
-  .nav {
-	position: sticky;
-	top: 0;
+  
+  .logo img {
+	width: 150px; /* pas aan naar wens */
+	height: auto;
   }
   
+  /* Navigatie */
   .nav ul {
 	list-style: none;
 	display: flex;
@@ -97,8 +112,8 @@ body {
 	text-decoration: none;
 	color: #fff;
 	font-weight: 300;
-	transition: color 0.3s;
 	font-size: 12pt;
+	transition: color 0.3s;
   }
   
   .nav li a:hover {
@@ -114,8 +129,9 @@ body {
 	text-align: center;
   }
   
+  /* Hamburger-menu (mobiel) */
   .hamburger {
-	display: none;
+	display: none; /* Verander naar display: flex als je op mobiel wilt tonen */
 	flex-direction: column;
 	gap: 4px;
 	background: none;
@@ -129,36 +145,26 @@ body {
 	background: #fff;
   }
   
-  .hero {
-	position: relative; 
-	width: 100%;
-	min-height: 80vh; 
-	background-image: url("images/Screenshot 2025-01-24 112545.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-  }
-  
+  /* Hero-tekst */
   .hero-content {
 	position: absolute;
-	bottom: 5%; 
-	left: 5%;   
-	max-width: 600px; 
+	bottom: 5%;
+	left: 5%;
+	max-width: 600px;
   }
   
   .hero-content h1 {
 	font-size: 2rem;
 	margin-bottom: 0.5rem;
-	font-family: "evolver-variable", sans-serif;
-	font-style: italic;
+	font-style: italic; 
   }
   
   .hero-content p {
 	font-size: 1rem;
 	line-height: 1.4;
-	font-family: "ocr-a-std", monospace;
 	margin: 0.5rem 0;
   }
+  
   
 [class*="wrapper"] > * {
 	max-width: 1200px;
