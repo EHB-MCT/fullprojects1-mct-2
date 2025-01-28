@@ -391,11 +391,14 @@ img:has(+ .wrapperVakken) {
 		gap: 20px;
 
 		img {
-			max-width: 60%;
+			max-width: 50%;
 			border-radius: 0px;
-			margin-top: 30px;
+			height: 100%;
+			width: 100%;
 		}
-
+		.leerkracht {
+			margin-top: 80px;
+		}
 		.text {
 			flex: 1;
 			max-width: 50%;
@@ -415,6 +418,14 @@ img:has(+ .wrapperVakken) {
 		p {
 			color: black;
 		}
+	}
+	.infoimg {
+		max-width: 70%;
+		border-radius: 0px;
+		padding-left: 10%;
+		padding-top: 20%;
+		height: 100%;
+		width: 100%;
 	}
 }
 
