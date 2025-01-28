@@ -23,7 +23,6 @@ body {
 	}
 	h3 {
 		font-size: 18pt;
-		margin-top: -15px;
 		color: #ec2b77;
 	}
 	h4 {
@@ -53,13 +52,11 @@ body {
 		text-decoration: underline;
 		color: #e11f26;
 	}
-
-	img,
-	video {
-		width: 100%;
-	}
 }
-
+img,
+video {
+	width: 100%;
+}
 .header {
 	position: sticky;
 	display: flex;
@@ -83,17 +80,17 @@ body {
 
 .nav {
 	position: sticky;
-	top: 0;
-}
-
-.nav ul {
-	list-style: none;
 	display: flex;
-	gap: 1rem;
-	margin: 0;
-	padding: 0;
+	justify-content: space-between;
+	top: 0;
+	ul {
+		list-style: none;
+		display: flex;
+		gap: 1rem;
+		margin: 0;
+		padding: 0;
+	}
 }
-
 .nav li a {
 	text-decoration: none;
 	color: #fff;
@@ -101,11 +98,6 @@ body {
 	transition: color 0.3s;
 	font-size: 12pt;
 }
-
-.nav li a:hover {
-	color: #ec2b77;
-}
-
 .inschrijven {
 	border: 1px solid #ec2b77;
 	color: #ec2b77;
@@ -113,6 +105,9 @@ body {
 	border-radius: 4px;
 	cursor: pointer;
 	text-align: center;
+}
+.nav li a:hover {
+	color: #ec2b77;
 }
 
 .hamburger {
@@ -180,6 +175,9 @@ body {
 		}
 		.text {
 			max-width: 35%;
+			h1 {
+				padding-top: 50px;
+			}
 		}
 
 		.afb {
@@ -250,6 +248,13 @@ body {
 		.fade {
 			animation-name: fade;
 			animation-duration: 1.5s;
+			position: relative;
+
+			.bannerDescription {
+				position: absolute;
+				bottom: 0;
+				width: 50%;
+			}
 		}
 
 		@keyframes fade {
@@ -376,6 +381,9 @@ img:has(+ .wrapperVakken) {
 	.flexibel-studeren,
 	.verkorte-trajecten {
 		padding: 20px;
+		img {
+			width: 100%;
+		}
 	}
 
 	.content {

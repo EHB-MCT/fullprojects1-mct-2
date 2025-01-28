@@ -142,6 +142,11 @@ img {
 		opacity: 1;
 	}
 }
+.bannerDescription {
+	position: absolute;
+	bottom: 0;
+	width: 50%;
+}
 
 .vakken {
 	margin: 100px;
