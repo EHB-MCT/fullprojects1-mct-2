@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1287.13 260.55">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #21bbb5;
+        font-family: OCRAStd, 'OCR A Std';
+        font-size: 121.06px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #21bbb5;
+        stroke-miterlimit: 10;
+        stroke-width: 10.08px;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(448.82 165.94)"><tspan x="0" y="0">Send</tspan></text>
+  <polyline class="cls-2" points="1283.57 115.41 1143.47 255.51 45.02 255.51"/>
+  <polyline class="cls-2" points="3.57 145.14 143.66 5.04 1242.11 5.04"/>
+</svg>
