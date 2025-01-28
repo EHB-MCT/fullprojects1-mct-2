@@ -207,6 +207,8 @@ video {
 			max-width: 1000px;
 			position: relative;
 			margin: auto;
+			padding-left: 100px;
+			padding-top: 10%;
 
 			.arrow {
 				display: flex;
