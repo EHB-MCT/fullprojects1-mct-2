@@ -1,114 +1,112 @@
 @import url("https://use.typekit.net/tst2dxh.css");
 body {
 	margin: 0;
-	font-family: "evolver-variable", sans-serif;
-	font-variation-settings: "wght" 400, "slnt" 1;
+	font-family: "ocr-a-std", monospace;
 	background-image: url("../cyberpunk/images/background\ purpel.jpg");
 	background-repeat: repeat;
-
 	color: #fff;
-}
 
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 20px;
-}
+	h1 {
+		margin-top: 20px;
+		font-size: 40pt;
+		font-family: "evolver-variable", sans-serif;
+		font-style: italic;
+		color: #fff;
+	}
 
-.header h1 {
-	font-size: 2.5rem;
-	margin-bottom: 20px;
-	color: #ffffff;
-}
+	h2 {
+		padding-top: 30px;
+		font-family: "evolver-variable", sans-serif;
+		font-variation-settings: "wght" 400, "slnt" 1;
+		font-size: 28pt;
+		color: #21bbb5;
+	}
+	h3 {
+		font-size: 18pt;
+		color: #ec2b77;
+	}
+	h4 {
+		font-size: 13pt;
+		color: #21bbb5;
+	}
+	h5 {
+		font-size: 24pt;
+	}
+	h6 {
+		font-size: 10pt;
+	}
+	p {
+		font-style: normal;
+		font-size: 12pt;
+		padding-bottom: 5px;
+	}
+	ul li {
+		font-style: normal;
+		font-size: 12pt;
+		padding-top: 2%;
+	}
 
-.content {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	gap: 20px;
+	a {
+		size: 16pt;
+		font-family: "ocr-a-std", monospace;
+		text-decoration: underline;
+		color: #e11f26;
+	}
 }
-
-.image {
-	flex: 1;
-	max-width: 50%;
-	border-radius: 0px;
-	margin-top: 30px;
-}
-
-.text {
-	flex: 1;
-	max-width: 50%;
-}
-
-.text h2 {
-	font-size: 2rem;
-	color: #5ef7d6;
-}
-
-.text h3 {
-	font-size: 1.5rem;
-	color: #ec2b77;
-}
-
-.text p {
-	line-height: 1.6;
-	margin-bottom: 15px;
-}
-
-.text a {
-	color: #5ef7d6;
-	text-decoration: none;
-}
-
-.text a:hover {
-	text-decoration: underline;
-}
-
-.flexibel-studeren,
-.verkorte-trajecten {
-	padding: 20px;
-	border-bottom: 1px solid #ffffff;
-}
-
-.content {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 20px;
-}
-
-.content img {
-	max-width: 45%;
-	border-radius: 0px;
-}
-
-.content .text {
-	max-width: 50%;
-}
-
-.content .text span {
-	font-size: 1.2em;
-	color: #ec2b77;
-	font-weight: bold;
-}
-
-body p {
-	font-family: "OCR-A-Std", sans-serif;
-	line-height: 1.6;
-	margin-bottom: 15px;
-}
-
-a {
-	color: #50fa7b;
-	text-decoration: none;
-}
-.infodagen {
-	background-image: url(../cyberpunk/images/white\ background.png);
-	color: black;
+img,
+video {
 	width: 100%;
 }
-.rizzler {
-	max-width: 1200px;
+.wrapperStuderen {
+	width: 90%;
 	margin: 0 auto;
-	padding: 20px;
+	.flexibel-studeren,
+	.verkorte-trajecten {
+		padding: 20px;
+		img {
+			width: 100%;
+		}
+	}
+
+	.content {
+		display: flex;
+		gap: 20px;
+
+		img {
+			max-width: 50%;
+			border-radius: 0px;
+			height: 100%;
+			width: 100%;
+		}
+		.leerkracht {
+			margin-top: 80px;
+		}
+		.text {
+			flex: 1;
+			max-width: 50%;
+		}
+	}
+}
+.wrapperInfodagen {
+	background-image: url(../cyberpunk/images/white\ background.png);
+
+	width: 100%;
+
+	.infodagen {
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		h1,
+		p {
+			color: black;
+		}
+	}
+	.infoimg {
+		max-width: 70%;
+		border-radius: 0px;
+		padding-left: 10%;
+		padding-top: 20%;
+		height: 100%;
+		width: 100%;
+	}
 }
