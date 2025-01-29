@@ -654,8 +654,131 @@
 					</li>
 				</div>
 				<div class="tabelstudiekosten">
-					<img src="images/tabel fp1.png" alt="" />
+					<div class="tablecontent">
+						<table>
+							<tr>
+								<td style="vertical-align: top" width="500">&nbsp;</td>
+								<td style="vertical-align: top" width="209">
+									<strong>Vast gedeelte</strong>
+								</td>
+								<td style="vertical-align: top" width="209">
+									<strong>Variabel gedeelte per studiepunt</strong>
+								</td>
+								<td style="vertical-align: top" width="209">
+									<strong
+										>Voltijdse studenten ’24-’25&nbsp;(60 studiepunten)</strong
+									>
+								</td>
+							</tr>
+							<tr>
+								<td style="vertical-align: top" width="209">
+									<strong>Niet-beurstariefstudent</strong>
+								</td>
+								<td
+									class="xl65"
+									style="box-sizing: border-box; height: 53.4pt; width: 48pt"
+									height="71"
+									width="64"
+								>
+									€ 288
+								</td>
+								<td
+									class="xl66"
+									style="
+										border-left-style: none;
+										box-sizing: border-box;
+										width: 48pt;
+									"
+									width="64"
+								>
+									€ 13,80
+								</td>
+								<td
+									class="xl67"
+									style="
+										border-left-style: none;
+										box-sizing: border-box;
+										width: 48pt;
+									"
+									width="64"
+								>
+									€ 1.116
+								</td>
+							</tr>
+							<tr>
+								<td style="vertical-align: top" width="209">
+									<strong>Bijna-beurstariefstudent</strong>
+								</td>
+								<td
+									class="xl65"
+									style="box-sizing: border-box; height: 53.4pt; width: 48pt"
+									height="71"
+									width="64"
+								>
+									€ 288
+								</td>
+								<td
+									class="xl65"
+									style="
+										border-left-style: none;
+										box-sizing: border-box;
+										width: 48pt;
+									"
+									width="64"
+								>
+									€ 5
+								</td>
+								<td
+									class="xl67"
+									style="
+										border-left-style: none;
+										box-sizing: border-box;
+										width: 48pt;
+									"
+									width="64"
+								>
+									€ 588
+								</td>
+							</tr>
+							<tr>
+								<td style="vertical-align: top" width="209">
+									<strong>Beurstariefstudent</strong>
+								</td>
+								<td
+									class="xl68"
+									style="box-sizing: border-box; height: 40.2pt; width: 48pt"
+									height="54"
+									width="64"
+								>
+									€ 131,50
+								</td>
+								<td
+									class="xl69"
+									style="
+										border-left-style: none;
+										box-sizing: border-box;
+										width: 48pt;
+									"
+									width="64"
+								>
+									€ 0
+								</td>
+								<td
+									class="xl70"
+									style="
+										border-left-style: none;
+										box-sizing: border-box;
+										width: 48pt;
+									"
+									width="64"
+								>
+									€ 131,50
+								</td>
+							</tr>
+						</table>
+					</div>
 				</div>
+
 				<div class="studiefinanciering">
 					<h2>Studiefinanciering</h2>
 					<h3>hulp nodig</h3>
@@ -715,5 +838,74 @@
 				</div>
 			</div>
 		</div>
+		<div class="open-button" onclick="openForm()">
+			<img src="../cyberpunk/images/svg/chat logo.svg" alt="Open Chat" />
+		</div>
+
+		<div class="chat-popup" id="myForm">
+			<form action="#" class="form-container">
+				<div class="closebutton">
+					<div type="button" class="btn cancel" onclick="closeForm()">
+						<img src="../cyberpunk/images/svg/close button.svg" alt="" />
+					</div>
+				</div>
+				<div class="chattekst">
+					<h1>Chat</h1>
+					<p>met studenten</p>
+				</div>
+
+				<div class="tabs">
+					<div class="row">
+						<div class="field">
+							<label for="naam">Naam</label>
+							<input
+								type="text"
+								id="naam"
+								name="naam"
+								placeholder="Naam"
+								required
+							/>
+						</div>
+						<div class="field">
+							<label for="voornaam">Voornaam</label>
+							<input
+								type="text"
+								id="voornaam"
+								name="voornaam"
+								placeholder="Voornaam"
+								required
+							/>
+						</div>
+					</div>
+
+					<div class="single-field">
+						<label for="email">E-mail</label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="E-mail"
+							required
+						/>
+					</div>
+
+					<div class="single-field">
+						<label for="vraag">Vraag</label>
+						<textarea
+							id="vraag"
+							name="vraag"
+							placeholder="Stel je vraag..."
+							required
+						></textarea>
+					</div>
+
+					<div type="submit" class="btn">
+						<img src="../cyberpunk/images/svg/send.svg" alt="" />
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<script src="website.js"></script>
 	</body>
 </html>

@@ -6,16 +6,25 @@
 		<title>kosten</title>
 		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="RV.css" />
+		<link rel="stylesheet" href="stylesheet.css" />
 	</head>
 	<body>
-		<button class="open-button" onclick="openForm()">
+		<div class="open-button" onclick="openForm()">
 			<img src="../cyberpunk/images/svg/chat logo.svg" alt="Open Chat" />
-		</button>
+		</div>
 
 		<div class="chat-popup" id="myForm">
 			<form action="#" class="form-container">
-				<h1>Chat</h1>
-				<p>met studenten</p>
+				<div class="closebutton">
+					<div type="button" class="btn cancel" onclick="closeForm()">
+						<img src="../cyberpunk/images/svg/close button.svg" alt="" />
+					</div>
+				</div>
+				<div class="chattekst">
+					<h1>Chat</h1>
+					<p>met studenten</p>
+				</div>
+
 				<div class="tabs">
 					<div class="row">
 						<div class="field">
@@ -61,16 +70,13 @@
 						></textarea>
 					</div>
 
-					<button type="submit" class="btn">
+					<div type="submit" class="btn">
 						<img src="../cyberpunk/images/svg/send.svg" alt="" />
-					</button>
-					<button type="button" class="btn cancel" onclick="closeForm()">
-						Close
-					</button>
+					</div>
 				</div>
 			</form>
 		</div>
 
-		<script src="RV.js"></script>
+		<script src="website.js"></script>
 	</body>
 </html>
