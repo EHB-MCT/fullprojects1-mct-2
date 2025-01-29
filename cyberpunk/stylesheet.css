@@ -13,9 +13,10 @@ body {
 		font-style: italic;
 		color: #fff;
 	}
-
+	.fotoinschrijving {
+		padding-top: 10px;
+	}
 	h2 {
-		padding-top: 30px;
 		font-family: "evolver-variable", sans-serif;
 		font-variation-settings: "wght" 400, "slnt" 1;
 		font-size: 28pt;
@@ -126,10 +127,10 @@ video {
 		ul {
 			list-style: none;
 			display: flex;
-			gap: 1rem;
+			gap: 2.5rem;
 			margin: 0;
 			padding: 0;
-			margin-right: 4%;
+			padding-right: 4%;
 		}
 	}
 
@@ -149,15 +150,22 @@ video {
 	}
 
 	.inschrijven {
-		border: 1px solid #ec2b77;
-	}
-	.inschrijven {
-		border: 1px solid #ec2b77;
-		color: #ec2b77;
 		padding: 0.3rem 0.6rem;
 		border-radius: 4px;
 		cursor: pointer;
 		text-align: center;
+	}
+	.inschrijven-hover {
+		display: none;
+	}
+
+	.inschrijven:hover {
+		.button {
+			display: none;
+		}
+		.inschrijven-hover {
+			display: block;
+		}
 	}
 
 	/* Hamburger-menu (mobiel) */
