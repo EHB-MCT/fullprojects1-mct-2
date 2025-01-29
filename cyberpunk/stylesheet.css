@@ -522,11 +522,32 @@ img:has(+ .wrapperVakken) {
 	}
 
 	.tabelstudiekosten {
-		grid-column: 5/8;
-		padding-top: 400px;
+		background-image: url("images/svg/tabel.svg");
+		width: fit-content;
+		margin-top: 60%;
+		background-repeat: no-repeat;
+		grid-column: 4/6;
 
-		img {
-			width: 100%;
+		.tablecontent {
+			color: #fff;
+			font-size: 12pt;
+			padding: 70px 35px 0 30px;
+			margin-left: auto;
+			margin-right: auto;
+
+			table {
+				border: 1px solid #e11f26;
+				border-spacing: 0;
+				border-collapse: collapse;
+
+				td {
+					border-top: 1px solid #e11f26;
+					border-right: 1px solid #e11f26;
+				}
+				td:last-child {
+					border-right: 0;
+				}
+			}
 		}
 	}
 
