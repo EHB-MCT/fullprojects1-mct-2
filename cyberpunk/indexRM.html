@@ -156,17 +156,6 @@
 
 					<div class="mySlides fade">
 						<img
-							src="images/ou student/ayazbatuhan.jpg"
-							style="width: 100%"
-							alt="Digikids"
-						/>
-						<div class="bannerDescription">
-							<img src="images/ou student/digikids.png" />
-						</div>
-					</div>
-
-					<div class="mySlides fade">
-						<img
 							src="images/ou student/mignonquentin.jpg"
 							style="width: 100%"
 							alt="Prototyping"
@@ -237,7 +226,7 @@
 					// function changeBanner() {
 					// 	document.getElementById("topImage").src = newSrc;
 					// }
-					window.addEventListener("scroll", ScrollTracker, function () {
+					window.addEventListener("scroll", function () {
 						const nav = document.querySelector(".nav");
 						if (window.scrollY > 50) {
 							nav.classList.add("scrolled");
@@ -245,24 +234,6 @@
 							nav.classList.remove("scrolled");
 						}
 					});
-					const sections = document.querySelectorAll("section");
-					function ScrollTracker() {
-						const currentYScroll = window.scrollY;
-						sections.forEach((section) => {
-							const sectionheight = section.offsetHeight;
-							const sectionTop = section.offsetTop - 100;
-							const id = section.getAttribute("id");
-							const currentNav = document.querySelector(`a[href="#${id}"]`);
-							if (
-								currentYScroll > sectionTop &&
-								currentYScroll <= sectionTop + sectionheight
-							) {
-								currentNav.classList.add("active");
-							} else {
-								currentNav.classList.remove("active");
-							}
-						});
-					}
 				</script>
 			</section>
 		</div>
@@ -272,6 +243,7 @@
 			<section id="vakken" class="vakken">
 				<h2>Vakken</h2>
 				<div class="column_uno">
+					<div><img src="images/peter.jpg" /></div>
 					<h3>1ste jaar</h3>
 					<p>
 						In het eerste jaar beginnen we<br />
@@ -317,10 +289,12 @@
 							</p>
 						</div>
 					</div>
-					<div class="endpic"><img src="images/peter.jpg" /></div>
 				</div>
 
 				<div class="column_dos">
+					<div>
+						<img src="images/cutten.jpg" />
+					</div>
 					<h3>2de jaar</h3>
 					<p>
 						In het tweede krijgt je dezelfde vakken <br />
@@ -397,12 +371,12 @@
 							</p>
 						</div>
 					</div>
-					<div class="endpic">
-						<img src="images/cutten.jpg" />
-					</div>
 				</div>
 
 				<div class="column_tres">
+					<div>
+						<img src="images/foto.jpg" />
+					</div>
 					<h3>3de jaar</h3>
 					<div class="kolommen">
 						<div class="part one">
@@ -465,9 +439,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="endpic">
-						<img src="images/foto.jpg" />
-					</div>
 				</div>
 			</section>
 		</div>
@@ -523,46 +494,48 @@
 				></iframe>
 			</div>
 		</div>
-		<section id="NaStudie" class="wrapperStudie">
-			<div class="NaStudie">
-				<h1 class="zwart">Na je NaStudie</h1>
-				<h2>Aan het werk</h2>
-				<p>Je kan aan de slag als:</p>
-				<ul>
-					<li>Webdesigner en -developer</li>
-					<li>Mobile app-designer</li>
-					<li>developer</li>
-					<li>Multimedia consultant</li>
-					<li>User experience designer</li>
-					<li>Creative digital</li>
-					<li>prototyper</li>
-					<li>Motion designer</li>
-					<li>Digital strategist</li>
-					<li>User interface designer</li>
-					<li>Usability engineer</li>
-					<li>Projectmanager</li>
-					<li>Internet</li>
-					<li>Things-ontwikkelaar</li>
-					<li>Interaction designer</li>
-					<li>Zelfstandige</li>
-				</ul>
-				<h2>Verder studeren aan EhB</h2>
-				<p>
-					Toch iets anders? Check het aanbod postgraduaten & extra bachelors
-					hier
-				</p>
-			</div>
-			<div class="interview">
-				<iframe
-					width="560"
-					height="315"
-					src="https://www.youtube.com/embed/qQQzHjJg9os?si=TT9QtV-Wtru1qA3B&amp;controls=0"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin"
-					allowfullscreen
-				></iframe>
+		<section id="NaStudie" class="wrapperInfodagen">
+			<div class="infodagen">
+				<div>
+					<h1>Na je NaStudie</h1>
+					<h2>Aan het werk</h2>
+					<p>Je kan aan de slag als:</p>
+					<ul>
+						<li>Webdesigner en -developer</li>
+						<li>Mobile app-designer</li>
+						<li>developer</li>
+						<li>Multimedia consultant</li>
+						<li>User experience designer</li>
+						<li>Creative digital</li>
+						<li>prototyper</li>
+						<li>Motion designer</li>
+						<li>Digital strategist</li>
+						<li>User interface designer</li>
+						<li>Usability engineer</li>
+						<li>Projectmanager</li>
+						<li>Internet</li>
+						<li>Things-ontwikkelaar</li>
+						<li>Interaction designer</li>
+						<li>Zelfstandige</li>
+					</ul>
+					<h2>Verder studeren aan EhB</h2>
+					<p>
+						Toch iets anders?<br />
+						Check het aanbod postgraduaten & extra bachelors hier
+					</p>
+				</div>
+				<div class="interview">
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/MzueaSHdN2U?si=B4Go2x-rItW8wpjS"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+					></iframe>
+				</div>
 			</div>
 		</section>
 		<div class="wrapperStuderen">

@@ -376,23 +376,6 @@ video {
 				}
 			}
 		}
-		.column_uno {
-			.endpic {
-				img {
-					margin-top: 100px;
-					width: 100%;
-				}
-			}
-		}
-
-		.column_dos {
-			.endpic {
-				img {
-					margin-top: 30px;
-					width: 100%;
-				}
-			}
-		}
 		.column_tres {
 			.kolommen {
 				display: flex;
@@ -634,4 +617,10 @@ input[type="submit"]:hover {
 .active {
 	color: #e11f26;
 	text-decoration: underline;
+}
+.infodagen li {
+	color: black;
+}
+.interview {
+	padding-top: 20%;
 }
