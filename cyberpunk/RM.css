@@ -8,3 +8,7 @@ body {
 
 	color: #fff;
 }
+.nav {
+	position: fixed;
+	z-index: 100;
+}

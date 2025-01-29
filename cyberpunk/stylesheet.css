@@ -116,25 +116,33 @@ video {
 	}
 
 	.nav {
-		position: sticky;
+		position: fixed;
+		z-index: 100;
 		display: flex;
 		justify-content: space-between;
 		top: 0;
-		padding-right: 80px;
+		width: 100%;
+		transition: background-color 0.4s ease-in-out;
 		ul {
 			list-style: none;
 			display: flex;
 			gap: 1rem;
 			margin: 0;
 			padding: 0;
+			margin-left: auto;
+			margin-right: 30px;
 		}
+	}
+
+	.nav.scrolled {
+		background-color: #21bbb5;
 	}
 	.nav li a {
 		text-decoration: none;
 		color: #fff;
 		font-weight: 300;
 		font-size: 12pt;
-		transition: color 0.3s;
+		transition: color 0.4s ease-in-out;
 	}
 
 	.nav li a:hover {
