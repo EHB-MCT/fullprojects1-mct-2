@@ -1,13 +1,23 @@
 // studentchat form
+console.log("ok");
+
+let btn = document.querySelector(".open-button");
+
+
 function openForm() {
 	document.getElementById("myForm").style.display = "block";
 	document.querySelector(".open-button").style.display = "none";
 }
 
+btn.onclick = openForm;
+
+let btn2 = document.querySelector(".closebutton");
+
 function closeForm() {
 	document.getElementById("myForm").style.display = "none";
 	document.querySelector(".open-button").style.display = "block";
 }
+btn2.onclick = closeForm;
 
 // hamburger menu
 function toggleMenu() {

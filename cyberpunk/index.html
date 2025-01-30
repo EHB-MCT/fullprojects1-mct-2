@@ -3,10 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="dropdown_menu.js"></script>
 		<title>Multimedia en Creatieve Technologie</title>
 		<link rel="icon" type="image/x-icon" href="images/svg/mct logo.svg" />
 		<link rel="stylesheet" href="normalize.css" />
-		<link rel="stylesheet" href="stylesheet.css" />
+		<link rel="stylesheet" href="RM.css" />
+		<script src="/cyberpunk/website.js" type="module"></script>
 	</head>
 	<body>
 		<section class="hero">
@@ -26,7 +28,15 @@
 						<li><a href="#infodagen">Infodagen</a></li>
 						<li><a href="#studiekosten">Studiekosten</a></li>
 						<li><a href="#over-ons">Over ons</a></li>
-						<li><a href="#inschrijven" class="inschrijven">Inschrijven</a></li>
+						<li>
+							<a
+								class="hover_image"
+								href="https://www.erasmushogeschool.be/nl/opleidingen/multimedia-en-creatieve-technologie"
+							>
+								<img src="/cyberpunk/images/inschrijven-hover.png" />
+								<img src="/cyberpunk/images/inschrijven.png" class="hide" />
+							</a>
+						</li>
 					</ul>
 				</nav>
 				<button class="hamburger" onclick="toggleMenu()">
@@ -46,16 +56,15 @@
 		</section>
 
 		<div class="wrapperOpleiding">
-			<div class="opleiding">
+			<section id="opleiding" class="opleiding">
 				<div class="text">
 					<h1>Opleiding</h1>
 					<h2>Wat leer je?</h2>
 
 					<h3>Creëren van multimediatoepassingen zoals:</h3>
 					<p>
-						Creëren van multimediatoepassingen zoals: Apps, websites,
-						VR-toepassingen, motion graphics en interactieve projecties. Design
-						& development
+						Apps, websites, VR-toepassingen, motion graphics en interactieve
+						projecties. Design & development
 					</p>
 					<h3>Design & development</h3>
 					<p>
@@ -75,12 +84,6 @@
 				</div>
 
 				<div class="slideshow-container">
-					<div class="mySlides fade">
-						<video controls autoplay muted>
-							<source src="images/backup Linked Comp 01(1).mp4" />
-						</video>
-					</div>
-
 					<div class="mySlides fade">
 						<img
 							src="images/ou student/bellotbieke.jpg"
@@ -148,17 +151,6 @@
 
 					<div class="mySlides fade">
 						<img
-							src="images/ou student/ayazbatuhan.jpg"
-							style="width: 100%"
-							alt="Digikids"
-						/>
-						<div class="bannerDescription">
-							<img src="images/ou student/digikids.png" />
-						</div>
-					</div>
-
-					<div class="mySlides fade">
-						<img
 							src="images/ou student/mignonquentin.jpg"
 							style="width: 100%"
 							alt="Prototyping"
@@ -179,18 +171,58 @@
 							><img src="images/svg/pijltjes.svg"
 						/></a>
 					</div>
-
-					<div style="text-align: center">
-						<span class="dot" onclick="currentSlide(1)"></span>
-						<span class="dot" onclick="currentSlide(2)"></span>
-						<span class="dot" onclick="currentSlide(3)"></span>
-						<span class="dot" onclick="currentSlide(4)"></span>
-						<span class="dot" onclick="currentSlide(5)"></span>
-						<span class="dot" onclick="currentSlide(6)"></span>
-						<span class="dot" onclick="currentSlide(7)"></span>
-					</div>
 				</div>
-			</div>
+
+				<script>
+					let slideIndex = 1;
+					showSlides(slideIndex);
+
+					function plusSlides(n) {
+						video = document.querySelector(".mySlides video");
+						console.log(video);
+						if (video) {
+							video.pause();
+							console.log("pausing");
+						}
+						showSlides((slideIndex += n));
+						if ((n = 2)) {
+							changeBanner();
+						}
+					}
+
+					function currentSlide(n) {
+						showSlides((slideIndex = n));
+					}
+
+					function showSlides(n) {
+						let slides = document.getElementsByClassName("mySlides");
+						let dots = document.getElementsByClassName("dot");
+						if (n > slides.length) {
+							slideIndex = 1;
+						}
+						if (n < 1) {
+							slideIndex = slides.length;
+						}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+
+						allVideos = document.querySelectorAll(".mySlides video");
+						allVideos.forEach((video) => video.pause());
+						slides[slideIndex - 1].style.display = "block";
+						let activeVideo = slides[slideIndex - 1].querySelector("video");
+						if (activeVideo) {
+							activeVideo.play();
+						}
+					}
+					// function changeBanner() {
+					// 	document.getElementById("topImage").src = newSrc;
+					// }
+				</script>
+			</section>
 		</div>
 
 		<img src="images/svg/banner.svg" />
@@ -205,10 +237,7 @@
 						met de algemene vakken zoals:
 					</p>
 					<div class="pijl">
-						<div
-							class="pijltjes1_1"
-							onclick="toggleDropdown('dropdown1_1', 'pijltjes1_1')"
-						>
+						<div class="pijltjes1_1" onclick="toggleDropdown()">
 							<p class="title">Coding</p>
 							<img src="images/svg/pijltjes.svg" />
 						</div>
@@ -221,10 +250,7 @@
 								brengen.
 							</p>
 						</div>
-						<div
-							class="pijltjes1_2"
-							onclick="toggleDropdown('dropdown1_2', 'pijltjes1_2')"
-						>
+						<div class="pijltjes1_2" onclick="toggleDropdown()">
 							<p class="title">Design</p>
 							<img src="images/svg/pijltjes.svg" />
 						</div>
@@ -237,10 +263,7 @@
 								maken.
 							</p>
 						</div>
-						<div
-							class="pijltjes1_3"
-							onclick="toggleDropdown('dropdown1_3', 'pijltjes1_3')"
-						>
+						<div class="pijltjes1_3" onclick="toggleDropdown()">
 							<p class="title">Motion</p>
 							<img src="images/svg/pijltjes.svg" />
 						</div>
@@ -265,10 +288,7 @@
 						met daarbij nog extra keuze vakkken.
 					</p>
 					<div class="pijl">
-						<div
-							class="pijltjes2_1"
-							onclick="toggleDropdown('dropdown2_1', 'pijltjes2_1')"
-						>
+						<div class="pijltjes2_1" onclick="toggleDropdown()">
 							<p class="title">XR & 3D</p>
 							<img src="images/svg/pijltjes.svg" />
 						</div>
@@ -286,10 +306,7 @@
 								XR-ontwikkelaar, 3D-content creator of immersieve UX-designer.
 							</p>
 						</div>
-						<div
-							class="pijltjes2_2"
-							onclick="toggleDropdown('dropdown2_2', 'pijltjes2_2')"
-						>
+						<div class="pijltjes2_2" onclick="toggleDropdown()">
 							<p class="title">Expierence Design</p>
 							<img src="images/svg/pijltjes.svg" />
 						</div>
@@ -308,10 +325,7 @@
 							</p>
 						</div>
 
-						<div
-							class="pijltjes2_3"
-							onclick="toggleDropdown('dropdown2_3', 'pijltjes2_3')"
-						>
+						<div class="pijltjes2_3" onclick="toggleDropdown()">
 							<p>Web & Mobile</p>
 							<img src="images/svg/pijltjes.svg" />
 						</div>
@@ -326,10 +340,7 @@
 								volgende generatie van online ervaringen neer te zetten.
 							</p>
 						</div>
-						<div
-							class="pijltjes2_4"
-							onclick="toggleDropdown('dropdown2_4', 'pijltjes2_4')"
-						>
+						<div class="pijltjes2_4" onclick="toggleDropdown()">
 							<p>Digital Design</p>
 							<img src="images/svg/pijltjes.svg" />
 						</div>
@@ -350,14 +361,14 @@
 				</div>
 
 				<div class="column_tres">
+					<div class="endpic">
+						<img src="images/foto.jpg" />
+					</div>
 					<h3>3de jaar</h3>
 					<div class="kolommen">
 						<div class="part one">
 							<div class="pijl">
-								<div
-									class="pijltjes3_1"
-									onclick="toggleDropdown('dropdown3_1', 'pijltjes3_1')"
-								>
+								<div class="pijltjes3_1" onclick="toggleDropdown()">
 									<p>Communication III</p>
 									<img src="images/svg/pijltjes.svg" />
 								</div>
@@ -365,30 +376,21 @@
 									<p>Later aan te vullen</p>
 								</div>
 
-								<div
-									class="pijltjes3_2"
-									onclick="toggleDropdown('dropdown3_2', 'pijltjes3_2')"
-								>
+								<div class="pijltjes3_2" onclick="toggleDropdown()">
 									<p>Design V</p>
 									<img src="images/svg/pijltjes.svg" />
 								</div>
 								<div id="dropdown3_2" class="dropdown" style="display: none">
 									<p>Later aan te vullen</p>
 								</div>
-								<div
-									class="pijltjes3_3"
-									onclick="toggleDropdown('dropdown3_3', 'pijltjes3_3')"
-								>
+								<div class="pijltjes3_3" onclick="toggleDropdown()">
 									<p>Development V</p>
 									<img src="images/svg/pijltjes.svg" />
 								</div>
 								<div id="dropdown3_3" class="dropdown" style="display: none">
 									<p>Later aan te vullen</p>
 								</div>
-								<div
-									class="pijltjes3_4"
-									onclick="toggleDropdown('dropdown3_4', 'pijltjes3_4')"
-								>
+								<div class="pijltjes3_4" onclick="toggleDropdown()">
 									<p>Grow III</p>
 									<img src="images/svg/pijltjes.svg" />
 								</div>
@@ -400,30 +402,21 @@
 						<!-- tweede kolom -->
 						<div class="part two">
 							<div class="pijl">
-								<div
-									class="pijltjes3_5"
-									onclick="toggleDropdown('dropdown3_5', 'pijltjes3_5')"
-								>
+								<div class="pijltjes3_5" onclick="toggleDropdown()">
 									<p>Expert Lab</p>
 									<img src="images/svg/pijltjes.svg" />
 								</div>
 								<div id="dropdown3_5" class="dropdown" style="display: none">
 									<p>Later aan te vullen</p>
 								</div>
-								<div
-									class="pijltjes3_6"
-									onclick="toggleDropdown('dropdown3_6', 'pijltjes3_6')"
-								>
+								<div class="pijltjes3_6" onclick="toggleDropdown()">
 									<p>Final Work</p>
 									<img src="images/svg/pijltjes.svg" />
 								</div>
 								<div id="dropdown3_6" class="dropdown" style="display: none">
 									<p>Later aan te vullen</p>
 								</div>
-								<div
-									class="pijltjes3_7"
-									onclick="toggleDropdown('dropdown3_7', 'pijltjes3_7')"
-								>
+								<div class="pijltjes3_7" onclick="toggleDropdown()">
 									<p>Intership</p>
 									<img src="images/svg/pijltjes.svg" />
 								</div>
@@ -432,9 +425,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="endpic">
-						<img src="images/foto.jpg" />
 					</div>
 				</div>
 			</div>
@@ -491,50 +481,52 @@
 				></iframe>
 			</div>
 		</div>
-		<div class="wrapperStudie">
-			<div class="NaStudie">
-				<h1 class="zwart">Na je NaStudie</h1>
-				<h2>Aan het werk</h2>
-				<p>Je kan aan de slag als:</p>
-				<ul>
-					<li>Webdesigner en -developer</li>
-					<li>Mobile app-designer</li>
-					<li>developer</li>
-					<li>Multimedia consultant</li>
-					<li>User experience designer</li>
-					<li>Creative digital</li>
-					<li>prototyper</li>
-					<li>Motion designer</li>
-					<li>Digital strategist</li>
-					<li>User interface designer</li>
-					<li>Usability engineer</li>
-					<li>Projectmanager</li>
-					<li>Internet</li>
-					<li>Things-ontwikkelaar</li>
-					<li>Interaction designer</li>
-					<li>Zelfstandige</li>
-				</ul>
-				<h2>Verder studeren aan EhB</h2>
-				<p>
-					Toch iets anders? Check het aanbod postgraduaten & extra bachelors
-					hier
-				</p>
-			</div>
-			<div class="interview">
-				<iframe
-					width="560"
-					height="315"
-					src="https://www.youtube.com/embed/qQQzHjJg9os?si=TT9QtV-Wtru1qA3B&amp;controls=0"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin"
-					allowfullscreen
-				></iframe>
-			</div>
+		<div class="wrapperInfodagen">
+			<section id="na-je-studie" class="infodagen">
+				<div class="text">
+					<h1>Na je NaStudie</h1>
+					<h2>Aan het werk</h2>
+					<p>Je kan aan de slag als:</p>
+					<ul>
+						<li>Webdesigner en -developer</li>
+						<li>Mobile app-designer</li>
+						<li>developer</li>
+						<li>Multimedia consultant</li>
+						<li>User experience designer</li>
+						<li>Creative digital</li>
+						<li>prototyper</li>
+						<li>Motion designer</li>
+						<li>Digital strategist</li>
+						<li>User interface designer</li>
+						<li>Usability engineer</li>
+						<li>Projectmanager</li>
+						<li>Internet</li>
+						<li>Things-ontwikkelaar</li>
+						<li>Interaction designer</li>
+						<li>Zelfstandige</li>
+					</ul>
+					<h2>Verder studeren aan EhB</h2>
+					<p style="padding-bottom: 10%">
+						Toch iets anders? Check het aanbod postgraduaten & extra bachelors
+						hier
+					</p>
+				</div>
+				<div class="interview">
+					<iframe
+						width="660"
+						height="415"
+						src="https://www.youtube.com/embed/MzueaSHdN2U?si=bg3GCXMYwvLR6ZgQ"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+					></iframe>
+				</div>
+			</section>
 		</div>
 		<div class="wrapperStuderen">
-			<div class="flexibel studeren">
+			<section id="flexibel" class="flexibelstuderen">
 				<h1>Flexibel studeren</h1>
 				<div class="content">
 					<img
@@ -565,35 +557,37 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
 			<div class="verkorte-trajecten">
 				<h2>Verkorte trajecten</h2>
-				<div class="content">
+				<section id="" class="content">
 					<div class="text">
 						<h3>Geïnteresseerd in een extra diploma?</h3>
 						<p>
 							Heb je een bachelor Toegepaste Informatica of een daarmee
 							gelijkgesteld diploma, dan volg je een verkort programma van 2
 							jaar. Heb je een andere vooropleiding? Heb je andere
-							ICT-gerelateerd diploma’s of credits behaald? Dan kun je op basis
-							van je eerder verworven kwalificaties of competenties eventueel
-							vrijstellingen krijgen. We bieden je dan een individueel
-							studietraject aan. Enkel de modules volgen die jou het meest
-							interesseren? Dat is geen probleem! Leer op korte termijn
-							ontzettend veel bij en vergroot je marktwaarde. Neem contact op
-							met onze trajectbegeleider
+							ICT-gerelateerd diploma’s of credits behaald?
+						</p>
+						<p>
+							Dan kun je op basis van je eerder verworven kwalificaties of
+							competenties eventueel vrijstellingen krijgen. We bieden je dan
+							een individueel studietraject aan. Enkel de modules volgen die jou
+							het meest interesseren? Dat is geen probleem! Leer op korte
+							termijn ontzettend veel bij en vergroot je marktwaarde. Neem
+							contact op met onze trajectbegeleider
 							<a href="mailto:gwendolyn.vander.putten@ehb.be"
 								>gwendolyn.vander.putten@ehb.be</a
 							>
 						</p>
 					</div>
 					<img src="./images/Greenscreen.jpg" alt="Groep in studio" />
-				</div>
+				</section>
 			</div>
 		</div>
 		<div class="wrapperInfodagen">
-			<div class="infodagen">
+			<section id="infodagen" class="infodagen">
 				<div class="text">
 					<h1>Infodagen</h1>
 					<h2>Eens langskomen?</h2>
@@ -618,10 +612,10 @@
 					</p>
 				</div>
 				<img class="infoimg" src="./images/infodagen.png" />
-			</div>
+			</section>
 		</div>
 		<div class="wrapperStudiekosten">
-			<div>
+			<section id="studiekosten">
 				<div class="tekststudiekosten">
 					<h1>Studiekosten</h1>
 					<p>
@@ -796,10 +790,10 @@
 					<p>Klaar om de stap te wagen? Schrijf je in!</p>
 					<a href="#">schrijf je in</a>
 				</div>
-			</div>
+			</section>
 		</div>
 		<div class="wrapperFooter">
-			<div class="footer">
+			<section id="over-ons" class="footer">
 				<div class="link">
 					<h1>Over ons</h1>
 
@@ -811,37 +805,38 @@
 				</div>
 				<div class="social">
 					<a href="https://www.facebook.com/erasmushogeschool"
-						><img src="images/svg/facebook logo.svg " alt=""
+						><img src="../cyberpunk/images/svg/facebook logo.svg " alt=""
 					/></a>
 					<a href="https://www.linkedin.com/school/erasmushogeschool-brussel/"
-						><img src="images/svg/linked in logo.svg" alt=""
+						><img src="../cyberpunk/images/svg/linked in logo.svg" alt=""
 					/></a>
 					<a href="https://x.com/ehbrussel?mx=2"
-						><img src="images/svg/x logo.svg" alt=""
+						><img src="../cyberpunk/images/svg/x logo.svg" alt=""
 					/></a>
 					<a href="https://www.instagram.com/erasmushogeschool/"
-						><img src="images/svg/insta logo.svg" alt=""
+						><img src="../cyberpunk/images/svg/insta logo.svg" alt=""
 					/></a>
 					<a href="https://www.youtube.com/user/ehbrussel"
-						><img src="images/svg/youtube logo.svg" alt=""
+						><img src="../cyberpunk/images/svg/youtube logo.svg" alt=""
 					/></a>
 					<a href="https://www.flickr.com/photos/erasmushogeschool"
-						><img src="images/svg/flickr logo.svg" alt=""
+						><img src="../cyberpunk/images/svg/flickr logo.svg" alt=""
 					/></a>
 				</div>
 				<div class="ehb">
-					<img src="images/svg/logo eramus.svg" alt="" />
+					<img src="../cyberpunk/images/svg/logo eramus.svg" alt="" />
 				</div>
-			</div>
+			</section>
 		</div>
-		<div class="open-button" onclick="openForm()">
+		<script src="/cyberpunk/website.js"></script>
+		<div class="open-button">
 			<img src="../cyberpunk/images/svg/chat logo.svg" alt="Open Chat" />
 		</div>
 
 		<div class="chat-popup" id="myForm">
 			<form action="#" class="form-container">
 				<div class="closebutton">
-					<div type="button" class="btn cancel" onclick="closeForm()">
+					<div type="button" class="btn cancel">
 						<img src="../cyberpunk/images/svg/close button.svg" alt="" />
 					</div>
 				</div>
@@ -901,6 +896,5 @@
 				</div>
 			</form>
 		</div>
-		<script src="website.js" defer></script>
 	</body>
 </html>
