@@ -202,3 +202,16 @@ img {
 		}
 	}
 }
+.form-container {
+	.btn {
+		all: unset;
+		background-image: url(images/svg/send.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 50%;
+		height: 35px;
+		margin-bottom: 45px;
+		font-size: 0;
+		cursor: pointer;
+	}
+}
