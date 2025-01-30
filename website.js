@@ -1,8 +1,5 @@
 // studentchat form
-console.log("ok");
-
 let btn = document.querySelector(".open-button");
-
 
 function openForm() {
 	document.getElementById("myForm").style.display = "block";
@@ -35,9 +32,6 @@ function plusSlides(n) {
 		video.pause();
 	}
 	showSlides((slideIndex += n));
-	if ((n = 2)) {
-		changeBanner();
-	}
 }
 
 function currentSlide(n) {
@@ -90,8 +84,6 @@ window.addEventListener("scroll", function () {
 		nav.classList.remove("scrolled");
 	}
 });
-
-
 
 function myFunction() {
 	var x = document.getElementById("myLinks");
