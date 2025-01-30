@@ -417,12 +417,23 @@ img:has(+ .wrapperVakken) {
 		grid-column: 1 / 4;
 		padding-bottom: 20%;
 	}
-	.map {
-		grid-column: 5/7;
-		padding-top: 50%;
-	}
-}
 
+}
+.wrapperLes .map {
+	grid-column: 5 / 7;
+	padding-top: 0;
+  
+	align-self: center;
+	justify-self: center;
+  }
+  
+  .wrapperLes .map iframe {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	display: block;
+  }
+  
 .wrapperStudie {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
