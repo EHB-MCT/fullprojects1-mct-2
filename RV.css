@@ -2,7 +2,7 @@
 body {
 	margin: 0;
 	font-family: "ocr-a-std", monospace;
-	background-image: url("../cyberpunk/images/background\ purpel.jpg");
+	background-image: url("./images/background\ purpel.jpg");
 	background-repeat: repeat;
 	color: #fff;
 
@@ -342,7 +342,7 @@ video {
 }
 
 .wrapperVakken {
-	background-image: url(../cyberpunk/images/white\ background.png);
+	background-image: url("./images/white\ background.png");
 	min-height: 100vh;
 	& > h2 {
 		margin-top: 0;
@@ -376,7 +376,6 @@ video {
 		.column_uno {
 			.endpic {
 				img {
-					margin-top: 100px;
 					width: 100%;
 				}
 			}
@@ -385,19 +384,13 @@ video {
 		.column_dos {
 			.endpic {
 				img {
-					margin-top: 30px;
 					width: 100%;
 				}
 			}
 		}
 		.column_tres {
 			.kolommen {
-				display: flex;
 				gap: 27px;
-
-				& > * {
-					width: 50%;
-				}
 			}
 		}
 	}
@@ -416,18 +409,28 @@ img:has(+ .wrapperVakken) {
 		grid-column: 1 / 4;
 		padding-bottom: 20%;
 	}
-	.map {
-		grid-column: 5/7;
-		padding-top: 50%;
-	}
 }
 
+.wrapperLes .map {
+	grid-column: 5 / 7;
+	padding-top: 0;
+
+	align-self: center;
+	justify-self: center;
+}
+
+.wrapperLes .map iframe {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	display: block;
+}
 .wrapperStudie {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: 1fr 4fr;
 	position: relative;
-	background-image: url("../cyberpunk/images/white\ background.png");
+	background-image: url("./images/white\ background.png");
 
 	.NaStudie {
 		width: 90%;
@@ -441,11 +444,9 @@ img:has(+ .wrapperVakken) {
 			color: #000000;
 		}
 	}
-
-	.interview {
-		grid-row: 2;
-		grid-column: 2/4;
-	}
+}
+.interview {
+	padding-top: 40%;
 }
 .wrapperStuderen {
 	width: 90%;
@@ -478,26 +479,25 @@ img:has(+ .wrapperVakken) {
 	}
 }
 .wrapperInfodagen {
-	background-image: url(../cyberpunk/images/white\ background.png);
+	background-image: url("./images/white\ background.png");
 
 	width: 100%;
 
 	.infodagen {
 		width: 90%;
 		margin: 0 auto;
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		h1,
-		p {
+		p,
+		li {
 			color: black;
 		}
 	}
 	.infoimg {
-		max-width: 70%;
 		border-radius: 0px;
 		padding-left: 10%;
-		padding-top: 20%;
-		height: 100%;
-		width: 100%;
+		padding-top: 30%;
 	}
 }
 
@@ -507,54 +507,60 @@ img:has(+ .wrapperVakken) {
 	grid-template-columns: repeat(6, 1fr);
 	display: grid;
 	padding-bottom: 100px;
-}
-.tekststudiekosten {
-	grid-column: 1 / 4;
 
-	padding-top: 50px;
-}
-.tekststudiekosten li {
-	margin-left: 40px;
-}
+	.tekststudiekosten {
+		grid-column: 1 / 4;
 
-.tabelstudiekosten {
-	background-image: url("images/svg/tabel.svg");
-	width: fit-content;
-	margin-top: 60%;
-	background-repeat: no-repeat;
-	grid-column: 4/6;
-}
-.tablecontent {
-	color: #fff;
-	font-size: 12pt;
-	padding: 70px 35px 0 30px;
-	margin-left: auto;
-	margin-right: auto;
-}
-table {
-	border: 1px solid #e11f26;
-	border-spacing: 0;
-	border-collapse: collapse;
-}
-td {
-	border-top: 1px solid #e11f26;
-	border-right: 1px solid #e11f26;
-}
-td:last-child {
-	border-right: 0;
-}
+		padding-top: 50px;
 
-.studiefinanciering {
-	grid-column: 1 / 3;
-	li {
-		margin-left: 40px;
+		li {
+			margin-left: 40px;
+		}
 	}
-}
 
-.Stinschrijven {
-	grid-column: 5 / 7;
-	a {
-		margin-left: 40px;
+	.tabelstudiekosten {
+		background-image: url("images/svg/tabel.svg");
+		width: fit-content;
+		margin-top: 60%;
+		background-repeat: no-repeat;
+		grid-column: 4/6;
+
+		.tablecontent {
+			color: #fff;
+			font-size: 12pt;
+			padding: 70px 35px 0 30px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 5%;
+
+			table {
+				border: 1px solid #e11f26;
+				border-spacing: 0;
+				border-collapse: collapse;
+
+				td {
+					border-top: 1px solid #e11f26;
+					border-right: 1px solid #e11f26;
+				}
+				td:last-child {
+					border-right: 0;
+				}
+			}
+		}
+	}
+
+	.studiefinanciering {
+		grid-column: 1 / 3;
+		li {
+			margin-left: 40px;
+		}
+	}
+
+	.Stinschrijven {
+		grid-column: 5 / 7;
+		a {
+			margin-left: 40px;
+		}
 	}
 }
 
@@ -680,7 +686,7 @@ input[type="submit"]:hover {
 	right: 28px;
 
 	z-index: 9;
-	background-image: url("../cyberpunk/images/svg/background-chat.svg");
+	background-image: url("./images/svg/background-chat.svg");
 	width: 400px; /* vaste breedte */
 
 	background-repeat: no-repeat;
@@ -780,111 +786,33 @@ textarea {
 .open-button:hover {
 	opacity: 1;
 }
-@media screen and (max-width: 480px) {
-	body {
-		width: 480px;
-	}
-	.wrapperStudiekosten > * {
-		display: block;
-		display: inline;
-
-		width: 480px;
-		padding-bottom: 0px;
-	}
-	.wrapperStudiekosten li {
-		font-size: 8pt;
-	}
-	.wrapperStudiekosten h1 {
-		font-size: 30pt;
-	}
-	.wrapperStudiekosten h2 {
-		font-size: 22pt;
-	}
-	.wrapperStudiekosten h3 {
-		font-size: 15pt;
-	}
-	.wrapperStudiekosten p {
-		font-size: 8pt;
-	}
-
-	.tekststudiekosten {
-		width: 100%;
-	}
-	.tabelstudiekosten {
-		width: 480px;
-
-		margin-top: 50px;
-	}
-	.tablecontent {
-		font-size: 8pt;
-		padding: 40px 35px 0px 25px;
-	}
-	.wrapperStuderen {
-		width: 90%;
-		margin: 0 auto;
-	}
-	.wrapperStuderen li {
-		font-size: 8pt;
-	}
-	.wrapperStuderen h1 {
-		font-size: 30pt;
-	}
-	.wrapperStuderen h2 {
-		font-size: 22pt;
-	}
-	.wrapperStuderen h3 {
-		font-size: 15pt;
-	}
-	.wrapperStuderen p {
-		font-size: 8pt;
-	}
-
-	.verkorte-trajecten {
-		padding: 20px;
-	}
-	.verkorte-trajecten img {
-		width: 100%;
-	}
-
-	.content {
-		display: flex;
-		width: 100%;
-		flex-direction: column;
-	}
-
-	.content img {
-		flex-direction: column;
-		background-color: blue;
-	}
-	.leerkracht {
-		margin-top: 80px;
-	}
-	.text {
-		flex: 1;
-		max-width: 50%;
-	}
-
-	.wrapperInfodagen {
-		background-image: url(../cyberpunk/images/white\ background.png);
-
-		width: 100%;
-
-		.infodagen {
-			width: 90%;
-			margin: 0 auto;
-			display: flex;
-			h1,
-			p {
-				color: black;
-			}
-		}
-		.infoimg {
-			max-width: 70%;
-			border-radius: 0px;
-			padding-left: 10%;
-			padding-top: 20%;
-			height: 100%;
-			width: 100%;
-		}
-	}
+.vakken h2 {
+	padding-top: 5%;
+	margin-bottom: 0%;
+}
+.plaatsles h2 {
+	margin-bottom: 0%;
+}
+.flexibelstuderen h1 {
+	margin-bottom: 0%;
+}
+.verkorte-trajecten h2 {
+	margin-bottom: 0%;
+}
+.opleiding h1,
+h2,
+h3 {
+	margin-bottom: 0%;
+}
+.hover_image:hover {
+	text-decoration: none;
+}
+.hide {
+	display: none;
+}
+.hover_image:hover img:first-child {
+	display: none;
+}
+.hover_image:hover img:last-child {
+	display: inline-block;
 }

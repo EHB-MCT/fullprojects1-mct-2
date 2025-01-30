@@ -98,7 +98,7 @@ video {
 	}
 
 	.logo img {
-		width: 150px; /* pas aan naar wens */
+		width: 120px; /* pas aan naar wens */
 		height: auto;
 	}
 
@@ -111,7 +111,7 @@ video {
 		font-weight: bold;
 		font-size: 1.5rem;
 		letter-spacing: 2px;
-		width: 150px;
+		width: 120px;
 		margin-top: 15px;
 		margin-left: 25px;
 	}
