@@ -3,13 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="dropdown_menu.js"></script>
 		<title>Multimedia en Creatieve Technologie</title>
 		<link rel="icon" type="image/x-icon" href="images/svg/mct logo.svg" />
 		<link rel="stylesheet" href="normalize.css" />
-		<link rel="stylesheet" href="stylesheet.css" />
+		<!-- <link rel="stylesheet" href="stylesheet.css" /> -->
 		<link rel="stylesheet" href="KB.css" />
-		<script src="website.js" type="module"></script>
+		<script src="website.js" defer></script>
 	</head>
 	<body>
 		<section class="hero">
@@ -173,59 +172,8 @@
 						/></a>
 					</div>
 				</div>
-
-				<script>
-					let slideIndex = 1;
-					showSlides(slideIndex);
-
-					function plusSlides(n) {
-						video = document.querySelector(".mySlides video");
-						console.log(video);
-						if (video) {
-							video.pause();
-							console.log("pausing");
-						}
-						showSlides((slideIndex += n));
-						if ((n = 2)) {
-							changeBanner();
-						}
-					}
-
-					function currentSlide(n) {
-						showSlides((slideIndex = n));
-					}
-
-					function showSlides(n) {
-						let slides = document.getElementsByClassName("mySlides");
-						let dots = document.getElementsByClassName("dot");
-						if (n > slides.length) {
-							slideIndex = 1;
-						}
-						if (n < 1) {
-							slideIndex = slides.length;
-						}
-						for (i = 0; i < slides.length; i++) {
-							slides[i].style.display = "none";
-						}
-						for (i = 0; i < dots.length; i++) {
-							dots[i].className = dots[i].className.replace(" active", "");
-						}
-
-						allVideos = document.querySelectorAll(".mySlides video");
-						allVideos.forEach((video) => video.pause());
-						slides[slideIndex - 1].style.display = "block";
-						let activeVideo = slides[slideIndex - 1].querySelector("video");
-						if (activeVideo) {
-							activeVideo.play();
-						}
-					}
-					// function changeBanner() {
-					// 	document.getElementById("topImage").src = newSrc;
-					// }
-				</script>
 			</section>
 		</div>
-
 		<img src="images/svg/banner.svg" />
 		<div class="wrapperVakken">
 			<div class="vakken">
@@ -238,7 +186,10 @@
 						met de algemene vakken zoals:
 					</p>
 					<div class="pijl">
-						<div class="pijltjes1_1" onclick="toggleDropdown()">
+						<div
+							class="pijltjes1_1"
+							onclick="toggleDropdown('dropdown1_1','pijltjes1_1')"
+						>
 							<p class="title">Coding</p>
 							<img src="images/svg/pijltjes.svg" />
 						</div>
@@ -482,8 +433,8 @@
 				></iframe>
 			</div>
 		</div>
-		<div class="wrapperInfodagen">
-			<section id="na-je-studie" class="infodagen">
+		<div class="wrapperNajeStudie">
+			<section id="na-je-studie" class="NajeStudie">
 				<div class="text">
 					<h1>Na je NaStudie</h1>
 					<h2>Aan het werk</h2>
@@ -514,6 +465,7 @@
 				</div>
 				<div class="interview">
 					<iframe
+						class="map"
 						width="660"
 						height="415"
 						src="https://www.youtube.com/embed/MzueaSHdN2U?si=bg3GCXMYwvLR6ZgQ"
@@ -597,9 +549,11 @@
 						We zwieren op verschillende momenten tijdens het jaar de deuren van
 						onze campussen open. Je bent dan welkom voor een toffe babbel met
 						docenten en studenten, een rondleiding op campus, een inkijk in
-						cursussen en je inschrijving. Zaterdag 22 maart 2025, van 10u tot
-						15u Zaterdag 3 mei 2025, van 10u tot 15u Zaterdag 28 juni 2025, van
-						10u tot 15u Zaterdag 6 september 2025, van 10u tot 15u Woensdag 10
+						cursussen en je inschrijving.<br />
+						Zaterdag 22 maart 2025, van 10u tot 15u<br />
+						Zaterdag 3 mei 2025, van 10u tot 15u <br />Zaterdag 28 juni 2025,
+						van 10u tot 15u<br />
+						Zaterdag 6 september 2025, van 10u tot 15u <br />Woensdag 10
 						september 2025, van 17u tot 20u
 					</p>
 					<h3>Openlesweek</h3>
@@ -609,7 +563,8 @@
 						krokusvakantie Check altijd deze pagina voor last-minute
 						wijzigingen. Wil je op de hoogte gehouden worden van al onze events?
 						Laat
-						<a>hier</a> dan je gegevens achter.
+						<a href="https://www.erasmushogeschool.be/nl/contact">hier</a> dan
+						je gegevens achter.
 					</p>
 				</div>
 				<img class="infoimg" src="./images/infodagen.png" />
@@ -825,26 +780,21 @@
 					/></a>
 				</div>
 				<div class="ehb">
-					<img src="./images/svg/logo eramus.svg" alt="" />
+					<a
+						href="https://www.erasmushogeschool.be/nl/inschrijven/eerste-inschrijving-aan-ehb"
+					>
+						<img src="./images/svg/logo eramus.svg" alt="" />
+					</a>
 				</div>
 			</section>
 		</div>
-		<script src="/cyberpunk/website.js"></script>
+
 		<div class="open-button">
 			<img src="./images/svg/chat logo.svg" alt="Open Chat" />
 		</div>
 
 		<div class="chat-popup" id="myForm">
-			<form
-				action="https://api.web3forms.com/submit"
-				method="POST"
-				class="form-container"
-			>
-				<input
-					type="hidden"
-					name="access_key"
-					value="122eb131-594f-4aba-a57e-9df045f0ca76"
-				/>
+			<form action="#" class="form-container">
 				<div class="closebutton">
 					<div type="button" class="btn cancel">
 						<img src="./images/svg/close button.svg" alt="" />
@@ -900,7 +850,9 @@
 						></textarea>
 					</div>
 
-					<button type="submit" class="btn">Send</button>
+					<div type="submit" class="btn">
+						<img src="./images/svg/send.svg" alt="" />
+					</div>
 				</div>
 			</form>
 		</div>
