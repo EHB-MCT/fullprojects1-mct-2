@@ -803,9 +803,7 @@ h3 {
 		position: relative;
 	  }
 
-  .nav.active {
-    background-color: rgba(33, 187, 181, 0.95);
-}
+	  
 	
 	  .nav #myLinks {
 		display: none;
