@@ -98,7 +98,7 @@ video {
 	}
 
 	.logo img {
-		width: 150px; /* pas aan naar wens */
+		width: 120px; /* pas aan naar wens */
 		height: auto;
 	}
 
@@ -111,7 +111,7 @@ video {
 		font-weight: bold;
 		font-size: 1.5rem;
 		letter-spacing: 2px;
-		width: 150px;
+		width: 120px;
 		margin-top: 15px;
 		margin-left: 25px;
 	}
@@ -500,6 +500,28 @@ img:has(+ .wrapperVakken) {
 		padding-top: 30%;
 	}
 }
+.wrapperNajeStudie {
+	background-image: url("./images/white\ background.png");
+
+	width: 100%;
+
+	.NajeStudie {
+		width: 90%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		h1,
+		p,
+		li {
+			color: black;
+		}
+	}
+	.infoimg {
+		border-radius: 0px;
+		padding-left: 10%;
+		padding-top: 30%;
+	}
+}
 
 .wrapperStudiekosten > * {
 	width: 90%;
@@ -815,4 +837,39 @@ h3 {
 }
 .hover_image:hover img:last-child {
 	display: inline-block;
+}
+@media (max-width: 480px) {
+	.wrapperLes > * {
+		width: 90%;
+		margin: 0 auto;
+		display: block;
+	}
+	.map {
+		width: 450px;
+		height: 375px;
+	}
+	.wrapperNajeStudie {
+		.NajeStudie {
+			width: 90%;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+	.interview {
+		padding-top: 0%;
+	}
+	.wrapperInfodagen {
+		.infodagen {
+			width: 90%;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+	.wrapperInfodagen {
+		.infoimg {
+			border-radius: 0px;
+			padding-left: 0%;
+			padding-top: 0%;
+		}
+	}
 }
