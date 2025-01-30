@@ -2,7 +2,7 @@
 body {
 	margin: 0;
 	font-family: "ocr-a-std", monospace;
-	background-image: url("../cyberpunk/images/background\ purpel.jpg");
+	background-image: url("./images/background\ purpel.jpg");
 	background-repeat: repeat;
 	color: #fff;
 
@@ -342,7 +342,7 @@ video {
 }
 
 .wrapperVakken {
-	background-image: url(../cyberpunk/images/white\ background.png);
+	background-image: url("./images/white\ background.png");
 	min-height: 100vh;
 	& > h2 {
 		margin-top: 0;
@@ -430,7 +430,7 @@ img:has(+ .wrapperVakken) {
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: 1fr 4fr;
 	position: relative;
-	background-image: url("../cyberpunk/images/white\ background.png");
+	background-image: url("./images/white\ background.png");
 
 	.NaStudie {
 		width: 90%;
@@ -479,7 +479,7 @@ img:has(+ .wrapperVakken) {
 	}
 }
 .wrapperInfodagen {
-	background-image: url(../cyberpunk/images/white\ background.png);
+	background-image: url("./images/white\ background.png");
 
 	width: 100%;
 
@@ -686,7 +686,7 @@ input[type="submit"]:hover {
 	right: 28px;
 
 	z-index: 9;
-	background-image: url("../cyberpunk/images/svg/background-chat.svg");
+	background-image: url("./images/svg/background-chat.svg");
 	width: 400px; /* vaste breedte */
 
 	background-repeat: no-repeat;
