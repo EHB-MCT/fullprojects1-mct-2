@@ -8,6 +8,7 @@
 		<link rel="icon" type="image/x-icon" href="images/svg/mct logo.svg" />
 		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="stylesheet.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="website.js" type="module"></script>
 	</head>
 	<body>
@@ -22,28 +23,28 @@
 						<img src="images/svg/mct logo.svg" alt="" />
 					</div>
 					<ul>
-						<li><a href="#opleiding">Opleiding</a></li>
-						<li><a href="#na-je-studie">Na je studie</a></li>
-						<li><a href="#flexibel">Flexibel studeren</a></li>
-						<li><a href="#infodagen">Infodagen</a></li>
-						<li><a href="#studiekosten">Studiekosten</a></li>
-						<li><a href="#over-ons">Over ons</a></li>
-						<li>
-							<a
-								class="hover_image"
-								href="https://www.erasmushogeschool.be/nl/opleidingen/multimedia-en-creatieve-technologie"
-							>
-								<img src="/images/inschrijven-hover.png" />
-								<img src="/images/inschrijven.png" class="hide" />
-							</a>
-						</li>
+						<div id="myLinks">
+							<li><a href="#opleiding">Opleiding</a></li>
+							<li><a href="#na-je-studie">Na je studie</a></li>
+							<li><a href="#flexibel">Flexibel studeren</a></li>
+							<li><a href="#infodagen">Infodagen</a></li>
+							<li><a href="#studiekosten">Studiekosten</a></li>
+							<li><a href="#over-ons">Over ons</a></li>
+							<li>
+								<a
+									class="hover_image"
+									href="https://www.erasmushogeschool.be/nl/opleidingen/multimedia-en-creatieve-technologie"
+								>
+									<img src="/images/inschrijven-hover.png" />
+									<img src="/images/inschrijven.png" class="hide" />
+								</a>
+							</li>
+						</div>
 					</ul>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
 				</nav>
-				<button class="hamburger" onclick="toggleMenu()">
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
-				</button>
 			</header>
 
 			<div class="hero-content">

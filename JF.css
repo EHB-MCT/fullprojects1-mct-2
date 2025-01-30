@@ -61,15 +61,36 @@ video {
 
 .hero {
 	position: relative;
-	/* Zorg dat de container het hele scherm vult */
 	width: 100%;
-	min-height: 100vh;
-	/* of: height: 100vh; */
-	overflow: hidden; /* belangrijk om de video mooi bij te snijden */
-}
-
-/* Volledige achtergrondvideo */
-.background-video {
+	min-height: 80vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+  }
+  
+  .hero-content {
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+	max-width: 600px;
+  }
+  
+  /* Hero-teksten */
+  .hero-content h1 {
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+	font-family: "evolver-variable", sans-serif;
+	font-style: italic;
+  }
+  
+  .hero-content p {
+	font-size: 1rem;
+	line-height: 1.4;
+	margin: 0.5rem 0;
+  }
+  
+  /* Video-achtergrond */
+  .background-video {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -77,155 +98,82 @@ video {
 	height: 100%;
 	object-fit: cover;
 	z-index: -1; /* video onder de content */
-}
+  }
+  
+  /* Header + navigatie */
+  .header {
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	top: 0;
+	z-index: 999;
+  }
+  
+  /* Logo in header */
+  .logo img {
+	width: 120px;
+	height: auto;
+  }
+  
+  /* De nav zelf */
+  .nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100; /* kan hoger/lager naargelang je needs */
+	display: flex;
+	justify-content: space-between;
+	transition: background-color 0.4s ease-in-out;
+  }
 
-/* Header + navigatie */
-.header {
-	img,
-	video {
-		width: 100%;
-	}
-	.header {
-		position: sticky;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 1rem;
-		/* padding-bottom: 620px;  <-- weghalen of commenten */
-		position: sticky;
-		top: 0;
-		z-index: 999;
-	}
-
-	.logo img {
-		width: 120px; /* pas aan naar wens */
-		height: auto;
-	}
-
-	/* Navigatie */
-	.nav ul {
-		list-style: none;
-	}
-
-	.logo {
-		font-weight: bold;
-		font-size: 1.5rem;
-		letter-spacing: 2px;
-		width: 120px;
-		margin-top: 15px;
-		margin-left: 25px;
-	}
-
-	.nav {
-		position: fixed;
-		z-index: 100;
-		display: flex;
-		justify-content: space-between;
-		top: 0;
-		width: 100%;
-		transition: background-color 0.4s ease-in-out;
-		ul {
-			list-style: none;
-			display: flex;
-			gap: 2.5rem;
-			margin: 0;
-			padding: 0;
-			padding-right: 4%;
-		}
-	}
-
-	.nav.scrolled {
-		background-color: #21bbb5;
-	}
-	.nav li a {
-		text-decoration: none;
-		color: #fff;
-		font-weight: 300;
-		font-size: 12pt;
-		transition: color 0.4s ease-in-out;
-	}
-
-	.nav li a:hover {
-		color: #ec2b77;
-	}
-
-	.inschrijven {
-		padding: 0.3rem 0.6rem;
-		border-radius: 4px;
-		cursor: pointer;
-		text-align: center;
+  
+  .nav ul {
+	list-style: none;
+	display: flex;
+	gap: 2.5rem;
+	margin: 0;
+	padding: 0;
+	padding-right: 4%;
+  }
+  
+  .nav li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+	font-size: 12pt;
+	transition: color 0.4s ease-in-out;
+  }
+  
+  .nav li a:hover {
+	color: #ec2b77;
+  }
+  
+  .nav.scrolled {
+	background-color: #21bbb5;
+  }
+  
+  .inschrijven {
+	padding: 0.3rem 0.6rem;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+  }
+  .inschrijven-hover {
+	display: none;
+  }
+  
+  .inschrijven:hover {
+	.button {
+	  display: none;
 	}
 	.inschrijven-hover {
-		display: none;
+	  display: block;
 	}
-
-	.inschrijven:hover {
-		.button {
-			display: none;
-		}
-		.inschrijven-hover {
-			display: block;
-		}
-	}
-
-	/* Hamburger-menu (mobiel) */
-	.hamburger {
-		display: none; /* Verander naar display: flex als je op mobiel wilt tonen */
-	}
-	.nav li a:hover {
-		color: #ec2b77;
-	}
-
-	.hamburger {
-		display: none;
-		flex-direction: column;
-		gap: 4px;
-		background: none;
-		border: none;
-		cursor: pointer;
-	}
-
-	.hamburger .bar {
-		width: 25px;
-		height: 3px;
-		background: #fff;
-	}
-}
-.hero {
-	position: relative;
-	width: 100%;
-	min-height: 80vh;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
-.hero-content {
-	position: absolute;
-	bottom: 5%;
-	left: 5%;
-	max-width: 600px;
-}
-
-.hero-content h1 {
-	font-size: 2rem;
-	margin-bottom: 0.5rem;
-	font-style: italic;
-}
-
-.hero-content h1 {
-	font-size: 2rem;
-	margin-bottom: 0.5rem;
-	font-family: "evolver-variable", sans-serif;
-	font-style: italic;
-}
-
-.hero-content p {
-	font-size: 1rem;
-	line-height: 1.4;
-	margin: 0.5rem 0;
-}
-
+  }
+  
+  
 [class*="wrapper"] > * {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -839,6 +787,38 @@ h3 {
 	display: inline-block;
 }
 @media (max-width: 480px) {
+
+	  .nav {
+		overflow: hidden;
+		background-color: none;
+		position: relative;
+	  }
+	
+	  .nav #myLinks {
+		display: none;
+	  }
+
+	  .nav a {
+		color: white;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+	  }
+
+	  .nav a.icon {
+		color: #e11f26;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	  }
+	  
+	  .nav a:hover {
+		background-color: #ddd;
+		color: black;
+	  }
+	  
 	.wrapperLes > * {
 		width: 90%;
 		margin: 0 auto;
