@@ -16,12 +16,6 @@ function closeForm() {
 }
 btn2.onclick = closeForm;
 
-// hamburger menu
-function toggleMenu() {
-	const navUl = document.querySelector(".nav ul");
-	navUl.classList.toggle("open");
-}
-
 // carrsoussel opleiding
 let slideIndex = 1;
 showSlides(slideIndex);
