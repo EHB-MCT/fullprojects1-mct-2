@@ -776,3 +776,21 @@ textarea {
 .open-button:hover {
 	opacity: 1;
 }
+.vakken h2 {
+	padding-top: 5%;
+	margin-bottom: 0%;
+}
+.plaatsles h2 {
+	margin-bottom: 0%;
+}
+.flexibelstuderen h1 {
+	margin-bottom: 0%;
+}
+.verkorte-trajecten h2 {
+	margin-bottom: 0%;
+}
+.opleiding h1,
+h2,
+h3 {
+	margin-bottom: 0%;
+}

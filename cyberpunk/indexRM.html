@@ -28,7 +28,13 @@
 						<li><a href="#infodagen">Infodagen</a></li>
 						<li><a href="#studiekosten">Studiekosten</a></li>
 						<li><a href="#over-ons">Over ons</a></li>
-						<li><a href="#inschrijven" class="inschrijven">Inschrijven</a></li>
+						<li>
+							<a
+								href="https://www.erasmushogeschool.be/nl/inschrijven/eerste-inschrijving-aan-ehb"
+								class="inschrijven"
+								>Inschrijven</a
+							>
+						</li>
 					</ul>
 				</nav>
 				<button class="hamburger" onclick="toggleMenu()">
@@ -48,7 +54,7 @@
 		</section>
 
 		<div class="wrapperOpleiding">
-			<div class="opleiding">
+			<section id="opleiding" class="opleiding">
 				<div class="text">
 					<h1>Opleiding</h1>
 					<h2>Wat leer je?</h2>
@@ -225,7 +231,7 @@
 					// 	document.getElementById("topImage").src = newSrc;
 					// }
 				</script>
-			</div>
+			</section>
 		</div>
 
 		<img src="images/svg/banner.svg" />
@@ -485,7 +491,7 @@
 			</div>
 		</div>
 		<div class="wrapperInfodagen">
-			<div class="infodagen">
+			<section id="na-je-studie" class="infodagen">
 				<div class="text">
 					<h1>Na je NaStudie</h1>
 					<h2>Aan het werk</h2>
@@ -526,10 +532,10 @@
 						allowfullscreen
 					></iframe>
 				</div>
-			</div>
+			</section>
 		</div>
 		<div class="wrapperStuderen">
-			<div class="flexibel studeren">
+			<section id="flexibel" class="flexibelstuderen">
 				<h1>Flexibel studeren</h1>
 				<div class="content">
 					<img
@@ -560,35 +566,37 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
 			<div class="verkorte-trajecten">
 				<h2>Verkorte trajecten</h2>
-				<div class="content">
+				<section id="" class="content">
 					<div class="text">
 						<h3>Geïnteresseerd in een extra diploma?</h3>
 						<p>
 							Heb je een bachelor Toegepaste Informatica of een daarmee
 							gelijkgesteld diploma, dan volg je een verkort programma van 2
 							jaar. Heb je een andere vooropleiding? Heb je andere
-							ICT-gerelateerd diploma’s of credits behaald? Dan kun je op basis
-							van je eerder verworven kwalificaties of competenties eventueel
-							vrijstellingen krijgen. We bieden je dan een individueel
-							studietraject aan. Enkel de modules volgen die jou het meest
-							interesseren? Dat is geen probleem! Leer op korte termijn
-							ontzettend veel bij en vergroot je marktwaarde. Neem contact op
-							met onze trajectbegeleider
+							ICT-gerelateerd diploma’s of credits behaald?
+						</p>
+						<p>
+							Dan kun je op basis van je eerder verworven kwalificaties of
+							competenties eventueel vrijstellingen krijgen. We bieden je dan
+							een individueel studietraject aan. Enkel de modules volgen die jou
+							het meest interesseren? Dat is geen probleem! Leer op korte
+							termijn ontzettend veel bij en vergroot je marktwaarde. Neem
+							contact op met onze trajectbegeleider
 							<a href="mailto:gwendolyn.vander.putten@ehb.be"
 								>gwendolyn.vander.putten@ehb.be</a
 							>
 						</p>
 					</div>
 					<img src="./images/Greenscreen.jpg" alt="Groep in studio" />
-				</div>
+				</section>
 			</div>
 		</div>
 		<div class="wrapperInfodagen">
-			<div class="infodagen">
+			<section id="infodagen" class="infodagen">
 				<div class="text">
 					<h1>Infodagen</h1>
 					<h2>Eens langskomen?</h2>
@@ -613,10 +621,10 @@
 					</p>
 				</div>
 				<img class="infoimg" src="./images/infodagen.png" />
-			</div>
+			</section>
 		</div>
 		<div class="wrapperStudiekosten">
-			<div>
+			<section id="studiekosten">
 				<div class="tekststudiekosten">
 					<h1>Studiekosten</h1>
 					<p>
@@ -791,10 +799,10 @@
 					<p>Klaar om de stap te wagen? Schrijf je in!</p>
 					<a href="#">schrijf je in</a>
 				</div>
-			</div>
+			</section>
 		</div>
 		<div class="wrapperFooter">
-			<div class="footer">
+			<section id="over-ons" class="footer">
 				<div class="link">
 					<h1>Over ons</h1>
 
@@ -827,7 +835,7 @@
 				<div class="ehb">
 					<img src="images/logo eramus.svg" alt="" />
 				</div>
-			</div>
+			</section>
 		</div>
 		<div class="open-button" onclick="openForm()">
 			<img src="../cyberpunk/images/svg/chat logo.svg" alt="Open Chat" />
@@ -897,6 +905,6 @@
 			</form>
 		</div>
 
-		<script src="website.js"></script>
+		<script src="/cyberpunk/website.js"></script>
 	</body>
 </html>
