@@ -75,3 +75,11 @@ document.querySelector(".pijltjes3_6").addEventListener("click", function () {
 document.querySelector(".pijltjes3_7").addEventListener("click", function () {
 	toggleDropdown("dropdown3_7", "pijltjes3_7");
 });
+window.addEventListener("scroll", function () {
+	const nav = document.querySelector(".nav");
+	if (window.scrollY > 50) {
+		nav.classList.add("scrolled");
+	} else {
+		nav.classList.remove("scrolled");
+	}
+});
