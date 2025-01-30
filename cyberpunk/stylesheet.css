@@ -624,3 +624,118 @@ input[type="submit"]:hover {
 .interview {
 	padding-top: 20%;
 }
+
+/* Open chat-knop rechtsonder */
+.open-button {
+	color: white;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+
+	opacity: 0.8;
+	position: fixed;
+	bottom: 23px;
+	right: 28px;
+	width: 100px;
+	height: 50px;
+}
+
+.open-button img {
+	width: 100%;
+	height: auto;
+}
+.tabs {
+	margin-top: 20px;
+}
+
+/* De popup zelf (standaard verborgen) */
+.chat-popup {
+	display: none;
+	position: fixed;
+	bottom: 80px; /* komt vlak boven de open-button */
+	right: 28px;
+
+	z-index: 9;
+	background-image: url("../cyberpunk/images/svg/background-chat.svg");
+	width: 400px; /* vaste breedte */
+
+	background-repeat: no-repeat;
+
+	background-size: cover;
+}
+
+/* Formulierelementen in de popup */
+.form-container {
+	display: flex;
+	flex-direction: column; /* stapel labels/inputs onder elkaar */
+	margin-left: 50px;
+
+	color: white;
+}
+
+.form-container h1 {
+	margin-top: 50px;
+	font-size: 1.5rem;
+	margin-bottom: 0.2rem;
+}
+.form-container p {
+	margin-bottom: 1rem;
+}
+
+/* Rij voor Naam en Voornaam naast elkaar */
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+	width: 42%;
+}
+
+label {
+	margin-bottom: 4px;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	background-color: #38beb5;
+	border: none;
+	padding: 8px;
+	margin-bottom: 10px;
+	resize: none;
+	outline: none;
+	color: #000;
+}
+
+/* Breder tekstvak voor de vraag */
+textarea {
+	height: 60px;
+}
+
+/* Volledige breedte voor enkelvoudige velden (E-mail, Vraag) */
+.single-field {
+	display: flex;
+	flex-direction: column;
+	width: 88%;
+	margin-bottom: 10px;
+}
+
+/* De knoppen in het formulier */
+.btn {
+	border: none;
+	cursor: pointer;
+	width: 50%;
+	margin-bottom: 10px;
+	opacity: 0.8;
+}
+.btn.cancel {
+	background-color: red;
+}
+.btn:hover,
+.open-button:hover {
+	opacity: 1;
+}

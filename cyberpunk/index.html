@@ -7,7 +7,9 @@
 		<title>Multimedia en Creatieve Technologie</title>
 		<link rel="icon" type="image/x-icon" href="images/svg/mct logo.svg" />
 		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="RM.css" />
 		<link rel="stylesheet" href="stylesheet.css" />
+
 		<script src="../cyberpunk/website.js" type="module"></script>
 	</head>
 	<body>
@@ -18,17 +20,28 @@
 
 			<header class="header">
 				<nav class="nav" id="navbar">
-					<div class="logo">
-						<img src="images/svg/mct logo.svg" alt="" />
-					</div>
+					<div class="logo"><img src="images/svg/mct logo.svg" alt="" /></div>
 					<ul>
-						<li><a href="#opleiding">Opleiding</a></li>
-						<li><a href="#na-je-studie">Na je studie</a></li>
-						<li><a href="#flexibel">Flexibel studeren</a></li>
-						<li><a href="#infodagen">Infodagen</a></li>
+						<li><a href="#opleiding" class="active">Opleiding</a></li>
+						<li><a href="#NaStudie">Na je studie</a></li>
+						<li><a href="#Flexibel">Flexibel studeren</a></li>
+						<li><a href="#infodag">Infodagen</a></li>
 						<li><a href="#studiekosten">Studiekosten</a></li>
-						<li><a href="#over-ons">Over ons</a></li>
-						<li><a href="#inschrijven" class="inschrijven">Inschrijven</a></li>
+						<li><a href="#footer">Over ons</a></li>
+						<li class="fotoinschrijving">
+							<div class="inschrijven">
+								<a href="#inschrijven"
+									><img
+										src="images/ou student/inschrijven.png"
+										class="button"
+									/>
+									<img
+										src="/cyberpunk/images/inschrijven-hover.png"
+										class="inschrijven-hover"
+									/>
+								</a>
+							</div>
+						</li>
 					</ul>
 				</nav>
 				<button class="hamburger" onclick="toggleMenu()">
@@ -48,16 +61,15 @@
 		</section>
 
 		<div class="wrapperOpleiding">
-			<div class="opleiding">
+			<section id="opleiding" class="opleiding">
 				<div class="text">
 					<h1>Opleiding</h1>
 					<h2>Wat leer je?</h2>
 
 					<h3>Creëren van multimediatoepassingen zoals:</h3>
 					<p>
-						Creëren van multimediatoepassingen zoals: Apps, websites,
-						VR-toepassingen, motion graphics en interactieve projecties. Design
-						& development
+						Apps, websites, VR-toepassingen, motion graphics en interactieve
+						projecties. Design & development
 					</p>
 					<h3>Design & development</h3>
 					<p>
@@ -144,17 +156,6 @@
 
 					<div class="mySlides fade">
 						<img
-							src="images/ou student/ayazbatuhan.jpg"
-							style="width: 100%"
-							alt="Digikids"
-						/>
-						<div class="bannerDescription">
-							<img src="images/ou student/digikids.png" />
-						</div>
-					</div>
-
-					<div class="mySlides fade">
-						<img
 							src="images/ou student/mignonquentin.jpg"
 							style="width: 100%"
 							alt="Prototyping"
@@ -174,16 +175,6 @@
 						<a class="next" onclick="plusSlides(1)"
 							><img src="images/svg/pijltjes.svg"
 						/></a>
-					</div>
-
-					<div style="text-align: center">
-						<span class="dot" onclick="currentSlide(1)"></span>
-						<span class="dot" onclick="currentSlide(2)"></span>
-						<span class="dot" onclick="currentSlide(3)"></span>
-						<span class="dot" onclick="currentSlide(4)"></span>
-						<span class="dot" onclick="currentSlide(5)"></span>
-						<span class="dot" onclick="currentSlide(6)"></span>
-						<span class="dot" onclick="currentSlide(7)"></span>
 					</div>
 				</div>
 
@@ -235,15 +226,24 @@
 					// function changeBanner() {
 					// 	document.getElementById("topImage").src = newSrc;
 					// }
+					window.addEventListener("scroll", function () {
+						const nav = document.querySelector(".nav");
+						if (window.scrollY > 50) {
+							nav.classList.add("scrolled");
+						} else {
+							nav.classList.remove("scrolled");
+						}
+					});
 				</script>
-			</div>
+			</section>
 		</div>
 
 		<img src="images/svg/banner.svg" />
 		<div class="wrapperVakken">
-			<div class="vakken">
+			<section id="vakken" class="vakken">
 				<h2>Vakken</h2>
 				<div class="column_uno">
+					<div><img src="images/peter.jpg" /></div>
 					<h3>1ste jaar</h3>
 					<p>
 						In het eerste jaar beginnen we<br />
@@ -289,10 +289,12 @@
 							</p>
 						</div>
 					</div>
-					<div class="endpic"><img src="images/peter.jpg" /></div>
 				</div>
 
 				<div class="column_dos">
+					<div>
+						<img src="images/cutten.jpg" />
+					</div>
 					<h3>2de jaar</h3>
 					<p>
 						In het tweede krijgt je dezelfde vakken <br />
@@ -369,12 +371,12 @@
 							</p>
 						</div>
 					</div>
-					<div class="endpic">
-						<img src="images/cutten.jpg" />
-					</div>
 				</div>
 
 				<div class="column_tres">
+					<div>
+						<img src="images/foto.jpg" />
+					</div>
 					<h3>3de jaar</h3>
 					<div class="kolommen">
 						<div class="part one">
@@ -437,15 +439,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="endpic">
-						<img src="images/foto.jpg" />
-					</div>
 				</div>
-			</div>
+			</section>
 		</div>
 		<div class="wrapperLes">
 			<div>
-				<div class="plaatsles">
+				<section id="plaatsles" class="plaatsles">
 					<h2>Stages</h2>
 					<h3>Buitenland</h3>
 					<p>
@@ -481,12 +480,12 @@
 						<li>Vlot bereikbaar met trein, metro.</li>
 						<li>Grote parkeerruimte</li>
 					</ul>
-				</div>
+				</section>
 
 				<iframe
 					class="map"
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5038.804072709278!2d4.322808000000001!3d50.842239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c40f19faf0f9%3A0x4ef5b683135ecb1e!2sErasmushogeschool%20Brussel!5e0!3m2!1snl!2sbe!4v1737544992783!5m2!1snl!2sbe"
-					width="600"
+					width="500"
 					height="450"
 					style="border: 0"
 					allowfullscreen=""
@@ -495,50 +494,52 @@
 				></iframe>
 			</div>
 		</div>
-		<div class="wrapperStudie">
-			<div class="NaStudie">
-				<h1 class="zwart">Na je NaStudie</h1>
-				<h2>Aan het werk</h2>
-				<p>Je kan aan de slag als:</p>
-				<ul>
-					<li>Webdesigner en -developer</li>
-					<li>Mobile app-designer</li>
-					<li>developer</li>
-					<li>Multimedia consultant</li>
-					<li>User experience designer</li>
-					<li>Creative digital</li>
-					<li>prototyper</li>
-					<li>Motion designer</li>
-					<li>Digital strategist</li>
-					<li>User interface designer</li>
-					<li>Usability engineer</li>
-					<li>Projectmanager</li>
-					<li>Internet</li>
-					<li>Things-ontwikkelaar</li>
-					<li>Interaction designer</li>
-					<li>Zelfstandige</li>
-				</ul>
-				<h2>Verder studeren aan EhB</h2>
-				<p>
-					Toch iets anders? Check het aanbod postgraduaten & extra bachelors
-					hier
-				</p>
+		<section id="NaStudie" class="wrapperInfodagen">
+			<div class="infodagen">
+				<div>
+					<h1>Na je NaStudie</h1>
+					<h2>Aan het werk</h2>
+					<p>Je kan aan de slag als:</p>
+					<ul>
+						<li>Webdesigner en -developer</li>
+						<li>Mobile app-designer</li>
+						<li>developer</li>
+						<li>Multimedia consultant</li>
+						<li>User experience designer</li>
+						<li>Creative digital</li>
+						<li>prototyper</li>
+						<li>Motion designer</li>
+						<li>Digital strategist</li>
+						<li>User interface designer</li>
+						<li>Usability engineer</li>
+						<li>Projectmanager</li>
+						<li>Internet</li>
+						<li>Things-ontwikkelaar</li>
+						<li>Interaction designer</li>
+						<li>Zelfstandige</li>
+					</ul>
+					<h2>Verder studeren aan EhB</h2>
+					<p>
+						Toch iets anders?<br />
+						Check het aanbod postgraduaten & extra bachelors hier
+					</p>
+				</div>
+				<div class="interview">
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/MzueaSHdN2U?si=B4Go2x-rItW8wpjS"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+					></iframe>
+				</div>
 			</div>
-			<div class="interview">
-				<iframe
-					width="560"
-					height="315"
-					src="https://www.youtube.com/embed/qQQzHjJg9os?si=TT9QtV-Wtru1qA3B&amp;controls=0"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin"
-					allowfullscreen
-				></iframe>
-			</div>
-		</div>
+		</section>
 		<div class="wrapperStuderen">
-			<div class="flexibel studeren">
+			<section id="Flexibel" class="flexibel studeren">
 				<h1>Flexibel studeren</h1>
 				<div class="content">
 					<img
@@ -569,7 +570,7 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
 			<div class="verkorte-trajecten">
 				<h2>Verkorte trajecten</h2>
@@ -597,7 +598,7 @@
 			</div>
 		</div>
 		<div class="wrapperInfodagen">
-			<div class="infodagen">
+			<section id="infodag" class="infodagen">
 				<div class="text">
 					<h1>Infodagen</h1>
 					<h2>Eens langskomen?</h2>
@@ -622,10 +623,10 @@
 					</p>
 				</div>
 				<img class="infoimg" src="./images/infodagen.png" />
-			</div>
+			</section>
 		</div>
 		<div class="wrapperStudiekosten">
-			<div>
+			<section id="studiekosten">
 				<div class="tekststudiekosten">
 					<h1>Studiekosten</h1>
 					<p>
@@ -800,10 +801,10 @@
 					<p>Klaar om de stap te wagen? Schrijf je in!</p>
 					<a href="#">schrijf je in</a>
 				</div>
-			</div>
+			</section>
 		</div>
 		<div class="wrapperFooter">
-			<div class="footer">
+			<section id="footer" class="footer">
 				<div class="link">
 					<h1>Over ons</h1>
 
@@ -815,28 +816,28 @@
 				</div>
 				<div class="social">
 					<a href="https://www.facebook.com/erasmushogeschool"
-						><img src="images/facebook logo.svg" alt=""
+						><img src="/cyberpunk/images/svg/facebook logo.svg" alt=""
 					/></a>
 					<a href="https://www.linkedin.com/school/erasmushogeschool-brussel/"
-						><img src="images/linked in logo.svg" alt=""
+						><img src="/cyberpunk/images/svg/linked in logo.svg" alt=""
 					/></a>
 					<a href="https://x.com/ehbrussel?mx=2"
-						><img src="images/x logo.svg" alt=""
+						><img src="/cyberpunk/images/svg/x logo.svg" alt=""
 					/></a>
 					<a href="https://www.instagram.com/erasmushogeschool/"
-						><img src="images/insta logo.svg" alt=""
+						><img src="/cyberpunk/images/svg/insta logo.svg" alt=""
 					/></a>
 					<a href="https://www.youtube.com/user/ehbrussel"
-						><img src="images/youtube logo.svg" alt=""
+						><img src="/cyberpunk/images/svg/youtube logo.svg" alt=""
 					/></a>
 					<a href="https://www.flickr.com/photos/erasmushogeschool"
-						><img src="images/flickr logo.svg" alt=""
+						><img src="/cyberpunk/images/svg/flickr logo.svg" alt=""
 					/></a>
 				</div>
 				<div class="ehb">
-					<img src="images/logo eramus.svg" alt="" />
+					<img src="/cyberpunk/images/svg/logo eramus.svg" alt="" />
 				</div>
-			</div>
+			</section>
 		</div>
 		<div class="open-button" onclick="openForm()">
 			<img src="../cyberpunk/images/svg/chat logo.svg" alt="Open Chat" />
