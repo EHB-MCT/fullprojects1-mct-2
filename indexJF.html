@@ -1,129 +1,621 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="" type="module"></script>
-		<title>Multimedia en Creative Technologie</title>
-		<link rel="icon" type="image/icon" href="images/mct logo.svg" />
+		<script src="dropdown_menu.js"></script>
+		<title>Multimedia en Creatieve Technologie</title>
+		<link rel="icon" type="image/x-icon" href="images/svg/mct logo.svg" />
 		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="stylesheet.css" />
+		<script src="website.js" type="module"></script>
 	</head>
 	<body>
-	
-	      <header class="header">
+		<section class="hero">
+			<video class="background-video" autoplay muted loop playsinline>
+				<source src="images/Promovid.mp4" type="video/mp4" />
+			</video>
 
-			<div class="logo">
-				<a href="indexJF.html"><img src="images/mct logo.svg" alt="MCT Logo" /></a>
+			<header class="header">
+				<nav class="nav" id="navbar">
+					<div class="logo">
+						<img src="images/svg/mct logo.svg" alt="" />
+					</div>
+					<ul>
+						<li><a href="#opleiding">Opleiding</a></li>
+						<li><a href="#na-je-studie">Na je studie</a></li>
+						<li><a href="#flexibel">Flexibel studeren</a></li>
+						<li><a href="#infodagen">Infodagen</a></li>
+						<li><a href="#studiekosten">Studiekosten</a></li>
+						<li><a href="#over-ons">Over ons</a></li>
+						<li>
+							<a
+								class="hover_image"
+								href="https://www.erasmushogeschool.be/nl/opleidingen/multimedia-en-creatieve-technologie"
+							>
+								<img src="/cyberpunk/images/inschrijven-hover.png" />
+								<img src="/cyberpunk/images/inschrijven.png" class="hide" />
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<button class="hamburger" onclick="toggleMenu()">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</button>
+			</header>
+
+			<div class="hero-content">
+				<h1>
+					multimedia en <br />
+					creatieve technologie
+				</h1>
+				<p>Met design en tech in balans, wordt creativiteit onze kans!</p>
 			</div>
-	
-			<input type="checkbox" id="hamburger-toggle" />
-			<label for="hamburger-toggle" class="hamburger-icon">
-			  <span></span><span></span><span></span>
-			</label>
-	
-			<nav class="navigation">
-			  <ul>
-				<li class="nav-item"><a href="#">Opleiding</a></li>
-				<li class="nav-item"><a href="#">Na je studie</a></li>
-				<li class="nav-item"><a href="#">Flexibel studeren</a></li>
-				<li class="nav-item"><a href="#">Infodagen</a></li>
-				<li class="nav-item"><a href="#">Studiekosten</a></li>
-				<li class="nav-item"><a href="#">Over ons</a></li>
-				<li><a href="#" class="inschrijven">Inschrijven</a></li>
-			  </ul>
-			</nav>
-			<div class="wrapper">
+		</section>
 
+		<div class="wrapperOpleiding">
+			<section id="opleiding" class="opleiding">
+				<div class="text">
+					<h1>Opleiding</h1>
+					<h2>Wat leer je?</h2>
 
+					<h3>Creëren van multimediatoepassingen zoals:</h3>
+					<p>
+						Apps, websites, VR-toepassingen, motion graphics en interactieve
+						projecties. Design & development
+					</p>
+					<h3>Design & development</h3>
+					<p>
+						Vind de perfecte balans tussen vormgeving en techniek met de
+						nieuwste tools.
+					</p>
+					<h3>Je experimenteert met up-to-date technologie</h3>
+					<p>
+						Ga aan de slag met AI, augmented reality, physical prototyping,
+						virtual studios en nog veel meer.
+					</p>
+					<h3>Teamwork</h3>
+					<p>
+						Elk semester werk je in kleine teams aan real-life projecten,
+						begeleid door specialisten uit het bedrijfsleven.
+					</p>
+				</div>
 
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<img
+							src="images/ou student/bellotbieke.jpg"
+							style="width: 100%"
+							alt="NoirSoir"
+						/>
+						<div class="bannerDescription">
+							<img src="images/ou student/noirsoir-banner.png" />
+						</div>
+					</div>
+
+					<div class="mySlides fade">
+						<video controls autoplay muted>
+							<source
+								src="images/ou student/janssensquinn_28022_2916756_promovideo.mp4"
+							/>
+						</video>
+						<div class="bannerDescription">
+							<img src="images/ou student/animation-banner.png" />
+						</div>
+					</div>
+
+					<div class="mySlides fade">
+						<img
+							src="images/ou student/assakaliilyas.jpg"
+							style="width: 100%"
+							alt="SportSync"
+						/>
+						<div class="bannerDescription">
+							<img src="images/ou student/sportsync-banner.png" />
+						</div>
+					</div>
+
+					<div class="mySlides fade">
+						<video controls>
+							<source
+								src="images/ou student/shresthaaachal_38611_2919034_SHOWREEL_AACHAL.mp4"
+							/>
+						</video>
+						<div class="bannerDescription">
+							<img src="images/ou student/chinees.png" />
+						</div>
+					</div>
+
+					<div class="mySlides fade">
+						<img
+							src="images/ou student/lozanogabarronjuanluca.jpg"
+							style="width: 100%"
+							alt="junapix"
+						/>
+						<div class="bannerDescription">
+							<img src="images/ou student/junipix-banner.png" />
+						</div>
+					</div>
+					<div class="mySlides fade">
+						<video controls autoplay>
+							<source
+								src="images/ou student/vanalphenkylian_28005_2915151_Promovideo.mp4"
+							/>
+						</video>
+						<div class="bannerDescription">
+							<img src="images/ou student/film-banner.png" />
+						</div>
+					</div>
+
+					<div class="mySlides fade">
+						<img
+							src="images/ou student/mignonquentin.jpg"
+							style="width: 100%"
+							alt="Prototyping"
+						/>
+						<div class="bannerDescription">
+							<img src="images/ou student/makers-banner.png" />
+						</div>
+					</div>
+
+					<div class="arrow">
+						<a class="prev" onclick="plusSlides(-1)"
+							><img src="images/svg/pijltjes.svg"
+						/></a>
+
+						<p>See more creations of students</p>
+
+						<a class="next" onclick="plusSlides(1)"
+							><img src="images/svg/pijltjes.svg"
+						/></a>
+					</div>
+				</div>
+
+				<script>
+					let slideIndex = 1;
+					showSlides(slideIndex);
+
+					function plusSlides(n) {
+						video = document.querySelector(".mySlides video");
+						console.log(video);
+						if (video) {
+							video.pause();
+							console.log("pausing");
+						}
+						showSlides((slideIndex += n));
+						if ((n = 2)) {
+							changeBanner();
+						}
+					}
+
+					function currentSlide(n) {
+						showSlides((slideIndex = n));
+					}
+
+					function showSlides(n) {
+						let slides = document.getElementsByClassName("mySlides");
+						let dots = document.getElementsByClassName("dot");
+						if (n > slides.length) {
+							slideIndex = 1;
+						}
+						if (n < 1) {
+							slideIndex = slides.length;
+						}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+
+						allVideos = document.querySelectorAll(".mySlides video");
+						allVideos.forEach((video) => video.pause());
+						slides[slideIndex - 1].style.display = "block";
+						let activeVideo = slides[slideIndex - 1].querySelector("video");
+						if (activeVideo) {
+							activeVideo.play();
+						}
+					}
+					// function changeBanner() {
+					// 	document.getElementById("topImage").src = newSrc;
+					// }
+				</script>
+			</section>
 		</div>
-		  </header>
-		
+
+		<img src="images/svg/banner.svg" />
+		<div class="wrapperVakken">
+			<div class="vakken">
+				<h2>Vakken</h2>
+				<div class="column_uno">
+					<div class="endpic"><img src="images/peter.jpg" /></div>
+					<h3>1ste jaar</h3>
+					<p>
+						In het eerste jaar beginnen we<br />
+						met de algemene vakken zoals:
+					</p>
+					<div class="pijl">
+						<div class="pijltjes1_1" onclick="toggleDropdown()">
+							<p class="title">Coding</p>
+							<img src="images/svg/pijltjes.svg" />
+						</div>
+						<div id="dropdown1_1" class="dropdown" style="display: none">
+							<p>
+								Duik in de wereld van code en ontwikkel interactieve ervaringen.
+								Je leert programmeren voor web, apps en games, met technologieën
+								zoals HTML, CSS, JavaScript, en meer. Ontdek hoe je jouw
+								technische skills inzet om creatieve ideeën tot leven te
+								brengen.
+							</p>
+						</div>
+						<div class="pijltjes1_2" onclick="toggleDropdown()">
+							<p class="title">Design</p>
+							<img src="images/svg/pijltjes.svg" />
+						</div>
+						<div id="dropdown1_2" class="dropdown" style="display: none">
+							<p>
+								Van visuele communicatie tot gebruiksvriendelijke interfaces,
+								design is de kern van alles wat je maakt. Leer hoe je krachtige
+								visuals ontwerpt, UX/UI-principes toepast en creativiteit
+								combineert met functionaliteit om ontwerpen te maken die indruk
+								maken.
+							</p>
+						</div>
+						<div class="pijltjes1_3" onclick="toggleDropdown()">
+							<p class="title">Motion</p>
+							<img src="images/svg/pijltjes.svg" />
+						</div>
+						<div id="dropdown1_3" class="dropdown" style="display: none">
+							<p>
+								Breng beelden tot leven met motion graphics, animaties en video.
+								Je ontdekt hoe beweging verhalen versterkt, emoties oproept en
+								impact creëert. Van 2D-animatie tot geavanceerde motion design –
+								dit is waar creativiteit echt gaat stromen.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="column_dos">
+					<div class="endpic">
+						<img src="images/cutten.jpg" />
+					</div>
+					<h3>2de jaar</h3>
+					<p>
+						In het tweede krijgt je dezelfde vakken <br />
+						met daarbij nog extra keuze vakkken.
+					</p>
+					<div class="pijl">
+						<div class="pijltjes2_1" onclick="toggleDropdown()">
+							<p class="title">XR & 3D</p>
+							<img src="images/svg/pijltjes.svg" />
+						</div>
+						<div id="dropdown2_1" class="dropdown" style="display: none">
+							<h4>Ontwerp je eigen wereld</h4>
+							<p>
+								Het keuzetraject XR & 3D biedt studenten een diepgaande
+								opleiding in Virtual Reality (VR), Augmented Reality (AR), Mixed
+								Reality (MR) en 3D-content creatie. Je ontwikkelt zowel
+								technische als creatieve skills om meeslepende ervaringen te
+								ontwerpen, van interactieve XR-toepassingen en real-time
+								3D-modellen tot complexe wereldopbouw en gebruikersonderzoeken.
+								Door praktijkgericht te leren werken met toonaangevende software
+								en hardware, ben je klaar voor innovatieve rollen zoals
+								XR-ontwikkelaar, 3D-content creator of immersieve UX-designer.
+							</p>
+						</div>
+						<div class="pijltjes2_2" onclick="toggleDropdown()">
+							<p class="title">Expierence Design</p>
+							<img src="images/svg/pijltjes.svg" />
+						</div>
+						<div id="dropdown2_2" class="dropdown" style="display: none">
+							<h4>Breng verhalen tot leven</h4>
+							<p>
+								Het keuzetraject Experience Design bereidt je voor om
+								meeslepende en interactieve ervaringen te creëren voor de
+								evenementen-, cultuur- en marketingsector. Je ontwikkelt sterke
+								vaardigheden in conceptontwikkeling, 2D/3D-visualisatie, en
+								prototyping, met expertise in zowel soft-ware als hardware,
+								zoals AV-technologie, sensoren en creative coding. Door te
+								werken met tools als Touch-Designer, Unreal, en Mad-mapper leer
+								je abstracte ideeën om te zetten in immersieve ervaringen die je
+								publiek op een unieke manier betrekken.
+							</p>
+						</div>
+
+						<div class="pijltjes2_3" onclick="toggleDropdown()">
+							<p>Web & Mobile</p>
+							<img src="images/svg/pijltjes.svg" />
+						</div>
+						<div id="dropdown2_3" class="dropdown" style="display: none">
+							<h4>Creër de toekomst van digitale ervaringen</h4>
+							<p>
+								Het keuzetraject Web & Mobile bereidt je voor op een carrière
+								als front-end, back-end of mobile developer met uitgebreide
+								vaardigheden in moderne frameworks en tools. Van data-driven web
+								applicaties tot storytelling in een browser of mobiel toestel,
+								je combineert je solide technische en design basis om de
+								volgende generatie van online ervaringen neer te zetten.
+							</p>
+						</div>
+						<div class="pijltjes2_4" onclick="toggleDropdown()">
+							<p>Digital Design</p>
+							<img src="images/svg/pijltjes.svg" />
+						</div>
+						<div id="dropdown2_4" class="dropdown" style="display: none">
+							<h4>Design met impact</h4>
+							<p>
+								Het keuzetraject Digital Design biedt je de kans om uit te
+								blinken als eigenzinnige ontwerper, van visual- en motion- tot
+								UX-designer. Je leert probleemoplossend en cross-mediaal denken,
+								waarbij zowel het proces als de gebruiker centraal staan. Door
+								visueel onderzoek ontwikkel je een eigen stijl en ontwerpvisie.
+								Of je nu digitale verhalen, social-mediacampagnes of immersieve
+								websites creërt, je verwerft de vaardigheden om grensverleggende
+								oplossingen te realiseren.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="column_tres">
+					<div class="endpic">
+						<img src="images/foto.jpg" />
+					</div>
+					<h3>3de jaar</h3>
+					<div class="kolommen">
+						<div class="part one">
+							<div class="pijl">
+								<div class="pijltjes3_1" onclick="toggleDropdown()">
+									<p>Communication III</p>
+									<img src="images/svg/pijltjes.svg" />
+								</div>
+								<div id="dropdown3_1" class="dropdown" style="display: none">
+									<p>Later aan te vullen</p>
+								</div>
+
+								<div class="pijltjes3_2" onclick="toggleDropdown()">
+									<p>Design V</p>
+									<img src="images/svg/pijltjes.svg" />
+								</div>
+								<div id="dropdown3_2" class="dropdown" style="display: none">
+									<p>Later aan te vullen</p>
+								</div>
+								<div class="pijltjes3_3" onclick="toggleDropdown()">
+									<p>Development V</p>
+									<img src="images/svg/pijltjes.svg" />
+								</div>
+								<div id="dropdown3_3" class="dropdown" style="display: none">
+									<p>Later aan te vullen</p>
+								</div>
+								<div class="pijltjes3_4" onclick="toggleDropdown()">
+									<p>Grow III</p>
+									<img src="images/svg/pijltjes.svg" />
+								</div>
+								<div id="dropdown3_4" class="dropdown" style="display: none">
+									<p>Later aan te vullen</p>
+								</div>
+							</div>
+						</div>
+						<!-- tweede kolom -->
+						<div class="part two">
+							<div class="pijl">
+								<div class="pijltjes3_5" onclick="toggleDropdown()">
+									<p>Expert Lab</p>
+									<img src="images/svg/pijltjes.svg" />
+								</div>
+								<div id="dropdown3_5" class="dropdown" style="display: none">
+									<p>Later aan te vullen</p>
+								</div>
+								<div class="pijltjes3_6" onclick="toggleDropdown()">
+									<p>Final Work</p>
+									<img src="images/svg/pijltjes.svg" />
+								</div>
+								<div id="dropdown3_6" class="dropdown" style="display: none">
+									<p>Later aan te vullen</p>
+								</div>
+								<div class="pijltjes3_7" onclick="toggleDropdown()">
+									<p>Intership</p>
+									<img src="images/svg/pijltjes.svg" />
+								</div>
+								<div id="dropdown3_7" class="dropdown" style="display: none">
+									<p>Later aan te vullen</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="wrapperLes">
-			<div class="plaatsles">
-				<h2>Stages</h2>
-				<h3>Buitenland</h3>
-				<p>
-					Internationalisering is essentieel in de opleiding door goede
-					voorbeelden uit het buitenland.
-				</p>
-				<p>
-					Studenten volgen seminaries en gastcolleges met internationale
-					experts,
-				</p>
-				<p>
-					bezoeken multimedia- en technologiebeurzen en kunnen stages,
-					afstudeerwerk of een deel van hun studie in het buitenland doen.
-				</p>
-				<h2>Waar heb je les</h2>
-				<h3>Campus Kaai</h3>
-				<ul>
-					<li>In Anderlecht</li>
-					<li>
-						Brussel is het kloppend hart van de IT- en multimedia-industrie
-					</li>
-					<li>Vlakbij station Brussel-Zuid</li>
-					<li>
-						IT-campus: medialab / fablab / design lab / netwerklab -
-						Kunst-campus: musical, theater
-					</li>
-					<li>Kunst-campus: musical, theater en drama</li>
-					<li>
-						Leuke studentenresto met warme maaltijden, broodjes, salades, soepen
-						enz
-					</li>
-					<li>Groene ruimte om buiten te zitten</li>
-					<li>Vlot bereikbaar met trein, metro.</li>
-					<li>Grote parkeerruimte</li>
-				</ul>
-			</div>
+			<div>
+				<div class="plaatsles">
+					<h2>Stages</h2>
+					<h3>Buitenland</h3>
+					<p>
+						Internationalisering is essentieel in de opleiding door goede
+						voorbeelden uit het buitenland.
+					</p>
+					<p>
+						Studenten volgen seminaries en gastcolleges met internationale
+						experts,
+					</p>
+					<p>
+						bezoeken multimedia- en technologiebeurzen en kunnen stages,
+						afstudeerwerk of een deel van hun studie in het buitenland doen.
+					</p>
+					<h2>Waar heb je les</h2>
+					<h3>Campus Kaai</h3>
+					<ul>
+						<li>In Anderlecht</li>
+						<li>
+							Brussel is het kloppend hart van de IT- en multimedia-industrie
+						</li>
+						<li>Vlakbij station Brussel-Zuid</li>
+						<li>
+							IT-campus: medialab / fablab / design lab / netwerklab -
+							Kunst-campus: musical, theater
+						</li>
+						<li>Kunst-campus: musical, theater en drama</li>
+						<li>
+							Leuke studentenresto met warme maaltijden, broodjes, salades,
+							soepen enz
+						</li>
+						<li>Groene ruimte om buiten te zitten</li>
+						<li>Vlot bereikbaar met trein, metro.</li>
+						<li>Grote parkeerruimte</li>
+					</ul>
+				</div>
 
-			<iframe class="map"
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5038.804072709278!2d4.322808000000001!3d50.842239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c40f19faf0f9%3A0x4ef5b683135ecb1e!2sErasmushogeschool%20Brussel!5e0!3m2!1snl!2sbe!4v1737544992783!5m2!1snl!2sbe"
-				width="600"
-				height="450"
-				style="border: 0"
-				allowfullscreen=""
-				loading="lazy"
-				referrerpolicy="no-referrer-when-downgrade"
-			></iframe>
-		</div>
-		<div class="wrapperStudie">
-			<div class="NaStudie">
-				<h1>Na je NaStudie</h1>
-				<h2>Aan het werk</h2>
-				<p>Je kan aan de slag als:</p>
-				<ul>
-					<li>Webdesigner en -developer</li>
-					<li>Mobile app-designer</li>
-					<li>developer</li>
-					<li>Multimedia consultant</li>
-					<li>User experience designer</li>
-					<li>Creative digital</li>
-					<li>prototyper</li>
-					<li>Motion designer</li>
-					<li>Digital strategist</li>
-					<li>User interface designer</li>
-					<li>Usability engineer</li>
-					<li>Projectmanager</li>
-					<li>Internet</li>
-					<li>Things-ontwikkelaar</li>
-					<li>Interaction designer</li>
-					<li>Zelfstandige</li>
-				</ul>
-				<h2>Verder studeren aan EhB</h2>
-				<p>
-					Toch iets anders? Check het aanbod postgraduaten & extra bachelors
-					hier
-				</p>
-			</div>
-			<div class="interview">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/qQQzHjJg9os?si=TT9QtV-Wtru1qA3B&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<iframe
+					class="map"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5038.804072709278!2d4.322808000000001!3d50.842239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c40f19faf0f9%3A0x4ef5b683135ecb1e!2sErasmushogeschool%20Brussel!5e0!3m2!1snl!2sbe!4v1737544992783!5m2!1snl!2sbe"
+					width="600"
+					height="450"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
 			</div>
 		</div>
-		<body>
-			<div class="wrapperstudiekosten">
+		<div class="wrapperInfodagen">
+			<section id="na-je-studie" class="infodagen">
+				<div class="text">
+					<h1>Na je NaStudie</h1>
+					<h2>Aan het werk</h2>
+					<p>Je kan aan de slag als:</p>
+					<ul>
+						<li>Webdesigner en -developer</li>
+						<li>Mobile app-designer</li>
+						<li>developer</li>
+						<li>Multimedia consultant</li>
+						<li>User experience designer</li>
+						<li>Creative digital</li>
+						<li>prototyper</li>
+						<li>Motion designer</li>
+						<li>Digital strategist</li>
+						<li>User interface designer</li>
+						<li>Usability engineer</li>
+						<li>Projectmanager</li>
+						<li>Internet</li>
+						<li>Things-ontwikkelaar</li>
+						<li>Interaction designer</li>
+						<li>Zelfstandige</li>
+					</ul>
+					<h2>Verder studeren aan EhB</h2>
+					<p style="padding-bottom: 10%">
+						Toch iets anders? Check het aanbod postgraduaten & extra bachelors
+						hier
+					</p>
+				</div>
+				<div class="interview">
+					<iframe
+						width="660"
+						height="415"
+						src="https://www.youtube.com/embed/MzueaSHdN2U?si=bg3GCXMYwvLR6ZgQ"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+					></iframe>
+				</div>
+			</section>
+		</div>
+		<div class="wrapperStuderen">
+			<section id="flexibel" class="flexibelstuderen">
+				<h1>Flexibel studeren</h1>
+				<div class="content">
+					<img
+						class="leerkracht"
+						src="./images/leerkracht.png"
+						alt="Groep die studeert"
+					/>
+					<div class="text">
+						<h2>Werken en studeren</h2>
+						<h3>Heb je werk of ben je werkzoekend?</h3>
+						<p>
+							In onze werktrajecten hanteren we zowel online en/of on-campus
+							coaching, zowel individueel als in groep. Dit betekent dat je
+							studeert met kant-en-klaar cursus- en oefenmateriaal en
+							instructies die via onze elektronische leeromgeving beschikbaar
+							zijn. Je kan dus met een maximum aan flexibiliteit studeren, op je
+							eigen tempo en zonder gebonden te zijn aan vaste uren en plaatsen.
+						</p>
+						<p>
+							Je kan ervoor kiezen om een traject op maat uit te stippelen, of
+							om het standaardtraject te volgen, wat de load tussen werken en
+							studeren in balans houdt.
+						</p>
+						<p>
+							Meer info gewenst over de verwachtingen van het flex traject?
+							Stuur een mailtje naar
+							<a href="mailto:mike.derycke@ehb.be">mike.derycke@ehb.be</a>.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<div class="verkorte-trajecten">
+				<h2>Verkorte trajecten</h2>
+				<section id="" class="content">
+					<div class="text">
+						<h3>Geïnteresseerd in een extra diploma?</h3>
+						<p>
+							Heb je een bachelor Toegepaste Informatica of een daarmee
+							gelijkgesteld diploma, dan volg je een verkort programma van 2
+							jaar. Heb je een andere vooropleiding? Heb je andere
+							ICT-gerelateerd diploma’s of credits behaald?
+						</p>
+						<p>
+							Dan kun je op basis van je eerder verworven kwalificaties of
+							competenties eventueel vrijstellingen krijgen. We bieden je dan
+							een individueel studietraject aan. Enkel de modules volgen die jou
+							het meest interesseren? Dat is geen probleem! Leer op korte
+							termijn ontzettend veel bij en vergroot je marktwaarde. Neem
+							contact op met onze trajectbegeleider
+							<a href="mailto:gwendolyn.vander.putten@ehb.be"
+								>gwendolyn.vander.putten@ehb.be</a
+							>
+						</p>
+					</div>
+					<img src="./images/Greenscreen.jpg" alt="Groep in studio" />
+				</section>
+			</div>
+		</div>
+		<div class="wrapperInfodagen">
+			<section id="infodagen" class="infodagen">
+				<div class="text">
+					<h1>Infodagen</h1>
+					<h2>Eens langskomen?</h2>
+					<h3>Infodagen</h3>
+					<p>
+						We zwieren op verschillende momenten tijdens het jaar de deuren van
+						onze campussen open. Je bent dan welkom voor een toffe babbel met
+						docenten en studenten, een rondleiding op campus, een inkijk in
+						cursussen en je inschrijving. Zaterdag 22 maart 2025, van 10u tot
+						15u Zaterdag 3 mei 2025, van 10u tot 15u Zaterdag 28 juni 2025, van
+						10u tot 15u Zaterdag 6 september 2025, van 10u tot 15u Woensdag 10
+						september 2025, van 17u tot 20u
+					</p>
+					<h3>Openlesweek</h3>
+					<p>
+						Benieuwd hoe het eraan toegaat op campus? Goesting om je even een
+						echte student te wanen? Kom een workshop of les volgen Tijdens de
+						krokusvakantie Check altijd deze pagina voor last-minute
+						wijzigingen. Wil je op de hoogte gehouden worden van al onze events?
+						Laat
+						<a>hier</a> dan je gegevens achter.
+					</p>
+				</div>
+				<img class="infoimg" src="./images/infodagen.png" />
+			</section>
+		</div>
+		<div class="wrapperStudiekosten">
+			<section id="studiekosten">
 				<div class="tekststudiekosten">
 					<h1>Studiekosten</h1>
 					<p>
@@ -141,7 +633,7 @@
 					</p>
 					<h2>Opleiding gebonden kosten</h2>
 					<h3>Laptop</h3>
-	
+
 					<li>
 						Een laptop:<a href="#"> koop een laptop aan studententarief</a>
 						of check of je eigen laptop voldoet aan de voorwaarden
@@ -152,64 +644,257 @@
 					</li>
 				</div>
 				<div class="tabelstudiekosten">
-					<img src="images/tabel fp1.png" alt="" />
+					<div class="tablecontent">
+						<table>
+							<tr>
+								<td style="vertical-align: top" width="500">&nbsp;</td>
+								<td style="vertical-align: top" width="209">
+									<strong>Vast gedeelte</strong>
+								</td>
+								<td style="vertical-align: top" width="209">
+									<strong>Variabel gedeelte per studiepunt</strong>
+								</td>
+								<td style="vertical-align: top" width="209">
+									<strong
+										>Voltijdse studenten ’24-’25&nbsp;(60 studiepunten)</strong
+									>
+								</td>
+							</tr>
+							<tr>
+								<td style="vertical-align: top" width="209">
+									<strong>Niet-beurstariefstudent</strong>
+								</td>
+								<td
+									class="xl65"
+									style="box-sizing: border-box; height: 53.4pt; width: 48pt"
+									height="71"
+									width="64"
+								>
+									€ 288
+								</td>
+								<td
+									class="xl66"
+									style="
+										border-left-style: none;
+										box-sizing: border-box;
+										width: 48pt;
+									"
+									width="64"
+								>
+									€ 13,80
+								</td>
+								<td
+									class="xl67"
+									style="
+										border-left-style: none;
+										box-sizing: border-box;
+										width: 48pt;
+									"
+									width="64"
+								>
+									€ 1.116
+								</td>
+							</tr>
+							<tr>
+								<td style="vertical-align: top" width="209">
+									<strong>Bijna-beurstariefstudent</strong>
+								</td>
+								<td
+									class="xl65"
+									style="box-sizing: border-box; height: 53.4pt; width: 48pt"
+									height="71"
+									width="64"
+								>
+									€ 288
+								</td>
+								<td
+									class="xl65"
+									style="
+										border-left-style: none;
+										box-sizing: border-box;
+										width: 48pt;
+									"
+									width="64"
+								>
+									€ 5
+								</td>
+								<td
+									class="xl67"
+									style="
+										border-left-style: none;
+										box-sizing: border-box;
+										width: 48pt;
+									"
+									width="64"
+								>
+									€ 588
+								</td>
+							</tr>
+							<tr>
+								<td style="vertical-align: top" width="209">
+									<strong>Beurstariefstudent</strong>
+								</td>
+								<td
+									class="xl68"
+									style="box-sizing: border-box; height: 40.2pt; width: 48pt"
+									height="54"
+									width="64"
+								>
+									€ 131,50
+								</td>
+								<td
+									class="xl69"
+									style="
+										border-left-style: none;
+										box-sizing: border-box;
+										width: 48pt;
+									"
+									width="64"
+								>
+									€ 0
+								</td>
+								<td
+									class="xl70"
+									style="
+										border-left-style: none;
+										box-sizing: border-box;
+										width: 48pt;
+									"
+									width="64"
+								>
+									€ 131,50
+								</td>
+							</tr>
+						</table>
+					</div>
 				</div>
+
 				<div class="studiefinanciering">
 					<h2>Studiefinanciering</h2>
 					<h3>hulp nodig</h3>
 					<p>
-						Inschrijvingsgeld, boeken en cursussen, kot, vervoer,... studeren kost
-						wel wat.
+						Inschrijvingsgeld, boeken en cursussen, kot, vervoer,... studeren
+						kost wel wat.
 					</p>
 					<p>
-						Maar dit mage geen hindernis vormen om te studeren aan EhB.Check alle
-						mogelijkheden om ondersteuning te krijgen:
+						Maar dit mage geen hindernis vormen om te studeren aan EhB.Check
+						alle mogelijkheden om ondersteuning te krijgen:
 					</p>
 					<li><a href="#">Financiële steun studenten</a></li>
 					<li>
 						<a href="#">Financiële seun voor mensen die aan het werk zijn</a>
 					</li>
 				</div>
-				<div class="inschrijven">
+				<div class="Stinschrijven">
 					<h2>Inschrijven</h2>
 					<p>Klaar om de stap te wagen? Schrijf je in!</p>
 					<a href="#">schrijf je in</a>
 				</div>
-			</div>
+			</section>
+		</div>
+		<div class="wrapperFooter">
+			<section id="over-ons" class="footer">
+				<div class="link">
+					<h1>Over ons</h1>
 
-		<div class="footer">
-			<div class="link">
-				<h1>Over ons</h1>
+					<ul>
+						<a href="#">Contact</a>
+						<a href="#">Design & Technologie </a>
+						<a href="https://www.erasmushogeschool.be/nl">Erasmus hogeschool</a>
+					</ul>
+				</div>
+				<div class="social">
+					<a href="https://www.facebook.com/erasmushogeschool"
+						><img src="../cyberpunk/images/svg/facebook logo.svg " alt=""
+					/></a>
+					<a href="https://www.linkedin.com/school/erasmushogeschool-brussel/"
+						><img src="../cyberpunk/images/svg/linked in logo.svg" alt=""
+					/></a>
+					<a href="https://x.com/ehbrussel?mx=2"
+						><img src="../cyberpunk/images/svg/x logo.svg" alt=""
+					/></a>
+					<a href="https://www.instagram.com/erasmushogeschool/"
+						><img src="../cyberpunk/images/svg/insta logo.svg" alt=""
+					/></a>
+					<a href="https://www.youtube.com/user/ehbrussel"
+						><img src="../cyberpunk/images/svg/youtube logo.svg" alt=""
+					/></a>
+					<a href="https://www.flickr.com/photos/erasmushogeschool"
+						><img src="../cyberpunk/images/svg/flickr logo.svg" alt=""
+					/></a>
+				</div>
+				<div class="ehb">
+					<img src="../cyberpunk/images/svg/logo eramus.svg" alt="" />
+				</div>
+			</section>
+		</div>
+		<script src="/cyberpunk/website.js"></script>
+		<div class="open-button">
+			<img src="./images/svg/chat logo.svg" alt="Open Chat" />
+		</div>
 
-				<ul>
-					<a href="#">Contact</a>
-					<a href="#">Design & Technologie </a>
-					<a href="https://www.erasmushogeschool.be/nl">Erasmus hogeschool</a>
-				</ul>
-			</div>
-			<div class="social">
-				<a href="https://www.facebook.com/erasmushogeschool"
-					><img src="images/facebook logo.svg" alt=""
-				/></a>
-				<a href="https://www.linkedin.com/school/erasmushogeschool-brussel/"
-					><img src="images/linked in logo.svg" alt=""
-				/></a>
-				<a href="https://x.com/ehbrussel?mx=2"
-					><img src="images/x logo.svg" alt=""
-				/></a>
-				<a href="https://www.instagram.com/erasmushogeschool/"
-					><img src="images/insta logo.svg" alt=""
-				/></a>
-				<a href="https://www.youtube.com/user/ehbrussel"
-					><img src="images/youtube logo.svg" alt=""
-				/></a>
-				<a href="https://www.flickr.com/photos/erasmushogeschool"
-					><img src="images/flickr logo.svg" alt=""
-				/></a>
-			</div>
-			<div class="ehb">
-				<img src="images/logo eramus.svg" alt="" />
-			</div>
+		<div class="chat-popup" id="myForm">
+			<form action="#" class="form-container">
+				<div class="closebutton">
+					<div type="button" class="btn cancel">
+						<img src="./images/svg/close button.svg" alt="" />
+					</div>
+				</div>
+				<div class="chattekst">
+					<h1>Chat</h1>
+					<p>met studenten</p>
+				</div>
+
+				<div class="tabs">
+					<div class="row">
+						<div class="field">
+							<label for="naam">Naam</label>
+							<input
+								type="text"
+								id="naam"
+								name="naam"
+								placeholder="Naam"
+								required
+							/>
+						</div>
+						<div class="field">
+							<label for="voornaam">Voornaam</label>
+							<input
+								type="text"
+								id="voornaam"
+								name="voornaam"
+								placeholder="Voornaam"
+								required
+							/>
+						</div>
+					</div>
+
+					<div class="single-field">
+						<label for="email">E-mail</label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="E-mail"
+							required
+						/>
+					</div>
+
+					<div class="single-field">
+						<label for="vraag">Vraag</label>
+						<textarea
+							id="vraag"
+							name="vraag"
+							placeholder="Stel je vraag..."
+							required
+						></textarea>
+					</div>
+
+					<div type="submit" class="btn">
+						<img src="./images/svg/send.svg" alt="" />
+					</div>
+				</div>
+			</form>
 		</div>
 	</body>
 </html>
