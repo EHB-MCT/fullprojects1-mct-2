@@ -111,7 +111,7 @@ video {
   .logo img {
 	width: 120px;
 	height: auto;
-	margin-top: 25px;
+	margin: 25px;
   }
   
   .nav {
@@ -135,7 +135,7 @@ video {
   
   .nav li {
 	display: block;
-	float: left;
+	float: right;
 
   }
   
@@ -798,6 +798,7 @@ h3 {
 @media (max-width: 480px) {
 
 	.nav {
+		display: block;
 		overflow: hidden;
 		background-color: none;
 		position: relative;

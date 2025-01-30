@@ -7,7 +7,7 @@
 		<title>Multimedia en Creatieve Technologie</title>
 		<link rel="icon" type="image/x-icon" href="images/svg/mct logo.svg" />
 		<link rel="stylesheet" href="normalize.css" />
-		<link rel="stylesheet" href="JF.css" />
+		<link rel="stylesheet" href="stylesheet.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="website.js" type="module"></script>
 	</head>
@@ -85,6 +85,15 @@
 				</div>
 
 				<div class="slideshow-container">
+
+					<div class="mySlides fade">
+						<video controls autoplay muted>
+							<source
+								src="images/Mike Interview.mp4"
+							/>
+						</video>
+					</div>
+
 					<div class="mySlides fade">
 						<img
 							src="images/ou student/bellotbieke.jpg"
@@ -905,5 +914,17 @@
 				</div>
 			</form>
 		</div>
+
+		<script>
+			function myFunction() {
+	var x = document.getElementById("myLinks");
+	if (x.style.display === "block") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "block";
+	}
+}
+		</script>
+
 	</body>
 </html>
