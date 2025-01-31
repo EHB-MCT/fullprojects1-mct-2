@@ -825,199 +825,169 @@ h3 {
 		background-color: #ddd;
 		color: black;
 	}
-	@media (max-width: 480px) {
+
+	.opleiding {
+		flex-direction: column;
 		img {
 			display: block;
 		}
+	}
 
-		.opleiding {
-			flex-direction: column;
-		}
-
-		.wrapperOpleiding {
-			& .opleiding {
-				.text {
-					max-width: 100%;
-					width: 100%;
-				}
-				.slideshow-container {
-					padding-left: 0;
-					.arrow {
-						align-content: center;
-						a {
-							height: fit-content;
-						}
-						p {
-							text-align: center;
-						}
+	.wrapperOpleiding {
+		& .opleiding {
+			.text {
+				max-width: 100%;
+				width: 100%;
+			}
+			.slideshow-container {
+				padding-left: 0;
+				.arrow {
+					align-content: center;
+					a {
+						height: fit-content;
+					}
+					p {
+						text-align: center;
 					}
 				}
-				& > * {
-					max-width: 100%;
-					width: 100%;
-				}
+			}
+			& > * {
+				max-width: 100%;
+				width: 100%;
 			}
 		}
-		img:has(+ .wrapperVakken) {
-			margin-bottom: -40px;
+	}
+	img:has(+ .wrapperVakken) {
+		margin-bottom: -40px;
+	}
+	.wrapperVakken {
+		h2 {
+			margin-block: 0.83em;
+		}
+		& .vakken {
+			display: block;
 		}
 	}
-	.wrapperLes > * {
+.wrapperLes > * {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+.map {
+	width: 450px;
+	height: 375px;
+}
+.wrapperNajeStudie {
+	.NajeStudie {
 		width: 90%;
 		margin: 0 auto;
 		display: block;
 	}
-	.map {
-		width: 450px;
-		height: 375px;
+}
+.interview {
+	padding-top: 0%;
+}
+.wrapperInfodagen {
+	.infodagen {
+		width: 90%;
+		margin: 0 auto;
+		display: block;
 	}
-	.wrapperNajeStudie {
-		.NajeStudie {
-			width: 90%;
-			margin: 0 auto;
-			display: block;
-		}
-	}
-	.interview {
+	.infoimg {
+		border-radius: 0px;
+		padding-left: 0%;
 		padding-top: 0%;
 	}
-	.wrapperInfodagen {
-		.infodagen {
-			width: 90%;
-			margin: 0 auto;
-			display: block;
+}
+
+.wrapperStuderen {
+	.content {
+		flex-direction: column;
+		img {
+			max-width: 100%;
+			margin-top: 1rem;
+		}
+		.text {
+			max-width: 100%;
 		}
 	}
-	.wrapperInfodagen {
-		.infoimg {
-			border-radius: 0px;
-			padding-left: 0%;
-			padding-top: 0%;
-		}
+	.verkorte-trajecten .content {
+		flex-direction: column;
 	}
-	.wrapperStuderen {
-		.content {
-			flex-direction: column;
+}
+
+.infoimg {
+	padding-left: 0;
+	padding-top: 0;
+	order: 2;
+	width: 100%;
+}
+.text {
+	order: 1;
+}
+
+.wrapperFooter {
+	.footer {
+		flex-direction: column;
+		height: auto;
+		gap: 2rem;
+		padding: 2rem 1rem;
+
+		.link,
+		.social,
+		.ehb {
+			width: 100%;
+		}
+		.social {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 0;
 			img {
-				max-width: 100%;
-				margin-top: 1rem;
-			}
-			.text {
-				max-width: 100%;
+				width: 60px;
+				margin: 0.5rem;
 			}
 		}
-		.verkorte-trajecten .content {
-			flex-direction: column;
-		}
-	}
-
-	/* Nogmaals infodagen (wrapperInfodagen) /
-	  .wrapperInfodagen {
-		.infodagen {
-		  grid-template-columns: 1fr; / Eén kolom */
-	.infoimg {
-		padding-left: 0;
-		padding-top: 0;
-		order: 2;
-		width: 100%;
-	}
-	.text {
-		order: 1;
-	}
-
-	.wrapperFooter {
-		.footer {
-			flex-direction: column;
-			height: auto;
-			gap: 2rem;
-			padding: 2rem 1rem;
-
-			.link,
-			.social,
-			.ehb {
-				width: 100%;
-			}
-			.social {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				padding: 0;
-				img {
-					width: 30px;
-					margin: 0.5rem;
-				}
-			}
-			.ehb {
-				img {
-					width: 150px;
-					margin: 0 auto;
-				}
+		.ehb {
+			img {
+				width: 200px;
+				margin-left: 65px;
 			}
 		}
 	}
-	.wrapperFooter {
-		.footer {
-			flex-direction: column;
-			height: auto;
-			gap: 2rem;
-			padding: 2rem 1rem;
+}
+.wrapperStudiekosten > * {
+	width: 100%;
 
-			.link,
-			.social,
-			.ehb {
-				width: 100%;
-			}
-			.social {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				padding: 0;
-				img {
-					width: 60px;
-					margin: 0.5rem;
-				}
-			}
-			.ehb {
-				img {
-					width: 200px;
-					margin-left: 65px;
-				}
-			}
+	grid-template-columns: 1;
+	display: grid;
+
+	.tekststudiekosten {
+		grid-column: 1 / 1;
+	}
+	.h1 {
+		font-size: 10pt;
+	}
+
+	.tabelstudiekosten {
+		margin-top: 50px;
+
+		background-size: 90%;
+		grid-column: 1/1;
+
+		.tablecontent {
+			color: #fff;
+			font-size: 8pt;
+			padding: 0px;
+			margin: 25px 50px 0px 0px;
 		}
 	}
-	.wrapperStudiekosten > * {
-		width: 100%;
 
-		grid-template-columns: 1;
-		display: grid;
+	.studiefinanciering {
+		grid-column: 1 / 1;
+	}
 
-		.tekststudiekosten {
-			grid-column: 1 / 1;
-		}
-		.h1 {
-			font-size: 10pt;
-		}
-
-		.tabelstudiekosten {
-			margin-top: 50px;
-
-			background-size: 90%;
-			grid-column: 1/1;
-
-			.tablecontent {
-				color: #fff;
-				font-size: 8pt;
-				padding: 0px;
-				margin: 25px 50px 0px 0px;
-			}
-		}
-
-		.studiefinanciering {
-			grid-column: 1 / 1;
-		}
-
-		.Stinschrijven {
-			grid-column: 1 / 1;
-		}
+	.Stinschrijven {
+		grid-column: 1 / 1;
 	}
 }
