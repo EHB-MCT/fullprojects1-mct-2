@@ -206,29 +206,6 @@ video {
 			}
 		}
 
-		.afb {
-			align-self: center;
-			margin-top: 9%;
-			img {
-				width: 100%;
-			}
-			.arrow {
-				display: flex;
-				margin-top: 5%;
-				justify-self: center;
-				p {
-					max-width: fit-content;
-					padding: 0 150px;
-				}
-				img {
-					width: 50px;
-				}
-				.arrow1 {
-					transform: rotate(180deg);
-				}
-			}
-		}
-
 		.slideshow-container {
 			max-width: 1000px;
 			position: relative;
@@ -249,6 +226,7 @@ video {
 				}
 				a img {
 					width: 50px;
+					cursor: pointer;
 				}
 
 				.prev {
@@ -305,6 +283,7 @@ video {
 		}
 		& > * {
 			.pijl {
+				cursor: pointer;
 				& > * {
 					display: flex;
 					img {
@@ -868,126 +847,127 @@ h3 {
 			display: block;
 		}
 	}
-.wrapperLes > * {
-	width: 90%;
-	margin: 0 auto;
-	display: block;
-}
-.map {
-	width: 450px;
-	height: 375px;
-}
-.wrapperNajeStudie {
-	.NajeStudie {
+	.wrapperLes > * {
 		width: 90%;
 		margin: 0 auto;
 		display: block;
 	}
-}
-.interview {
-	padding-top: 0%;
-}
-.wrapperInfodagen {
-	.infodagen {
-		width: 90%;
-		margin: 0 auto;
-		display: block;
+	.map {
+		width: 450px;
+		height: 375px;
 	}
-	.infoimg {
-		border-radius: 0px;
-		padding-left: 0%;
+	.wrapperNajeStudie {
+		.NajeStudie {
+			width: 90%;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+	.interview {
 		padding-top: 0%;
 	}
-}
-
-.wrapperStuderen {
-	.content {
-		flex-direction: column;
-		img {
-			max-width: 100%;
-			margin-top: 1rem;
+	.wrapperInfodagen {
+		.infodagen {
+			width: 90%;
+			margin: 0 auto;
+			display: block;
 		}
-		.text {
-			max-width: 100%;
+		.infoimg {
+			border-radius: 0px;
+			padding-left: 0%;
+			padding-top: 0%;
 		}
 	}
-	.verkorte-trajecten .content {
-		flex-direction: column;
-	}
-}
 
-.infoimg {
-	padding-left: 0;
-	padding-top: 0;
-	order: 2;
-	width: 100%;
-}
-.text {
-	order: 1;
-}
-
-.wrapperFooter {
-	.footer {
-		flex-direction: column;
-		height: auto;
-		gap: 2rem;
-		padding: 2rem 1rem;
-
-		.link,
-		.social,
-		.ehb {
-			width: 100%;
-		}
-		.social {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			padding: 0;
+	.wrapperStuderen {
+		.content {
+			flex-direction: column;
 			img {
-				width: 60px;
-				margin: 0.5rem;
+				max-width: 100%;
+				margin-top: 1rem;
+			}
+			.text {
+				max-width: 100%;
 			}
 		}
-		.ehb {
-			img {
-				width: 200px;
-				margin-left: 65px;
+		.verkorte-trajecten .content {
+			flex-direction: column;
+		}
+	}
+
+	.infoimg {
+		padding-left: 0;
+		padding-top: 0;
+		order: 2;
+		width: 100%;
+	}
+	.text {
+		order: 1;
+	}
+
+	.wrapperFooter {
+		.footer {
+			flex-direction: column;
+			height: auto;
+			gap: 2rem;
+			padding: 2rem 1rem;
+
+			.link,
+			.social,
+			.ehb {
+				width: 100%;
+			}
+			.social {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				padding: 0;
+				img {
+					width: 60px;
+					margin: 0.5rem;
+				}
+			}
+			.ehb {
+				img {
+					width: 200px;
+					margin-left: 65px;
+				}
 			}
 		}
 	}
-}
-.wrapperStudiekosten > * {
-	width: 100%;
+	.wrapperStudiekosten > * {
+		width: 100%;
 
-	grid-template-columns: 1;
-	display: grid;
+		grid-template-columns: 1;
+		display: grid;
 
-	.tekststudiekosten {
-		grid-column: 1 / 1;
-	}
-	.h1 {
-		font-size: 10pt;
-	}
-
-	.tabelstudiekosten {
-		margin-top: 50px;
-
-		background-size: 90%;
-		grid-column: 1/1;
-
-		.tablecontent {
-			color: #fff;
-			font-size: 8pt;
-			padding: 0px;
-			margin: 25px 50px 0px 0px;
+		.tekststudiekosten {
+			grid-column: 1 / 1;
 		}
-	}
+		.h1 {
+			font-size: 10pt;
+		}
 
-	.studiefinanciering {
-		grid-column: 1 / 1;
-	}
+		.tabelstudiekosten {
+			margin-top: 50px;
 
-	.Stinschrijven {
-		grid-column: 1 / 1;
+			background-size: 90%;
+			grid-column: 1/1;
+
+			.tablecontent {
+				color: #fff;
+				font-size: 8pt;
+				padding: 0px;
+				margin: 25px 50px 0px 0px;
+			}
+		}
+
+		.studiefinanciering {
+			grid-column: 1 / 1;
+		}
+
+		.Stinschrijven {
+			grid-column: 1 / 1;
+		}
 	}
 }
