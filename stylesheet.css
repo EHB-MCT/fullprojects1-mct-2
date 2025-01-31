@@ -861,14 +861,6 @@ h3 {
 		img:has(+ .wrapperVakken) {
 			margin-bottom: -40px;
 		}
-		.wrapperVakken {
-			h2 {
-				margin-block: 0.83em;
-			}
-			& .vakken {
-				display: block;
-			}
-		}
 	}
 	.wrapperLes > * {
 		width: 90%;
