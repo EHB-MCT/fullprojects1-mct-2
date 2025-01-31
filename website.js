@@ -79,6 +79,7 @@ window.addEventListener("scroll", function () {
 	}
 });
 
+// nav
 function myFunction() {
 	var x = document.getElementById("myLinks");
 	if (x.style.display === "block") {

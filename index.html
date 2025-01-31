@@ -845,7 +845,16 @@
 		</div>
 
 		<div class="chat-popup" id="myForm">
-			<form action="#" class="form-container">
+			<form
+				action="https://api.web3forms.com/submit"
+				method="POST"
+				class="form-container"
+			>
+				<input
+					type="hidden"
+					name="access_key"
+					value="122eb131-594f-4aba-a57e-9df045f0ca76"
+				/>
 				<div class="closebutton">
 					<div type="button" class="btn cancel">
 						<img src="./images/svg/close button.svg" alt="" />
@@ -855,6 +864,7 @@
 					<h1>Chat</h1>
 					<p>met studenten</p>
 				</div>
+
 				<div class="tabs">
 					<div class="row">
 						<div class="field">
@@ -900,9 +910,7 @@
 						></textarea>
 					</div>
 
-					<div type="submit" class="btn">
-						<img src="./images/svg/send.svg" alt="" />
-					</div>
+					<button type="submit" class="btn">Send</button>
 				</div>
 			</form>
 		</div>
