@@ -103,7 +103,6 @@ video {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem;
 	top: 0;
 	z-index: 999;
 }
@@ -113,7 +112,9 @@ video {
 	height: auto;
 	margin: 25px;
 }
-
+.icon {
+	display: none;
+}
 .nav {
 	position: fixed;
 	top: 0;
@@ -521,6 +522,10 @@ img:has(+ .wrapperVakken) {
 		grid-column: 5 / 7;
 		a {
 			margin-left: 40px;
+		}
+		.inschrijvenbtn {
+			width: 50%;
+			display: flex;
 		}
 	}
 }
