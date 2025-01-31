@@ -669,8 +669,20 @@ input[type="submit"]:hover {
 	display: flex;
 	flex-direction: column; /* stapel labels/inputs onder elkaar */
 	margin-left: 50px;
-
 	color: white;
+
+	.btn {
+		all: unset;
+		color: transparent;
+		background-image: url(images/svg/send.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 50%;
+		height: 35px;
+		margin-bottom: 45px;
+		font-size: 0;
+		cursor: pointer;
+	}
 }
 .chattekst {
 	padding-top: 40px;
