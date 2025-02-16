@@ -2,7 +2,7 @@
 
 A website for Multimedia and Creative Technologies at Erasmus Higeschool Brussel with a glitch theme. A website made for students, by students and therefore carefully tailored to the students' needs.
 
-live link:https://laughing-adventure-eg3r3q3.pages.github.io/
+live link:https://ehb-mct.github.io/fullprojects1-mct-2/
 
 ## Sources
 
